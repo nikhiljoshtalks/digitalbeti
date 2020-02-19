@@ -1,0 +1,43 @@
+{% extends "digitalbeti/base.html" %}
+{% load static i18n %}
+
+<!-- Title -->
+{% block title %}
+{% trans 'About CSC Academy' %} || {% trans 'Digital Beti' %}
+{% endblock title %}
+
+{% block body %}
+
+<!-- Header -->
+<div class="row no-gutters">
+    <div class="col">
+        <div id="about-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{% static 'digitalbeti/images/about-csc/header.jpg' %}"
+                        alt="First slide">
+                    <div class="header-image-text">
+                        {% trans 'ABOUT CSC ACADEMY' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container">
+    <p class="text-center about-text big-text text-left mt-5">
+        {% trans 'CSC Academy is a publicly invested learning institution committed to teaching, delivering specialised trainingprogrammes, and promoting rural entrepreneurship. The purpose behind skilling the VLEs is to enable them to:' %}
+    </p>
+    <ul class="text-left about-text big-text">
+        <li>{% trans 'Fulfil personal learning goals and become facilitators' %}</li>
+        <li>{% trans 'Increase learners’ income' %}</li>
+        <li>{% trans 'Expand business to new products and services' %}</li>
+        <li>{% trans 'Augment markets and reach new customers' %}</li>
+        <li>{% trans 'Improve existing businesses to become recruiters' %}</li>
+        <li>{% trans 'Impart career oriented education' %}</li>
+    </ul>
+</div>
+
+{% endblock body %}

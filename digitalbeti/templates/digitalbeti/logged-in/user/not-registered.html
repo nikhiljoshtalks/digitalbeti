@@ -1,0 +1,37 @@
+{% extends 'digitalbeti/logged-in/dashboard_base.html' %}
+
+<!-- Title -->
+{% block title %}
+Not Registered || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">User <span class="text-dark">Not Registered</span></h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+{% block body %}
+
+<!-- Content -->
+<div class="container">
+    <div class="row justify-content-center align-self-center">
+        <div class="col-12">
+            <h4 class="text-center about-text" style="color: #5C5C5C;margin-top:40vh">
+                Sorry, you are not registered with us at the moment. To register please click the link below:
+            </h4>
+        </div>
+        <div class="col-12">
+            <p class="text-center about-text">
+                <a class="btn btn-orange" href="{% url 'fill_details' %}">Register</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

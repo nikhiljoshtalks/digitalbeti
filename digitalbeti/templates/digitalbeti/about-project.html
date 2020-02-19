@@ -1,0 +1,38 @@
+{% extends "digitalbeti/base.html" %}
+{% load static i18n %}
+
+<!-- Title -->
+{% block title %}
+{% trans 'About The Project' %} || {% trans 'Digital Beti' %}
+
+{% endblock title %}
+
+{% block body %}
+
+<!-- Header -->
+<div class="row no-gutters">
+    <div class="col">
+        <div id="about-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{% static 'digitalbeti/images/about-project/about-project.jpg' %}"
+                        alt="First slide">
+                    <div class="header-image-text">
+                        {% trans 'ABOUT THE PROJECT' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container">
+    <div class="col-12 mt-5">
+        <p class="text-center about-text big-text">
+            {% trans 'Digital Beti, a joint initiative of the Ministry of Electronics and Information Technology’s CSC Academy and Facebook, envisions to overcome the digital gender gap in India by training women from rural areas tobecome entrepreneurs, using digital tools. With necessary technological skills, they will be able to enhancetheir businesses and gain market access, thereby creating better opportunities for them and their communities.The program aims to train 5,000 Village Level Entrepreneurs on digital literacy, who in turn as MasterTrainers, will educate 250,000 rural entrepreneurs in over 3,000 villages across 10 Indian states.' %}
+        </p>
+    </div>
+</div>
+
+{% endblock body %}

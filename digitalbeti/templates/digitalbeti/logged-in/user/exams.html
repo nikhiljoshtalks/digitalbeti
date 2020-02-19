@@ -1,0 +1,59 @@
+{% extends 'digitalbeti/logged-in/dashboard_base.html' %}
+
+{% load static %}
+
+<!-- Title -->
+{% block title %}
+    Exams || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">Examinations</h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+
+{% block body %}
+
+    <!-- Exam -->
+    <div class="container pb-4">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="row justify-content-center py-2 mt-5">
+                <h4 class="text-center">Choose the exam you want to attempt &downarrow;</h4>
+            </div>
+            <div class="row justify-content-center py-2 mt-5">
+                {% for exam in exams %}
+                    <div class="col-sm-4">
+                        <div class="row">
+                            <div class="col py-2 d-flex justify-content-center align-items-center">
+                                <img src="{% static exam.urls %}" class="img-fluid"
+                                     width="250px" height="250px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col py-2 d-flex justify-content-center align-items-center font-weight-bold">
+                                {{ exam.title }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col py-2 d-flex justify-content-center align-items-center font-weight-bold">
+                                <input type="radio" name="exam_id" value="{{ exam.id }}"/>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="row justify-content-center py-2 exams-icon mb-3 mt-3">
+                <button type="submit" class="btn btn-orange">START NOW</button>
+            </div>
+        </form>
+    </div>
+
+{% endblock body %}

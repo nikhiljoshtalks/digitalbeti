@@ -1,0 +1,327 @@
+{% extends request.user.is_authenticated|yesno:"digitalbeti/logged-in/dashboard_base.html,digitalbeti/base.html" %}
+
+{% load static i18n %}
+
+
+{% get_current_language as LANGUAGE_CODE %}
+<!-- Title -->
+{% block title %}
+    {% trans 'Digital Marketing Curriculum' %} || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">{% trans 'Digital Marketing' %} <span class="text-dark">{% trans 'Curriculum' %}</span></h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+{% block mainheader %}
+        <div class="container-fluid blue-board">
+        <div class="container">
+            <div class="row">
+                <div class="col py-4 text-center">
+                    <h1>{% trans 'Digital Marketing' %}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock mainheader %}
+
+
+{% block body %}
+{% static 'digitalbeti/images/digital-marketing/' as base_url%}
+    <!-- Digital Marketing Curriculum -->
+    <div class="container">
+        <div class="row">
+            <div class="col py-5">
+                <div id="accordion" class="dc-list">
+                    <div class="card">
+                        <div class="card-header collapsed  curriculum-header curriculum-header" id="headingOne"
+                             data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                             aria-controls="collapseOne">
+                            <h4 class="mb-0 text-center">{% trans 'Basics of Digital Marketing' %}</h4>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col dc-list-item-text">
+                                        <h6 class="mb-0 text-left" style="color: #00227C">{% trans 'What is Digital Marketing?' %}</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/1/1.jpg"
+                                           data-title="{% trans 'What is Digital Marketing?' %}">
+
+                                            <img src="{{base_url}}{{LANGUAGE_CODE}}/1/1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/1/2.jpg"
+                                           data-title="{% trans 'What is Digital Marketing?' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/1/2.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header collapsed  curriculum-header" id="headingTwo" data-toggle="collapse"
+                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="mb-0 text-center">{% trans 'Using Facebook for Digital Marketing' %}</h4>
+                        </div>
+
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image">
+
+                                        <a href="#" data-toggle="modal" data-target="#videoModal"
+                                           data-video="https://www.youtube.com/embed/icjecKdZ1bo?autoplay=1"
+                                           data-title="{% trans 'Key Features' %}"><img
+                                                src="{% static 'digitalbeti/images/digital-marketing/2/1.jpg' %}">
+                                        </a>
+                                        <h6 class="text-center" style="color: #00227C;padding-top: 20px;">{% trans 'Key Features' %}</h6>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#videoModal"
+                                           data-video="https://www.youtube.com/embed/V1_SQAl5S9U?autoplay=1"
+                                           data-title="{% trans 'Expand Businesses on Facebook' %}"><img
+                                                src="{% static 'digitalbeti/images/digital-marketing/2/2.jpg' %}">
+                                        </a>
+                                        <h6 class="text-center" style="color: #00227C;padding-top: 20px;">{% trans 'How to Create and Expand Businesses on Facebook?' %}</h6>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#videoModal"
+                                           data-video="https://www.youtube.com/embed/kQbaYt2LoKI?autoplay=1"
+                                           data-title="{% trans 'Facebook Features Benefits for Businesses' %}"><img
+                                                src="{% static 'digitalbeti/images/digital-marketing/2/3.jpg' %}">
+                                        </a>
+                                        <h6 class="text-center" style="color: #00227C;padding-top: 20px;">{% trans 'How do Facebook Features Benefit Businesses' %}?</h6>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/2/4.jpg"
+                                           data-title="{% trans 'Using Facebook for Digital Marketing' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/2/4.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header collapsed  curriculum-header" id="headingThree" data-toggle="collapse"
+                             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4 class="mb-0 text-center">{% trans 'Facebook Profile' %}</h4>
+                        </div>
+
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col dc-list-item-text" style="color: #00227C;padding-top: 20px;">
+                                        {% trans 'How to Create a Facebook Profile and Why?' %}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/3/1.jpg"
+                                           data-title="{% trans 'Facebook Profile' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/3/1.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/3/2.jpg"
+                                           data-title="{% trans 'Facebook Profile' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/3/2.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{% static 'digitalbeti/images/digital-marketing/3/3.jpg' %}"
+                                           data-title="{% trans 'Facebook Profile' %}"><img
+                                                src="{% static 'digitalbeti/images/digital-marketing/3/3.jpg' %}"></a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{% static 'digitalbeti/images/digital-marketing/3/4.jpg' %}"
+                                           data-title="{% trans 'Facebook Profile' %}"><img
+                                                src="{% static 'digitalbeti/images/digital-marketing/3/4.jpg' %}"></a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{% static 'digitalbeti/images/digital-marketing/3/5.jpg' %}"
+                                           data-title="{% trans 'Facebook Profile' %}"><img
+                                                src="{% static 'digitalbeti/images/digital-marketing/3/5.jpg' %}"></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header collapsed  curriculum-header" id="headingFour" data-toggle="collapse"
+                             data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h4 class="mb-0 text-center">{% trans 'Facebook Page' %}</h4>
+                        </div>
+
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#videoModal"
+                                           data-video="https://www.youtube.com/embed/Q7AVtPB4HZA?autoplay=1"
+                                           data-title="{% trans 'Expand Businesses on Facebook' %}"><img
+                                                src="{% static 'digitalbeti/images/digital-marketing/4/1.jpg' %}">
+                                        </a></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col dc-list-item-text" style="color: #00227C;padding-top: 20px;">
+                                        {% trans 'How to Create a Facebook Page' %}?
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/4/2.jpg"
+                                           data-title="{% trans 'Facebook Page' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/4/2.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/4/3.jpg"
+                                           data-title="{% trans 'Facebook Page' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/4/3.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/4/3.jpg"
+                                           data-title="{% trans 'Facebook Page' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/4/3.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/4/5.jpg"
+                                           data-title="{% trans 'Facebook Page' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/4/5.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/4/6.jpg"
+                                           data-title="{% trans 'Facebook Page' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/4/6.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/4/7.jpg"
+                                           data-title="{% trans 'Facebook Page' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/4/7.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/4/8.jpg"
+                                           data-title="{% trans 'Facebook Page' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/4/8.jpg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header collapsed  curriculum-header" id="headingFive" data-toggle="collapse"
+                             data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <h4 class="mb-0 text-center">{% trans 'Facebook Groups' %}</h4>
+                        </div>
+
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col dc-list-item-text" style="color: #00227C;padding-top: 20px;">
+                                        {% trans 'The benefits of Creating and Joining Facebook Groups' %}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image"><a href="#" data-toggle="modal"
+                                                                                data-target="#imageModal"
+                                                                                data-image="{{base_url}}{{LANGUAGE_CODE}}/5/1.jpg"
+                                                                                data-title="{% trans 'Facebook Groups' %}"><img
+                                            src="{{base_url}}{{LANGUAGE_CODE}}/5/1.jpg"></a></div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/5/2.jpg"
+                                           data-title="{% trans 'Facebook Groups' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/5/2.jpg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header collapsed  curriculum-header" id="headingSix" data-toggle="collapse"
+                             data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <h4 class="mb-0 text-center">{% trans 'Facebook Watch' %}</h4>
+                        </div>
+
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col dc-list-item-text" style="color: #00227C;padding-top: 20px;">
+                                        {% trans 'What is Facebook Watch' %}?
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image"><a href="#" data-toggle="modal"
+                                                                                data-target="#imageModal"
+                                                                                data-image="{{base_url}}{{LANGUAGE_CODE}}/6/1.jpg"
+                                                                                data-title="{% trans 'Facebook Watch' %}"><img
+                                            src="{{base_url}}{{LANGUAGE_CODE}}/6/1.jpg"></a></div>
+                                    <div class="col-sm-6 dc-list-item-image"><a href="#" data-toggle="modal"
+                                                                                data-target="#imageModal"
+                                                                                data-image="{{base_url}}{{LANGUAGE_CODE}}/6/2.jpg"
+                                                                                data-title="{% trans 'Facebook Watch' %}"><img
+                                            src="{{base_url}}{{LANGUAGE_CODE}}/6/2.jpg"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header collapsed  curriculum-header" id="headingSeven" data-toggle="collapse"
+                             data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <h4 class="mb-0 text-center">{% trans 'Facebook Live' %}</h4>
+                        </div>
+
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col dc-list-item-text" style="color: #00227C;padding-top: 20px;">
+                                        {% trans 'What is Facebook Live' %}?
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/7/1.jpg"
+                                           data-title="{%  trans 'Facebook Live' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/7/1.jpg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}

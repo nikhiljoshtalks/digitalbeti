@@ -1,0 +1,78 @@
+{% extends "digitalbeti/logged-in/dashboard_base.html" %}
+{% load static %}
+
+<!-- Title -->
+{% block title %}
+    Conduct Exams || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+{% endblock subheader %}
+
+{% block body %}
+
+    <!-- Content -->
+    <div class="container h-100 py-4 d-flex flex-column justify-content-between">
+        <div class="row exams-icon">
+            {% for data in question_data %}
+
+                {% if data.type == 'TEXT' %}
+                    <div class="col-12 text-center">
+                        <h3>{{ data.data }}</h3>
+                    </div>
+                {% elif data.type == 'IMAGE' %}
+                    <div class="col-4 text-center">
+                        <img src="{{ data.data }}" width="300px" alt="question_image">
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="question_id" value="{{ question.id }}">
+                <div class="row justify-content-center py-2 exams-icon">
+                    <div class="col-sm-6 p-2">
+                        <label class="selectable-radio-div">
+                            <input type="radio" name="answer" value="1"/>
+                            <div>
+                                <div class="btn btn-outline-orange btn-block ">{{ question.option_1 }}</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-sm-6 p-2">
+                        <label class="selectable-radio-div">
+                            <input type="radio" name="answer" value="2"/>
+                            <div>
+                                <div class="btn btn-outline-orange btn-block">{{ question.option_2 }}</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-sm-6 p-2">
+                        <label class="selectable-radio-div">
+                            <input type="radio" name="answer" value="3"/>
+                            <div>
+                                <div class="btn btn-outline-orange btn-block">{{ question.option_3 }}</div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-sm-6 p-2">
+                        <label class="selectable-radio-div">
+                            <input type="radio" name="answer" value="4"/>
+                            <div>
+                                <div class="btn btn-outline-orange btn-block">{{ question.option_4 }}</div>
+                            </div>
+                        </label>
+                    </div>
+
+                </div>
+                <div class="row justify-content-end py-2 exams-icon">
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-orange">Next</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock body %}

@@ -1,0 +1,75 @@
+{% extends "digitalbeti/base.html" %}
+{% load static i18n %}
+
+<!-- Title -->
+{% block title %}
+Login || Digital Beti
+{% endblock title %}
+
+{% block body %}
+
+<!-- Form -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            {% if messages %}
+            <div class="container py-4">
+                {% for message in messages %}
+                <div class="row">
+                    <div class="col">
+                        <div class="{{message.tags}}" role="alert">
+                            {{ message }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+        <div class="offset-sm-4 col-sm-4 offset-sm-4 py-5">
+            <form method="POST">
+                {% csrf_token %}
+                {% if error_message %}
+                <div class="col-12 py-2 text-center error-message font-weight-bold mb-4 mt-4">
+                    {{ error_message }}
+                </div>
+                {% endif %}
+                <div class="row">
+                    <div class="col-12">
+                        <div id="div_id_username" class="form-group">
+                            <label for="id_username" class="requiredField">
+                                {% trans 'Username' %}
+                            </label>
+                            <div class="">
+                                <input type="text" name="username" maxlength="100"
+                                    class="textinput textInput form-control" required="" id="id_username"
+                                    value="{{ username }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="div_id_password" class="form-group">
+                            <label for="id_password" class=" requiredField">
+                                {% trans 'Password' %}
+                            </label>
+                            <div class="">
+                                <input type="password" name="password" maxlength="100"
+                                    class="textinput textInput form-control" required="" id="id_password">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-success btn-block">{% trans 'Login' %}</button>
+                    </div>
+                </div>
+            </form>
+            <div class="row pt-4">
+                <div class="col text-center">
+                    {% trans 'New User?' %} <a href="{% url 'signup' %}">{% trans 'Sign Up' %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

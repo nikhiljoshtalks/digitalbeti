@@ -1,0 +1,58 @@
+{% extends 'digitalbeti/logged-in/dashboard_base.html' %}
+{% load static %}
+
+<!-- Title -->
+{% block title %}
+    History || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">Examination <span class="text-dark">History</span></h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+
+{% block body %}
+
+    <div class="container py-5">
+        <div style="overflow-x:auto">
+            <table class="table table-striped">
+                <thead style="background-color: #EDEEF2">
+                <tr style="font-weight: bold; text-align: left;">
+                    <th scope="col" class="sNo">S. No.</th>
+                    <th scope="col" class="appN">User Registration Number</th>
+                    <th scope="col" class="name">Examination Name</th>
+                    <th scope="col" class="staE">Status</th>
+                    <th scope="col" class="staE">Result</th>
+                    <th scope="col" class="certificate">Certificate</th>
+                </tr>
+                </thead>
+                <tbody id="VLEDashTBody">
+                <!-- Run a for loop here. -->
+                {% for answer_set in as %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>DB{{ answer_set.participant.beneficiarydata.id|stringformat:"08d" }}</td>
+                        <td>{{ answer_set.exam.title }}</td>
+                        <td>{{ answer_set.status }}</td>
+                        <td>{{ answer_set.result }}</td>
+                        <td>
+                            {% if answer_set.result == 'SUCCESS' %}
+                                <a class="btn btn-primary btn-sm" href="{% url 'download_certificate' ref_hash=answer_set.ref_hash %}"
+                    download>Download Certificate</a>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock body %}

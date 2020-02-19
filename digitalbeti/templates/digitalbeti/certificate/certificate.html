@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Certificate || Digital Beti</title>
+    <meta name="description" content="Certificate">
+</head>
+
+<body>
+    <div class="name">
+        {{ answer_set.participant.user.first_name }} {{ answer_set.participant.user.last_name }}
+    </div>
+    <div class="date">
+        {{ answer_set.date_created|date:'Y-m-d'}}
+    </div>
+    <div class="signature">
+    </div>
+</body>
+
+</html>

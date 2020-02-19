@@ -1,0 +1,36 @@
+{% extends "digitalbeti/base.html" %}
+{% load static i18n  %}
+
+<!-- Title -->
+{% block title %}
+About Facebook
+{% endblock title %}
+
+{% block body %}
+
+<!-- Header -->
+<div class="row no-gutters">
+    <div class="col">
+        <div id="about-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="{% static "digitalbeti/images/about-facebook/about.jpg" %}"
+                        alt="First slide">
+                    <div class="header-image-text">
+                        {% trans 'ABOUT FACEBOOK' %}
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Content -->
+<div class="container">
+    <p class="text-center about-text big-text mt-5">
+        {% trans 'Facebook was founded in 2004 with the mission to bring the world closer and empower people to build community.Today, over 2 billion people use Facebook, Instagram, WhatsApp, or Messenger every month to stay connected withfriends and family, discover what’s going on in the world, create and run businesses, and share things that matter.' %}
+    </p>
+</div>
+
+{% endblock body %}

@@ -1,0 +1,252 @@
+{% load static i18n %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Linking Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'digitalbeti/css/simple-sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'digitalbeti/css/default.css' %}">
+    <link href="{% static 'digitalbeti/extra-assets/iconic/css/open-iconic-bootstrap.css' %}" rel="stylesheet">
+    <link rel="icon" href="{% static 'digitalbeti/images/favicon.png' %}">
+    {% block extra_resources %}
+    {% endblock extra_resources %}
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+
+<div id="preloader"></div>
+
+<div class="d-flex" id="wrapper">
+    <!-- Sidebar -->
+    {% if not skip_menu %}
+        <div class="border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading text-center">
+                <img src="{% static 'digitalbeti/images/db.png' %}" height="70px" width="180px"
+                     style="border-radius: 8px;"></div>
+            <div class="list-group text-left">
+                {% if user.digitalbetiuser.kind == 'USER' %}
+                    <a href="{% url 'profile' %}"><h5 class="list-group-item border-0 font-weight-bold">
+                        {% trans 'USER PROFILE' %}</h5></a>
+                    <a href="{% url 'curriculum' %}"><h5 class="list-group-item border-0 font-weight-bold">{% trans 'CURRICULUM' %}</h5></a>
+                    <a href="{% url 'digital-marketing' %}" class="list-group-item border-0"
+                       style="color: rgb(147, 148, 150);">{% trans 'Digital Marketing' %}</a>
+                    <a href="{% url 'jobs' %}" class="list-group-item border-0"
+                       style="color: rgb(147, 148, 150);">{% trans 'Jobs and Livelihood' %}</a>
+                    <a href="{% url 'online-safety' %}" class="list-group-item border-0"
+                       style="color: rgb(147, 148, 150);">{% trans 'Online Safety' %}</a>
+                    <h5 class="list-group-item border-0 font-weight-bold">{% trans 'EXAM' %}</h5>
+                    <a href="{% url 'exams' %}" class="list-group-item border-0"
+                       style="color: rgb(147, 148, 150);">{% trans 'Examinations' %}</a>
+                {% elif user.digitalbetiuser.kind == 'VLE' %}
+                    <a href="{% url 'reg_user_prompt' %}">
+                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'REGISTER A USER' %}</h5></a>
+                    <a href="{% url 'reg_history' %}">
+                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'REGISTRATION HISTORY' %}</h5></a>
+                    <a href="{% url 'vle_user_exam' %}">
+                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'CONDUCT EXAMINATION' %}</h5></a>
+                    <a href="{% url 'history' %}">
+                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'EXAMINATION HISTORY' %}</h5></a>
+                    <a href="{% url 'competition' %}">
+                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'COMPETITION' %}</h5></a>
+                    <a href="{% url 'assets' %}">
+                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'ICE MATERIAL' %}</h5></a>
+                {% else %}
+                    <a href="#">
+                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'ACTIVE VLEs' %}</h5></a>
+                    <a href="#">
+                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'TOP PERFORMING VLEs' %}</h5></a>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <!-- Toggle button & Username -->
+        <nav class="navbar navbar-expand-lg border-bottom navbar-custom2">
+            {% if not skip_menu %}
+                <button
+                        class="navbar-toggler custom-toggler d-sm-block d-xs-block d-md-block d-lg-block d-xl-block d-inline"
+                        id="menu-toggle"><span class="navbar-toggler-icon"></span>
+                </button>
+            {% endif %}
+            <h5 class="d-inline mt-2">Hi {{ user.first_name }}</h5>
+            <!-- Logout -->
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'logout' %}">Logout <span
+                                class="oi oi-account-logout px-2"></span></a>
+                    </li>
+                </ul>
+            </div>
+<form action="{% url 'set_language' %}" method="post" id="myForm">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <label>
+        <select name="language">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
+                        selected{% endif %}> {{ language.name_local }} ({{ language.code }})
+                </option>
+            {% endfor %}
+        </select>
+    </label>
+
+</form>
+        </nav>
+
+        <!-- Main Page Content -->
+        <div class="container-fluid main-page-content px-0 mx-0">
+            {% block subheader %}
+            {% endblock subheader %}
+
+            {% if messages %}
+                <div class="container py-4">
+                    {% for message in messages %}
+                        <div class="row">
+                            <div class="col">
+                                <div class="{{ message.tags }}" role="alert">
+                                    {{ message }}
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            {% block body %}
+            {% endblock body %}
+        </div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+    <div class="container">
+        <div class="row" style="vertical-align: middle;">
+            <div class="col-12 text-center center-block mt-4">
+                <a href="https://www.facebook.com/OfficialDigitalBeti" class="social-footer">
+                    <img src="{% static 'digitalbeti/images/icons/fb.svg' %}" class="mx-3" width="20px"
+                         height="20px">
+                </a>
+                <a href="#" class="social-footer"><img src="{% static 'digitalbeti/images/icons/insta.svg' %}"
+                                                       class="mx-3" width="20px" height="20px"></a>
+                <a href="#" class="social-footer"><img src="{% static 'digitalbeti/images/icons/messenger.svg' %}"
+                                                       class="mx-3" width="20px" height="20px"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark border-dark">
+                <div id="imageTitle"></div>
+                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body bg-dark p-0">
+                    <img width="100%" />
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark border-dark">
+                <div id="videoTitle"></div>
+                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body bg-dark p-0">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script>
+    $(function () {
+        setTimeout(function () {
+            $('#preloader').fadeOut('slow', function () {
+                $(this).remove();
+            });
+        }, 1500);
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#imageModal").on("show.bs.modal", function (event) {
+            let button = $(event.relatedTarget);
+            let url = button.data("image");
+            let title = button.data("title");
+
+            $('#imageTitle').html('<h5 class="modal-title text-white">' + title + '</h5>');
+            $(this).find("img").attr({
+                src: url,
+            });
+        });
+        $("#imageModal").on("hidden.bs.modal", function () {
+            $("#imageModal iframe").removeAttr("src allow");
+        });
+        $("#imageModal").on("hidden.bs.modal", function () {
+            $("#imageModal iframe").removeAttr("src allow");
+        });
+        $("#videoModal").on("show.bs.modal", function (event) {
+            let button = $(event.relatedTarget);
+            let url = button.data("video");
+            let title = button.data("title");
+
+            $('#videoTitle').html('<h5 class="modal-title text-white">' + title + '</h5>');
+            $(this).find("iframe").attr({
+                src: url,
+                allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            });
+        });
+        $("#videoModal").on("hidden.bs.modal", function () {
+            $("#videoModal iframe").removeAttr("src allow");
+        });
+    });
+
+    document.getElementById("myForm").onclick = function() {
+  document.getElementById("myForm").submit();
+};
+</script>
+{% block scripttags %}
+{% endblock scripttags %}
+
+</body>
+</html>

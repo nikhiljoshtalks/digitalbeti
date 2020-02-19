@@ -1,0 +1,7 @@
+.DS_Store
+venv
+.idea
+db.sqlite3
+*.pyc
+staticfiles
+env

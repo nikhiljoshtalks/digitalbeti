@@ -1,0 +1,47 @@
+{% extends 'digitalbeti/logged-in/dashboard_base.html' %}
+
+<!-- Title -->
+{% block title %}
+Exam Completed || Digital Beti
+{% endblock title %}
+
+{% block body %}
+
+<!-- Content -->
+<div class="container py-4">
+    <div class="row justify-content-center align-self-center">
+        {% if success %}
+        <div class="col-12">
+            <h1 class="text-center mt-5">
+                You Passed!!
+            </h1>
+            <p class="text-center about-text mt-4">
+                Congratulations, you scored {{ answer_set.score }}/{{ answer_set.total_score }} correct answers. You
+                have successfully cleared the <b>{{ exam.title }}</b> examination. You can download the certificate from
+                below.
+            </p>
+        </div>
+        <div class="col-12">
+            <p class="text-center about-text">
+                <a class="btn btn-orange" href="{% url 'download_certificate' ref_hash=answer_set.ref_hash %}"
+                    download>Download Certificate</a>
+            </p>
+        </div>
+        {% else %}
+        <div class="col-12">
+            <h1 class="text-center mt-5">
+                Better Luck Next Time.
+            </h1>
+            <p class="text-center about-text mt-4">
+                You scored {{ answer_set.score }} out of {{ answer_set.total_score }}.
+            </p>
+        </div>
+        <div class="col-12">
+            <p class="text-center about-text">
+                <a class="btn btn-orange" href="{% url 'exams' %}">Try Again</a>
+            </p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock body %}

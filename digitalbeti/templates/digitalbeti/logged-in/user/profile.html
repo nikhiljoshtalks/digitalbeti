@@ -1,0 +1,61 @@
+{% extends 'digitalbeti/logged-in/dashboard_base.html' %}
+{% load static %}
+
+<!-- Title -->
+{% block title %}
+Profile || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">User <span class="text-dark">Profile</span></h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+{% block body %}
+
+<!-- Body -->
+<div class="container pb-4">
+    <div class="row mt-5">
+        <div class="col-auto d-flex align-items-center">
+            <img class="rounded-circle" src="{% static 'digitalbeti/images/profile.svg' %}" width="120px"
+                 style="border: 2px solid black;" />
+        </div>
+        <div class="col-9 d-flex flex-column justify-content-center">
+            <h3> {{ details.first_name }} {{ details.middle_name }} {{ details.last_name }}</h3>
+            <p>{{ details.permanent_address.text }}</p>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-4 font-weight-bold">
+            <h4>Date of Birth</h4>
+        </div>
+        <div class="col-8">
+            <p> {{ details.date_of_birth }}</p>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-4 font-weight-bold">
+            <h4>Email</h4>
+        </div>
+        <div class="col-8">
+            <p> {{ details.email_id }}</p>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-4 font-weight-bold">
+            <h4>Phone</h4>
+        </div>
+        <div class="col-8">
+            <p>{{ details.phone_number }}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

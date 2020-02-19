@@ -1,0 +1,56 @@
+{% extends "digitalbeti/logged-in/dashboard_base.html" %}
+{% load static %}
+
+<!-- Title -->
+{% block title %}
+    Registration History || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">Registration <span class="text-dark">History</span></h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+{% block body %}
+
+    <!-- Content -->
+    <div class="container py-5">
+        <div style="overflow-x:auto">
+            <table class="table table-striped mt-2">
+                <thead style="background-color: #EDEEF2">
+                <tr style="font-weight: bold; text-align: left;">
+                    <th scope="col" class="sNo">S. No.</th>
+                    <th scope="col" class="appN">Application No.</th>
+                    <th scope="col" class="name">Name</th>
+                    <th scope="col" class="staE">Examination Status</th>
+                    <th scope="col" class="staE">Conduct Examination</th>
+                </tr>
+                </thead>
+                <tbody id="VLEDashTBody">
+                <!-- Run a for loop here. -->
+                {% for user in ru %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>DB{{ user.beneficiarydata.id|stringformat:"08d" }}</td>
+                        <td>{{ user.user.first_name }} {{ user.user.middle_name }} {{ user.user.last_name }}</td>
+                        <td>{{ user.examination_status }}</td>
+                        <td>
+                            <form method="GET" action="{% url 'vle_user_exam' %}">
+                                <input type="hidden" name="user_id" value="{{ user.beneficiarydata.id }}">
+                                <button class="btn btn-primary btn-sm">Conduct</button>
+                            </form>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock body %}

@@ -1,0 +1,100 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-18 16:23+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:20
+#: digitalbeti/templates/digitalbeti/base.html:53
+msgid "ABOUT"
+msgstr "మా గురించి"
+
+#: digitalbeti/templates/digitalbeti/base.html:48
+msgid "HOME"
+msgstr "హోమ్"
+
+#: digitalbeti/templates/digitalbeti/base.html:57
+msgid "The Project"
+msgstr "ప్రాజెక్ట్"
+
+#: digitalbeti/templates/digitalbeti/base.html:60
+msgid "CSC Academy"
+msgstr "csc అకాడమీ"
+
+#: digitalbeti/templates/digitalbeti/base.html:63
+msgid "Facebook"
+msgstr "ఫేస్బుక్"
+
+#: digitalbeti/templates/digitalbeti/base.html:67
+msgid "IMPACT"
+msgstr "ప్రభావం"
+
+#: digitalbeti/templates/digitalbeti/base.html:77
+msgid "LOGIN"
+msgstr "ప్రవేశించండి"
+
+#: digitalbeti/templates/digitalbeti/index.html:68
+msgid "DIGITAL CURRICULUM"
+msgstr "డిజిటల్ కరిక్యులం"
+
+#: digitalbeti/templates/digitalbeti/index.html:85
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:40
+msgid "Digital Marketing"
+msgstr "డిజిటల్ మార్కెటింగ్"
+
+#: digitalbeti/templates/digitalbeti/index.html:98
+msgid "Jobs and Livelihood"
+msgstr "జాబ్స్ మరియు లైవ్లీహూడ్"
+
+#: digitalbeti/templates/digitalbeti/index.html:111
+msgid "Online Safety"
+msgstr "ఆన్‌లైన్ భద్రత"
+
+#: digitalbeti/templates/digitalbeti/index.html:125
+msgid "Case Stories"
+msgstr "కేసు కథలు"
+
+#: digitalbeti/templates/digitalbeti/index.html:130
+msgid "Meet the groundbreakers"
+msgstr "గ్రౌండ్‌బ్రేకర్లను కలవండి"
+
+#: digitalbeti/templates/digitalbeti/index.html:131
+msgid ""
+"who are changing the face of rural India, by redefining opportunities for "
+"themselves and their communities."
+msgstr ""
+"తమకు మరియు వారి వర్గాలకు అవకాశాలను పునర్నిర్వచించడం ద్వారా గ్రామీణ భారతదేశం యొక్క ముఖాన్ని మారుస్తున్న "
+"వారు."
+
+#: digitalbeti/templates/digitalbeti/index.html:179
+msgid "Program Status"
+msgstr "ప్రోగ్రామ్ స్థితి"
+
+#: digitalbeti/templates/digitalbeti/index.html:195
+msgid "Latest News & Update"
+msgstr "తాజా వార్తలు మరియు నవీకరణ"
+
+#: digitalbeti/templates/digitalbeti/index.html:212
+msgid ""
+"Content feedback session has been conducted in Coimbatore, Tamilnadu with "
+"VLEs."
+msgstr "VLE లతో తమిళనాడులోని కోయంబత్తూర్‌లో కంటెంట్ ఫీడ్‌బ్యాక్ సెషన్ నిర్వహించారు."
+
+#: digitalbeti/templates/digitalbeti/index.html:227
+msgid ""
+"Content feedback session has been conducted in Katihar, Bihar with VLEs."
+msgstr "వీహెచ్‌ఈలతో బీహార్‌లోని కతిహార్‌లో కంటెంట్ ఫీడ్‌బ్యాక్ సెషన్ నిర్వహించారు."

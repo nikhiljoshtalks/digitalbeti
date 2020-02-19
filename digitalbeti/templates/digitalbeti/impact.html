@@ -1,0 +1,44 @@
+{% extends "digitalbeti/base.html" %}
+{% load static i18n %}
+
+<!-- Title -->
+{% block title %}
+Impact Stories || Digital Beti
+{% endblock title %}
+
+{% block body %}
+
+<!-- Groundbreakers -->
+<div class="container">
+    <div class="row">
+        <div class="col py-4">
+            <h1 class="text-center font-weight-bold mt-5 case-stories">{% trans 'Impact Stories' %}</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col py-4">
+            <p class="text-center about-text">
+                {% trans "Let's have a look at how Digital Beti is changing and " %}<span style="color: orange;"
+                    class="font-weight-bold">{% trans 'impacting lives' %}</span> {% trans 'in rural India' %}.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div
+            class="col-sm-6 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
+            <a href="#" data-toggle="modal" data-target="#videoModal"
+                data-video="https://www.youtube.com/embed/ZOoFxMverAM?autoplay=1" data-title="{% trans 'Digital Beti Campaign Video' %}"><img
+                    src="{% static 'digitalbeti/images/impact/video1.png' %}" class="img-fluid"></a>
+        </div>
+        <div
+            class="col-sm-6 p-4 groundbreakers d-flex justify-content-sm-start justify-content-center align-items-center">
+            <a href="#" data-toggle="modal" data-target="#videoModal"
+                data-video="https://www.youtube.com/embed/mEH0_FkBJnU?autoplay=1" data-title="{% trans 'Sonu Bala' %}"><img
+                    src="{% static 'digitalbeti/images/impact/video2.png' %}" class="img-fluid"></a>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
+
+{% block scripttags %}
+{% endblock scripttags %}

@@ -1,0 +1,228 @@
+{% load static i18n %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Linking Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'digitalbeti/css/default.css' %}">
+    <link href="{% static 'digitalbeti/extra-assets/iconic/css/open-iconic-bootstrap.css' %}" rel="stylesheet">
+    <link rel="icon" href="{% static 'digitalbeti/images/favicon.png' %}">
+
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+
+<body>
+
+<div id="preloader"></div>
+
+<!-- Navbar Logos -->
+<nav class="navbar navbar-expand-lg navbar-inverse">
+    <div class="mr-auto">
+        <img width="120px" height="60px" src="{% static 'digitalbeti/images/digital_india.png' %}"
+             class="mx-4 hideme"/>
+        <img width="120px" height="40px" src="{% static 'digitalbeti/images/csc.png' %}" class="hideme mx-4"/>
+    </div>
+    <div class="mx-auto">
+        <img class="mx-4" width="150px" height="60px" src="{% static 'digitalbeti/images/db.png' %}"/>
+    </div>
+    <div class="ml-auto">
+        <img class="hideme mx-4" width="210px" height="90px" src="{% static 'digitalbeti/images/Facebook.gif' %}"/>
+    </div>
+</nav>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-inverse navbar-custom">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-start mt-2 mb-2" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item {% if home %} active{% endif %} mx-3">
+                        <a class="nav-link hideme" href="{% url 'index' %}">{% trans 'HOME' %}</a>
+                    </li>
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle hideme" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {% trans 'ABOUT' %}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item {% if about_project %} active{% endif %}"
+                               href="{% url 'about-project' %}">{% trans 'The Project' %}</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item {% if about_csc %} active{% endif %}"
+                               href="{% url 'about-csc' %}">{% trans 'CSC Academy' %}</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item {% if about_fb %} active{% endif %}"
+                               href="{% url 'about-fb' %}">{% trans 'Facebook' %}</a>
+                        </div>
+                    </li>
+                    <li class="nav-item {% if impact %} active{% endif %} mx-3">
+                        <a class="nav-link hideme" href="{% url 'impact' %}">{% trans 'IMPACT' %}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end mt-2 mb-2">
+            <ul class="navbar-nav">
+                <li class="nav-item mx-4">
+                    <div class="img-center">
+                        <a class="nav-link btn btn-outline-light btn-outline-white" href="{% url 'login' %}"
+                           style="padding: 10px;width: 130px;">{% trans 'LOGIN' %}</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+<form action="{% url 'set_language' %}" method="post" id="myForm">
+    {% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <label>
+        <select name="language">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+            {% for language in languages %}
+                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
+                        selected{% endif %}> {{ language.name_local }} ({{ language.code }})
+                </option>
+            {% endfor %}
+        </select>
+    </label>
+
+</form>
+</nav>
+
+
+{% block mainheader %}
+{% endblock mainheader %}
+
+{% block body %}
+{% endblock body %}
+
+<!-- Footer -->
+<footer id="footer" class="mt-5">
+    <div class="container">
+        <div class="row" style="vertical-align: middle;">
+            <div class="col-12 text-center center-block mt-4">
+                <a href="https://www.facebook.com/OfficialDigitalBeti" class="social-footer" target="_blank">
+                    <img src="{% static 'digitalbeti/images/icons/fb.svg' %}" class="mx-3" width="20px"
+                         height="20px">
+                </a>
+                <a href="#" class="social-footer" target="_blank">
+                    <img src="{% static 'digitalbeti/images/icons/insta.svg' %}" class="mx-3" width="20px"
+                         height="20px"></a>
+                <a href="#" class="social-footer" target="_blank">
+                    <img src="{% static 'digitalbeti/images/icons/messenger.svg' %}" class="mx-3" width="20px"
+                         height="20px"></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark border-dark">
+                <div id="imageTitle"></div>
+                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body bg-dark p-0">
+                <img width="100%"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-dark border-dark">
+                <div id="videoTitle"></div>
+                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body bg-dark p-0">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+{% block scripttags %}
+{% endblock scripttags %}
+
+<script>
+    $(function () {
+        setTimeout(function () {
+            $('#preloader').fadeOut('slow', function () {
+                $(this).remove();
+            });
+        }, 1500);
+    });
+
+    var stopVideos = function () {
+        var videos = document.querySelectorAll('iframe, video');
+        Array.prototype.forEach.call(videos, function (video) {
+            if (video.tagName.toLowerCase() === 'video') {
+                video.pause();
+            } else {
+                var src = video.src;
+                video.src = src;
+            }
+        });
+    };
+
+    $(document).ready(function () {
+        $("#imageModal").on("show.bs.modal", function (event) {
+            let button = $(event.relatedTarget);
+            let url = button.data("image");
+            let title = button.data("title");
+
+            $('#imageTitle').html('<h5 class="modal-title text-white">' + title + '</h5>');
+            $(this).find("img").attr({
+                src: url,
+            });
+        });
+        $("#imageModal").on("hidden.bs.modal", function () {
+            $("#imageModal iframe").removeAttr("src allow");
+        });
+        $("#videoModal").on("show.bs.modal", function (event) {
+            let button = $(event.relatedTarget);
+            let url = button.data("video");
+            let title = button.data("title");
+
+            $('#videoTitle').html('<h5 class="modal-title text-white">' + title + '</h5>');
+            $(this).find("iframe").attr({
+                src: url,
+                allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            });
+        });
+        $("#videoModal").on("hidden.bs.modal", function () {
+            $("#videoModal iframe").removeAttr("src allow");
+        });
+    });
+    {#document.getElementById("myForm").submit();#}
+    document.getElementById("myForm").onclick = function() {
+  document.getElementById("myForm").submit();
+};
+</script>
+
+</body>
+
+</html>

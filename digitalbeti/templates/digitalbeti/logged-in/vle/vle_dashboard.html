@@ -1,0 +1,96 @@
+{% extends "digitalbeti/logged-in/dashboard_base.html" %}
+{% load static %}
+
+<!-- Title -->
+{% block title %}
+    VLE Dashboard || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">Overview</h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+{% block body %}
+
+    <!-- Content -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-3 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Enrolled</h5>
+                        <h1>{{ total_registered }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Users Who Gave Exam</h5>
+                        <h1>{{ total_exams_given }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Users Passed</h5>
+                        <h1>{{ total_passed }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Users Failed</h5>
+                        <h1>{{ total_failed }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Result</h5>
+                        <canvas id="success_chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
+
+
+{% block scripttags %}
+    <script type="text/javascript">
+        var ctx = document.getElementById('success_chart');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Passed', 'Failed'],
+                datasets: [
+                    {
+                        label: '# of Votes',
+                        data: [{{total_passed}}, {{total_failed}}],
+                        backgroundColor: [
+                            '#0183FB',
+                            '#00227C'
+                        ],
+                        borderColor: [
+                            '#0183FB',
+                            '#00227C'
+                        ],
+                        borderWidth: 1
+                    }]
+            },
+            {#optio ns: options#}
+        });
+    </script>
+{% endblock scripttags %}

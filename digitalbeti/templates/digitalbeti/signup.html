@@ -1,0 +1,53 @@
+{% extends "digitalbeti/base.html" %}
+{% load static i18n %}
+
+<!-- Title -->
+{% block title %}
+Sign Up || Digital Beti
+{% endblock title %}
+
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+<!-- Form -->
+<div class="container">
+    <div class="row">
+        <div class="offset-sm-4 col-sm-4 offset-sm-4 py-3">
+            <form method="POST">
+                {% csrf_token %}
+                <div class="row mt-4">
+                    <div class="col-12">
+                        {{ form.username|as_crispy_field }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        {{ form.first_name|as_crispy_field }}
+                    </div>
+                    <div class="col-6">
+                        {{ form.last_name|as_crispy_field }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        {{ form.password1|as_crispy_field }}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        {{ form.password2|as_crispy_field }}
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">{% trans 'Sign Up' %}</button>
+            </form>
+            <div class="row pt-4">
+                <div class="col text-center">
+                    {% trans 'Already have an account?' %} <a href="{% url 'login' %}">{% trans 'Login' %}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

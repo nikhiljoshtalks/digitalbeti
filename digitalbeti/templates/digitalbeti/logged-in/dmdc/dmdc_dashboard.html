@@ -1,0 +1,43 @@
+{% extends "digitalbeti/logged-in/dashboard_base.html" %}
+{% load static %}
+
+<!-- Title -->
+{% block title %}
+    VLE Dashboard || Digital Beti
+{% endblock title %}
+
+{% block body %}
+
+    <!-- Content -->
+    <div class="container">
+        <div style="overflow-x:auto">
+            <table class="table table-striped mt-2">
+                <thead style="background-color: #EDEEF2">
+                <tr style="font-weight: bold; text-align: left;">
+                    <th scope="col" class="sNo">S. No.</th>
+                    <th scope="col" class="appN">Name</th>
+                    <th scope="col" class="name">subdistrict</th>
+                    <th scope="col" class="staE">Village</th>
+                </tr>
+                </thead>
+                <tbody id="VLEDashTBody">
+                <!-- Run a for loop here. -->
+                {% for vle in vles %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td><a href="{% url 'dmdc_vle_details' user_id=vle.id %}">{{ vle.user.first_name }}{{ vle.user.last_name }}</a></td>
+                        <td>{{ vle.subdistrict }}</td>
+                        <td>{{ vle.village }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock body %}
+
+
+{% block scripttags %}
+
+{% endblock scripttags %}

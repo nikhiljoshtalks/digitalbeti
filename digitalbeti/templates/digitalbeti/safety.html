@@ -1,0 +1,257 @@
+{% extends request.user.is_authenticated|yesno:"digitalbeti/logged-in/dashboard_base.html,digitalbeti/base.html" %}
+
+{% load static i18n %}
+
+<!-- Title -->
+{% block title %}
+    Online Safety Curriculum || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">{% trans 'Online Safety' %} <span class="text-dark">{% trans 'Curriculum' %}</span></h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+
+{% block mainheader %}
+        <div class="container-fluid blue-board">
+        <div class="container">
+            <div class="row">
+                <div class="col py-4 text-center">
+                    <h1>{% trans 'Online Safety' %}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock mainheader %}
+
+{% block body %}
+{% static 'digitalbeti/images/safety/' as base_url%}
+    <!-- Online Safety Curriculum -->
+    <div class="container">
+        <div class="row">
+            <div class="col py-5">
+                <div id="accordion" class="dc-list">
+                    <div class="card">
+                        <div class="card-header curriculum-header collapsed" id="headingOne" data-toggle="collapse"
+                             data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h4 class="mb-0 text-center">
+                                {% trans 'About Online Safety' %}
+                            </h4>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col dc-list-item-text" style="color: #00227C;">
+                                        {% trans 'What is Online Safety and Why is it Important?' %}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_1.jpg"
+                                           data-title="{% trans 'About Online Safety' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_2.jpg"
+                                           data-title="{% trans 'About Online Safety' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_3.jpg"
+                                           data-title="{% trans 'About Online Safety' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_3.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_4.jpg"
+                                           data-title="{% trans 'About Online Safety' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_4.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_5.jpg"
+                                           data-title="{% trans 'About Online Safety' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_5.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header curriculum-header" id="headingTwo" data-toggle="collapse"
+                             data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h4 class="mb-0 text-center">
+                                {% trans 'Security Features in Facebook' %}
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col dc-list-item-text" style="color: #00227C;">
+                                        {% trans 'How to Secure Your Facebook Account?' %}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_sf_1.jpg"
+                                           data-title="{% trans 'Security Features in Facebook' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_sf_1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_sf_2.jpg"
+                                           data-title="{% trans 'Security Features in Facebook' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_sf_2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_sf_3.jpg"
+                                           data-title="{% trans 'Security Features in Facebook' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_sf_3.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_sf_4.jpg"
+                                           data-title="{% trans 'Security Features in Facebook' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_sf_4.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header curriculum-header" id="headingThree" data-toggle="collapse"
+                             data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h4 class="mb-0 text-center">
+                                {% trans 'Privacy Settings on Facebook' %}
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col dc-list-item-text" style="color: #00227C;">
+                                        {% trans 'What Tools Can You Use for Privacy on Facebook?' %}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_ps_1.jpg"
+                                           data-title="{% trans 'Privacy Settings on Facebook' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_ps_1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_ps_2.jpg"
+                                           data-title="{% trans 'Privacy Settings on Facebook' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_ps_2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_ps_3.jpg"
+                                           data-title="{% trans 'Privacy Settings on Facebook' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_ps_3.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_ps_4.jpg"
+                                           data-title="{% trans 'Privacy Settings on Facebook' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_ps_4.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_ps_5.jpg"
+                                           data-title="{% trans 'Privacy Settings on Facebook' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_ps_5.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_ps_6.jpg"
+                                           data-title="{% trans 'Privacy Settings on Facebook' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_ps_6.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header curriculum-header" id="headingFour" data-toggle="collapse"
+                             data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h4 class="mb-0 text-center">
+                                {% trans 'Tackling Misinformation' %}
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col dc-list-item-text" style="color: #00227C;">
+                                        {% trans 'How to Deal with Incorrect Information?' %}
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_tm_1.jpg"
+                                           data-title="{% trans 'Tackling Misinformation' %}"><img
+                                                src="{{base_url}}{{LANGUAGE_CODE}}/os_tm_1.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_tm_2.jpg"
+                                           data-title="{% trans 'Tackling Misinformation' %}"><img
+                                            src="{{base_url}}{{LANGUAGE_CODE}}/os_tm_2.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_tm_3.jpg"
+                                           data-title="{% trans 'Tackling Misinformation' %}"><img
+                                            src="{{base_url}}{{LANGUAGE_CODE}}/os_tm_3.jpg">
+                                        </a>
+                                    </div>
+                                    <div class="col-sm-6 dc-list-item-image">
+                                        <a href="#" data-toggle="modal" data-target="#imageModal"
+                                           data-image="{{base_url}}{{LANGUAGE_CODE}}/os_tm_4.jpg"
+                                           data-title="{% trans 'Tackling Misinformation' %}"><img
+                                            src="{{base_url}}{{LANGUAGE_CODE}}/os_tm_4.jpg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
