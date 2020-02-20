@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-20 13:11+0530\n"
+"POT-Creation-Date: 2020-02-20 15:54+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,7 +105,7 @@ msgstr "शैक्षणिक योग्यता"
 
 #: digitalbeti/models.py:158
 msgid "Are you differently abled?"
-msgstr ""
+msgstr "क्या आप विकलांग हैं? "
 
 #: digitalbeti/models.py:159
 msgid "Do you have a bank account?"
@@ -702,6 +702,33 @@ msgstr "पहले से खाता है? "
 #: digitalbeti/views.py:77
 msgid "You have been successfully logged out."
 msgstr "आप सफलता पूर्वक लॉगआउट कर चुके हैं।"
+
+msgid "Your password can’t be a commonly used password."
+msgstr "आपका पासवर्ड आमतौर पर इस्तेमाल किया जाने वाला पासवर्ड नहीं हो सकता है।"
+
+msgid "Your password can’t be entirely numeric."
+msgstr "आपका पासवर्ड पूरी तरह से संख्यात्मक नहीं हो सकता है"
+
+msgid "Password confirmation"
+msgstr "पासवर्ड पुष्टि"
+
+msgid "The two password fields didn’t match."
+msgstr "ये दो पासवर्ड फ़ील्ड मेल नहीं खाते हैं।"
+
+msgid "Your password can’t be too similar to your other personal information."
+msgstr "आपका पासवर्ड आपकी अन्य व्यक्तिगत जानकारी के समान नहीं हो सकता है"
+
+
+#, python-format
+msgid "Your password must contain at least %(min_length)d character."
+msgid_plural "Your password must contain at least %(min_length)d characters."
+msgstr[0] "आपके पासवर्ड में कम से कम %(min_length)d वर्ण होना चाहिए।"
+msgstr[1] "आपके पासवर्ड में कम से कम %(min_length)d वर्ण होना चाहिए।"
+
+#, python-format
+msgid "The password is too similar to the %(verbose_name)s."
+msgstr "पासवर्ड %(verbose_name)s के समान है।"
+
 
 
 #~ msgid "village"
