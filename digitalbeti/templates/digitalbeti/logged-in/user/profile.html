@@ -1,9 +1,9 @@
 {% extends 'digitalbeti/logged-in/dashboard_base.html' %}
-{% load static %}
+{% load static i18n %}
 
 <!-- Title -->
 {% block title %}
-Profile || Digital Beti
+{% trans 'Profile' %} || Digital Beti
 {% endblock title %}
 
 {% block subheader %}
@@ -11,7 +11,7 @@ Profile || Digital Beti
     <div class="container-fluid dashboard-header">
         <div class="row justify-content-center align-items-center">
             <div class="col-12">
-                <h1 class="text-center">User <span class="text-dark">Profile</span></h1>
+                <h1 class="text-center">{% trans 'User' %} <span class="text-dark">{% trans 'Profile' %}</span></h1>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@ Profile || Digital Beti
 
     <div class="row mt-3">
         <div class="col-4 font-weight-bold">
-            <h4>Date of Birth</h4>
+            <h4>{% trans 'Date of Birth' %}</h4>
         </div>
         <div class="col-8">
             <p> {{ details.date_of_birth }}</p>
@@ -42,7 +42,7 @@ Profile || Digital Beti
     </div>
     <div class="row mt-3">
         <div class="col-4 font-weight-bold">
-            <h4>Email</h4>
+            <h4>{% trans 'Email' %}</h4>
         </div>
         <div class="col-8">
             <p> {{ details.email_id }}</p>
@@ -50,7 +50,7 @@ Profile || Digital Beti
     </div>
     <div class="row mt-3">
         <div class="col-4 font-weight-bold">
-            <h4>Phone</h4>
+            <h4>{% trans 'Phone' %}</h4>
         </div>
         <div class="col-8">
             <p>{{ details.phone_number }}</p>

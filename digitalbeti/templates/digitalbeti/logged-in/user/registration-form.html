@@ -1,5 +1,5 @@
 {% extends 'digitalbeti/logged-in/dashboard_base.html' %}
-{% load static %}
+{% load static i18n %}
 <!-- Title -->
 {% block title %}
     Fill Form || Digital Beti
@@ -12,7 +12,7 @@
     <div class="container-fluid dashboard-header">
         <div class="row justify-content-center align-items-center">
             <div class="col-12">
-                <h1 class="text-center">Registration <span class="text-dark">Form</span></h1>
+                <h1 class="text-center">{% trans 'Registration' %} <span class="text-dark">{% trans 'Form' %}</span></h1>
             </div>
         </div>
     </div>
@@ -63,7 +63,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h6>Your Permanent Address:</h6>
+                    <h6>{% trans 'Your Permanent Address:' %}</h6>
                 </div>
                 <div class="col-3">
                     {{ paf.state|as_crispy_field }}
@@ -88,7 +88,7 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h4>Select Languages You Are Fluent In:</h4>
+                    <h4>{% trans 'Select Languages You Are Fluent In:' %}</h4>
                 </div>
                 <div class="col-4">
                     {{ form.language_pref_1|as_crispy_field }}

@@ -9,12 +9,17 @@ from digitalbeti.models import BeneficiaryData, Address
 # Create your models here.
 
 class SignUpForm(UserCreationForm):
-    first_name = forms.CharField(max_length=30, required=True)
-    last_name = forms.CharField(max_length=30, required=True)
+    first_name = forms.CharField(label=_('First name'),max_length=30, required=True)
+    last_name = forms.CharField(label=_('Last name'),max_length=30, required=True)
 
     class Meta:
         model = User
         fields = ('username', 'first_name', 'last_name','password1', 'password2',)
+
+        help_texts = {
+            'username': _('Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.'),
+            'password2': _('Enter the same password as before, for verification.'),
+        }
 
 
 class BeneficiaryDataForm(ModelForm):
@@ -43,9 +48,9 @@ class VLEDataForm(ModelForm):
 
 
 class AddressForm(ModelForm):
-    district = forms.CharField(required=True, widget=forms.Select(choices=[]))
-    subdistrict = forms.CharField(required=True, widget=forms.Select(choices=[]))
-    village = forms.CharField(required=True, widget=forms.Select(choices=[]))
+    district = forms.CharField(required=True, widget=forms.Select(choices=[]), label=_('District'))
+    subdistrict = forms.CharField(required=True, widget=forms.Select(choices=[]), label=_('Subdistrict'))
+    village = forms.CharField(required=True, widget=forms.Select(choices=[]), label=_('Village'))
 
     class Meta:
         model = Address
@@ -55,3 +60,4 @@ class AddressForm(ModelForm):
                 attrs={'cols': 40, 'rows': 2}
             )
         }
+

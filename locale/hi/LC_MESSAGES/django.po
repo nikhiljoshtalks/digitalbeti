@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-19 15:22+0530\n"
+"POT-Creation-Date: 2020-02-20 13:11+0530\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,6 +18,99 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#: digitalbeti/forms.py:12 digitalbeti/models.py:140
+msgid "First name"
+msgstr "प्रथम नाम "
+
+#: digitalbeti/forms.py:13 digitalbeti/models.py:142
+msgid "Last name"
+msgstr "अंतिम नाम "
+
+#: digitalbeti/forms.py:20
+msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr "जरूरी है. 150 अक्षर या उससे कम. लेटर, डिजिट और @/./+/-/_ ."
+
+#: digitalbeti/forms.py:21
+msgid "Enter the same password as before, for verification."
+msgstr "वेरिफिकेशन के लिए एक जैसा पासवर्ड डालें "
+
+#: digitalbeti/forms.py:51 digitalbeti/models.py:92
+msgid "District"
+msgstr "जिला"
+
+#: digitalbeti/forms.py:52 digitalbeti/models.py:91
+msgid "Subdistrict"
+msgstr "उप जिला"
+
+#: digitalbeti/forms.py:53 digitalbeti/models.py:93
+msgid "Village"
+msgstr "गाँव"
+
+#: digitalbeti/models.py:90
+msgid "State"
+msgstr "राज्य"
+
+#: digitalbeti/models.py:94
+msgid "Full Address"
+msgstr "पूरा पता"
+
+#: digitalbeti/models.py:141
+msgid "Middle name"
+msgstr "मध्य नाम"
+
+#: digitalbeti/models.py:143
+msgid "Father name"
+msgstr "पिता का नाम "
+
+#: digitalbeti/models.py:144
+msgid "Mother name"
+msgstr "मां का नाम"
+
+#: digitalbeti/models.py:145
+msgid "Gender"
+msgstr "लिंग"
+
+#: digitalbeti/models.py:146
+msgid "Date of birth"
+msgstr "जन्म तिथि"
+
+#: digitalbeti/models.py:147
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:45
+msgid "Email"
+msgstr "ईमेल "
+
+#: digitalbeti/models.py:148
+msgid "Phone Number"
+msgstr "फ़ोन नंबर"
+
+#: digitalbeti/models.py:149
+msgid "Personal monthly income"
+msgstr "व्यक्तिगत मासिक आय"
+
+#: digitalbeti/models.py:151
+msgid "First Language Preference"
+msgstr "पहली भाषा वरीयता"
+
+#: digitalbeti/models.py:153
+msgid "Second Language Preference"
+msgstr "दूसरी भाषा वरीयता"
+
+#: digitalbeti/models.py:155
+msgid "Third Language Preference"
+msgstr "तीसरी भाषा वरीयता"
+
+#: digitalbeti/models.py:157
+msgid "Education qualification"
+msgstr "शैक्षणिक योग्यता"
+
+#: digitalbeti/models.py:158
+msgid "Are you differently abled?"
+msgstr ""
+
+#: digitalbeti/models.py:159
+msgid "Do you have a bank account?"
+msgstr "क्या आपके पास एक बैंक खाता है?"
+
 #: digitalbeti/templates/digitalbeti/about-csc.html:6
 msgid "About CSC Academy"
 msgstr "CSC अकेडमी के बारे में "
@@ -25,6 +118,7 @@ msgstr "CSC अकेडमी के बारे में "
 #: digitalbeti/templates/digitalbeti/about-csc.html:6
 #: digitalbeti/templates/digitalbeti/about-project.html:6
 #: digitalbeti/templates/digitalbeti/jobs.html:7
+#: digitalbeti/templates/digitalbeti/login.html:6
 msgid "Digital Beti"
 msgstr ""
 
@@ -60,11 +154,15 @@ msgstr "बाजारों में वृद्धि और नए ग्�
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:38
 msgid "Improve existing businesses to become recruiters"
-msgstr ""
+msgstr "भर्ती होने के लिए मौजूदा व्यवसायों में सुधार करें"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:39
 msgid "Impart career oriented education"
 msgstr "भर्ती होने के लिए मौजूदा व्यवसायों में सुधार"
+
+#: digitalbeti/templates/digitalbeti/about-facebook.html:6
+msgid "About Facebook"
+msgstr "फेसबुक के बारे में "
 
 #: digitalbeti/templates/digitalbeti/about-facebook.html:20
 msgid "ABOUT FACEBOOK"
@@ -114,7 +212,7 @@ msgstr ""
 
 #: digitalbeti/templates/digitalbeti/base.html:48
 msgid "HOME"
-msgstr ""
+msgstr "होम"
 
 #: digitalbeti/templates/digitalbeti/base.html:53
 msgid "ABOUT"
@@ -134,11 +232,15 @@ msgstr "फेसबुक"
 
 #: digitalbeti/templates/digitalbeti/base.html:67
 msgid "IMPACT"
-msgstr ""
+msgstr "प्रभाव"
 
 #: digitalbeti/templates/digitalbeti/base.html:77
 msgid "LOGIN"
 msgstr "लॉगिन"
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:9
+msgid "Digital Marketing Curriculum"
+msgstr "डिजिटल मार्केटिंग पाठ्यक्रम"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:17
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:28
@@ -150,6 +252,7 @@ msgstr "डिजिटल मार्केटिंग "
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:17
 #: digitalbeti/templates/digitalbeti/jobs.html:15
+#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:7
 #: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:15
 #: digitalbeti/templates/digitalbeti/safety.html:15
 msgid "Curriculum"
@@ -249,21 +352,22 @@ msgstr "फेसबुक लाइव "
 msgid "What is Facebook Live"
 msgstr "फेसबुक लाइव क्या है?"
 
+#: digitalbeti/templates/digitalbeti/impact.html:6
 #: digitalbeti/templates/digitalbeti/impact.html:15
 msgid "Impact Stories"
-msgstr ""
+msgstr "प्रभाव की कहानियाँ"
 
 #: digitalbeti/templates/digitalbeti/impact.html:21
 msgid "Let's have a look at how Digital Beti is changing and "
-msgstr ""
+msgstr "आइए नजर डालते हैं कि कैसे डिजिटल बेटी ने जीवन बदला और"
 
 #: digitalbeti/templates/digitalbeti/impact.html:22
 msgid "impacting lives"
-msgstr ""
+msgstr "जीवन को प्रभावित"
 
 #: digitalbeti/templates/digitalbeti/impact.html:22
 msgid "in rural India"
-msgstr ""
+msgstr "किया ग्रामीण भारत में।"
 
 #: digitalbeti/templates/digitalbeti/impact.html:29
 msgid "Digital Beti Campaign Video"
@@ -272,6 +376,10 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/impact.html:35
 msgid "Sonu Bala"
 msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:6
+msgid "Home"
+msgstr "होम"
 
 #: digitalbeti/templates/digitalbeti/index.html:68
 msgid "DIGITAL CURRICULUM"
@@ -354,50 +462,50 @@ msgstr "जॉब और आजीविका"
 msgid "Jobs & Livelihood"
 msgstr "जॉब और आजीविका"
 
-#: digitalbeti/templates/digitalbeti/jobs.html:44
-#: digitalbeti/templates/digitalbeti/jobs.html:65
-#: digitalbeti/templates/digitalbeti/jobs.html:70
-#: digitalbeti/templates/digitalbeti/jobs.html:75
+#: digitalbeti/templates/digitalbeti/jobs.html:46
+#: digitalbeti/templates/digitalbeti/jobs.html:67
+#: digitalbeti/templates/digitalbeti/jobs.html:72
+#: digitalbeti/templates/digitalbeti/jobs.html:77
 msgid "About Facebook Jobs"
 msgstr "फेसबुक जॉब के बारे में "
 
-#: digitalbeti/templates/digitalbeti/jobs.html:51
+#: digitalbeti/templates/digitalbeti/jobs.html:53
 msgid "What are Facebook Jobs?"
 msgstr "फेसबुक जॉब क्या है?"
 
-#: digitalbeti/templates/digitalbeti/jobs.html:58
+#: digitalbeti/templates/digitalbeti/jobs.html:60
 msgid "What is Facebook Jobs?"
 msgstr "फेसबुक जॉब क्या है?"
 
-#: digitalbeti/templates/digitalbeti/jobs.html:84
-#: digitalbeti/templates/digitalbeti/jobs.html:98
-#: digitalbeti/templates/digitalbeti/jobs.html:104
-#: digitalbeti/templates/digitalbeti/jobs.html:110
-#: digitalbeti/templates/digitalbeti/jobs.html:116
-#: digitalbeti/templates/digitalbeti/jobs.html:122
+#: digitalbeti/templates/digitalbeti/jobs.html:86
+#: digitalbeti/templates/digitalbeti/jobs.html:100
+#: digitalbeti/templates/digitalbeti/jobs.html:106
+#: digitalbeti/templates/digitalbeti/jobs.html:112
+#: digitalbeti/templates/digitalbeti/jobs.html:118
+#: digitalbeti/templates/digitalbeti/jobs.html:124
 msgid "Finding Jobs on Facebook"
 msgstr "फेसबुक पर जॉब ढूंढें"
 
-#: digitalbeti/templates/digitalbeti/jobs.html:90
+#: digitalbeti/templates/digitalbeti/jobs.html:92
 msgid "How to Find and Apply for Jobs on Facebook?"
 msgstr "फेसबुक पर जॉब कैसे खोजें और अप्लाई करें? "
 
-#: digitalbeti/templates/digitalbeti/jobs.html:132
-#: digitalbeti/templates/digitalbeti/jobs.html:148
-#: digitalbeti/templates/digitalbeti/jobs.html:154
-#: digitalbeti/templates/digitalbeti/jobs.html:160
-#: digitalbeti/templates/digitalbeti/jobs.html:166
-#: digitalbeti/templates/digitalbeti/jobs.html:172
+#: digitalbeti/templates/digitalbeti/jobs.html:134
+#: digitalbeti/templates/digitalbeti/jobs.html:150
+#: digitalbeti/templates/digitalbeti/jobs.html:156
+#: digitalbeti/templates/digitalbeti/jobs.html:162
+#: digitalbeti/templates/digitalbeti/jobs.html:168
+#: digitalbeti/templates/digitalbeti/jobs.html:174
 msgid "Posting and Managing Jobs on Facebook"
 msgstr "फेसबुक पर जॉब पोस्टिंग और मैनेज करना"
 
-#: digitalbeti/templates/digitalbeti/jobs.html:140
+#: digitalbeti/templates/digitalbeti/jobs.html:142
 msgid "How to Post and Manage Jobs on Your Business Page?"
 msgstr "फेसबुक बिजनेस पेज पर जॉब पोस्ट और मैनेज कैसे करें? "
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:37
 msgid "USER PROFILE"
-msgstr ""
+msgstr "यूजर प्रोफ़ाइल"
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:38
 msgid "CURRICULUM"
@@ -405,7 +513,7 @@ msgstr "पाठ्यक्रम"
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:45
 msgid "EXAM"
-msgstr ""
+msgstr "परीक्षा"
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:47
 msgid "Examinations"
@@ -443,9 +551,76 @@ msgstr ""
 msgid "TOP PERFORMING VLEs"
 msgstr ""
 
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:86
+msgid "Logout"
+msgstr "लॉग आउट"
+
 #: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:15
 msgid "Digital"
 msgstr "डिजिटल"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:7
+msgid "Exams"
+msgstr "परीक्षा"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:29
+msgid "Choose the exam you want to attempt"
+msgstr "वह परीक्षा चुनें जिसे आप प्रयास करना चाहते हैं"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:54
+msgid "START NOW"
+msgstr "अभी शुरू करो"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:13
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:14
+msgid "User"
+msgstr "यूजर"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:13
+msgid "Not Registered"
+msgstr "पंजीकृत नहीं है"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:26
+msgid ""
+"Sorry, you are not registered with us at the moment. To register please "
+"click below:"
+msgstr ""
+"क्षमा करें, आप इस समय हमारे साथ पंजीकृत नहीं हैं। रजिस्टर करने के लिए कृपया नीचे क्लिक करें:"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:6
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:14
+msgid "Profile"
+msgstr "प्रोफ़ाइल"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:37
+msgid "Date of Birth"
+msgstr "जन्म तिथि"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:53
+msgid "Phone"
+msgstr "फ़ोन नंबर"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:15
+msgid "Registration"
+msgstr "पंजीकरण"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:15
+msgid "Form"
+msgstr "प्रपत्र"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:66
+msgid "Your Permanent Address:"
+msgstr "आपका स्थायी पता"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:91
+msgid "Select Languages You Are Fluent In:"
+msgstr "आपके द्वारा बोली जाने वाली भाषाओं का चयन करें :"
+
+#: digitalbeti/templates/digitalbeti/login.html:6
+#: digitalbeti/templates/digitalbeti/login.html:62
+#: digitalbeti/templates/digitalbeti/signup.html:46
+msgid "Login"
+msgstr "लॉगिन "
 
 #: digitalbeti/templates/digitalbeti/login.html:41
 msgid "Username"
@@ -455,19 +630,19 @@ msgstr "यूजरनेम"
 msgid "Password"
 msgstr "पासवर्ड "
 
-#: digitalbeti/templates/digitalbeti/login.html:62
-#: digitalbeti/templates/digitalbeti/signup.html:46
-msgid "Login"
-msgstr "लॉगिन "
-
 #: digitalbeti/templates/digitalbeti/login.html:68
 msgid "New User?"
 msgstr "न्यू यूजर? "
 
 #: digitalbeti/templates/digitalbeti/login.html:68
+#: digitalbeti/templates/digitalbeti/signup.html:6
 #: digitalbeti/templates/digitalbeti/signup.html:42
 msgid "Sign Up"
 msgstr "साइन अप "
+
+#: digitalbeti/templates/digitalbeti/safety.html:7
+msgid "Online Safety Curriculum"
+msgstr "ऑनलाइन सेफ़्टी पाठ्यक्रम"
 
 #: digitalbeti/templates/digitalbeti/safety.html:45
 #: digitalbeti/templates/digitalbeti/safety.html:60
@@ -528,14 +703,15 @@ msgstr "पहले से खाता है? "
 msgid "You have been successfully logged out."
 msgstr "आप सफलता पूर्वक लॉगआउट कर चुके हैं।"
 
+
+#~ msgid "village"
+#~ msgstr "गाँव"
+
+#~ msgid "Password Confirmation"
+#~ msgstr "पासवर्ड कनफर्मेशन "
+
 #~ msgid "username"
 #~ msgstr "यूजरनेम"
-
-#~ msgid "first_name"
-#~ msgstr "प्रथम नाम "
-
-#~ msgid "last_name"
-#~ msgstr "अंतिम नाम "
 
 #~ msgid "password1"
 #~ msgstr "पासवर्ड "

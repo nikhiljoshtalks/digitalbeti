@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 from django.db import models
 import random, string
-
+from django.utils.translation import gettext_lazy as _
 # Create your models here.
 from django.forms import ModelForm, RadioSelect, TextInput, Textarea
 from bootstrap_datepicker.widgets import DatePicker
@@ -87,11 +87,11 @@ class Address(models.Model):
         ('MAHARASHTRA', 'MAHARASHTRA'),
         ('RAJASTHAN', 'RAJASTHAN'),
     ]
-    state = models.CharField(max_length=100, choices=STATE_CHOICES)
-    subdistrict = models.CharField(max_length=100)
-    district = models.CharField(max_length=100)
-    village = models.CharField(max_length=100)
-    text = models.CharField(max_length=250, verbose_name='Full Address', blank=True)
+    state = models.CharField(max_length=100, choices=STATE_CHOICES, verbose_name=_('State'))
+    subdistrict = models.CharField(max_length=100,verbose_name=_('Subdistrict'))
+    district = models.CharField(max_length=100, verbose_name=_('District'))
+    village = models.CharField(max_length=100,verbose_name=_('Village'))
+    text = models.CharField(max_length=250, verbose_name=_('Full Address'), blank=True)
 
 
 class BeneficiaryData(models.Model):
@@ -137,26 +137,26 @@ class BeneficiaryData(models.Model):
                        ('Tamil', 'Tamil'),
                        ('Telugu', 'Telugu')]
     user = models.OneToOneField(DigitalBetiUser, models.SET_NULL, null=True)
-    first_name = models.CharField(max_length=100)
-    middle_name = models.CharField(max_length=120, blank=True)
-    last_name = models.CharField(max_length=120)
-    fathers_name = models.CharField(max_length=120)
-    mothers_name = models.CharField(max_length=120)
-    gender = models.IntegerField(choices=GENDER_CHOICES, default=1)
-    date_of_birth = models.DateField(validators=[CustomValidators.validate_date_of_birth])
-    email_id = models.CharField(max_length=250, null=True, blank=True)
-    phone_number = models.CharField(max_length=13, null=True, blank=True)
-    personal_monthly_income = models.IntegerField(choices=MONTHLY_INCOME_LIST, default=0)
+    first_name = models.CharField(max_length=100,verbose_name=_('First name'))
+    middle_name = models.CharField(max_length=120, blank=True,verbose_name=_('Middle name'))
+    last_name = models.CharField(max_length=120,verbose_name=_('Last name'))
+    fathers_name = models.CharField(max_length=120,verbose_name=_('Father name'))
+    mothers_name = models.CharField(max_length=120,verbose_name=_('Mother name'))
+    gender = models.IntegerField(choices=GENDER_CHOICES, default=1, verbose_name=_('Gender'))
+    date_of_birth = models.DateField(validators=[CustomValidators.validate_date_of_birth], verbose_name=_('Date of birth'))
+    email_id = models.CharField(max_length=250, null=True, blank=True, verbose_name=_('Email'))
+    phone_number = models.CharField(max_length=13, null=True, blank=True, verbose_name=_('Phone Number'))
+    personal_monthly_income = models.IntegerField(choices=MONTHLY_INCOME_LIST, default=0, verbose_name=_('Personal monthly income'))
     permanent_address = models.ForeignKey(Address, models.SET_NULL, related_name='permanent', null=True, blank=True)
-    language_pref_1 = models.CharField(verbose_name='First Language Preference', max_length=30, choices=LANGUAGE_CHOICE,
+    language_pref_1 = models.CharField(verbose_name=_('First Language Preference'), max_length=30, choices=LANGUAGE_CHOICE,
                                        default='Hindi')
-    language_pref_2 = models.CharField(verbose_name='Second Language Preference', max_length=30,
+    language_pref_2 = models.CharField(verbose_name=_('Second Language Preference'), max_length=30,
                                        choices=LANGUAGE_CHOICE, default='NA')
-    language_pref_3 = models.CharField(verbose_name='Third Language Preference', max_length=30, choices=LANGUAGE_CHOICE,
+    language_pref_3 = models.CharField(verbose_name=_('Third Language Preference'), max_length=30, choices=LANGUAGE_CHOICE,
                                        default='NA')
-    education_qualification = models.CharField(max_length=50, choices=EDUCATION_OPTION, default='10+')
-    differently_abled = models.BooleanField(verbose_name='Are you differently abled?', default=False, choices=YES_NO)
-    bank_account = models.BooleanField(verbose_name='Do you have a bank account?', default=False, choices=YES_NO)
+    education_qualification = models.CharField(max_length=50, choices=EDUCATION_OPTION, default='10+',verbose_name=_('Education qualification'))
+    differently_abled = models.BooleanField(verbose_name=_('Are you differently abled?'), default=False, choices=YES_NO)
+    bank_account = models.BooleanField(verbose_name=_('Do you have a bank account?'), default=False, choices=YES_NO)
     facebook_link = models.CharField(verbose_name='Facebook Profile Link', max_length=264, null=True, blank=True)
     tc_count = models.IntegerField(verbose_name='Number of Training Computers', default=0)
     vle_csc_id = models.CharField(verbose_name='VLE CSC ID', max_length=20, null=True, blank=True)

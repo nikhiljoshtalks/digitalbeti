@@ -1,10 +1,10 @@
 {% extends 'digitalbeti/logged-in/dashboard_base.html' %}
 
-{% load static %}
+{% load static i18n %}
 
 <!-- Title -->
 {% block title %}
-    Exams || Digital Beti
+    {% trans 'Exams' %} || Digital Beti
 {% endblock title %}
 
 {% block subheader %}
@@ -26,7 +26,7 @@
         <form method="POST">
             {% csrf_token %}
             <div class="row justify-content-center py-2 mt-5">
-                <h4 class="text-center">Choose the exam you want to attempt &downarrow;</h4>
+                <h4 class="text-center">{% trans 'Choose the exam you want to attempt' %} &downarrow;</h4>
             </div>
             <div class="row justify-content-center py-2 mt-5">
                 {% for exam in exams %}
@@ -51,7 +51,7 @@
                 {% endfor %}
             </div>
             <div class="row justify-content-center py-2 exams-icon mb-3 mt-3">
-                <button type="submit" class="btn btn-orange">START NOW</button>
+                <button type="submit" class="btn btn-orange">{% trans 'START NOW' %}</button>
             </div>
         </form>
     </div>
