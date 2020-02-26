@@ -91,7 +91,7 @@
                     {% csrf_token %}
                     <input name="next" type="hidden" value="{{ redirect_to }}" >
                     <label>
-                        <select name="language" id="myFormInput">
+                        <select name="language" id="myFormInput"  onchange='this.form.submit()'>
                             {% get_current_language as LANGUAGE_CODE %}
                             {% get_available_languages as LANGUAGES %}
                             {% get_language_info_list for LANGUAGES as languages %}
@@ -243,9 +243,8 @@
         });
     });
 
-    document.getElementById("myFormInput").onclick = function() {
-  document.getElementById("myForm").submit();
-};
+  {#  document.getElementById("myFormInput").onclick = function() {#}
+  {#document.getElementById("myForm").submit();};#}
 </script>
 {% block scripttags %}
 {% endblock scripttags %}
