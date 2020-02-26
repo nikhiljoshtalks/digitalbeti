@@ -1,0 +1,685 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-26 05:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: digitalbeti/forms.py:12 digitalbeti/models.py:140
+msgid "First name"
+msgstr ""
+
+#: digitalbeti/forms.py:13 digitalbeti/models.py:142
+msgid "Last name"
+msgstr ""
+
+#: digitalbeti/forms.py:20
+msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr ""
+
+#: digitalbeti/forms.py:21
+msgid "Enter the same password as before, for verification."
+msgstr ""
+
+#: digitalbeti/forms.py:51 digitalbeti/models.py:92
+msgid "District"
+msgstr ""
+
+#: digitalbeti/forms.py:52 digitalbeti/models.py:91
+msgid "Subdistrict"
+msgstr ""
+
+#: digitalbeti/forms.py:53 digitalbeti/models.py:93
+msgid "Village"
+msgstr ""
+
+#: digitalbeti/models.py:90
+msgid "State"
+msgstr ""
+
+#: digitalbeti/models.py:94
+msgid "Full Address"
+msgstr ""
+
+#: digitalbeti/models.py:141
+msgid "Middle name"
+msgstr ""
+
+#: digitalbeti/models.py:143
+msgid "Father name"
+msgstr ""
+
+#: digitalbeti/models.py:144
+msgid "Mother name"
+msgstr ""
+
+#: digitalbeti/models.py:145
+msgid "Gender"
+msgstr ""
+
+#: digitalbeti/models.py:146
+msgid "Date of birth"
+msgstr ""
+
+#: digitalbeti/models.py:147
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:45
+msgid "Email"
+msgstr ""
+
+#: digitalbeti/models.py:148
+msgid "Phone Number"
+msgstr ""
+
+#: digitalbeti/models.py:149
+msgid "Personal monthly income"
+msgstr ""
+
+#: digitalbeti/models.py:151
+msgid "First Language Preference"
+msgstr ""
+
+#: digitalbeti/models.py:153
+msgid "Second Language Preference"
+msgstr ""
+
+#: digitalbeti/models.py:155
+msgid "Third Language Preference"
+msgstr ""
+
+#: digitalbeti/models.py:157
+msgid "Education qualification"
+msgstr ""
+
+#: digitalbeti/models.py:158
+msgid "Are you differently abled?"
+msgstr ""
+
+#: digitalbeti/models.py:159
+msgid "Do you have a bank account?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:6
+msgid "About CSC Academy"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:6
+#: digitalbeti/templates/digitalbeti/about-project.html:6
+#: digitalbeti/templates/digitalbeti/jobs.html:7
+#: digitalbeti/templates/digitalbeti/login.html:6
+msgid "Digital Beti"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:20
+msgid "ABOUT CSC ACADEMY"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:31
+msgid ""
+"CSC Academy is a publicly invested learning institution committed to "
+"teaching, delivering specialised trainingprogrammes, and promoting rural "
+"entrepreneurship. The purpose behind skilling the VLEs is to enable them to:"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:34
+msgid "Fulfil personal learning goals and become facilitators"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:35
+msgid "Increase learners’ income"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:36
+msgid "Expand business to new products and services"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:37
+msgid "Augment markets and reach new customers"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:38
+msgid "Improve existing businesses to become recruiters"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:39
+msgid "Impart career oriented education"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-facebook.html:6
+msgid "About Facebook"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-facebook.html:20
+msgid "ABOUT FACEBOOK"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-facebook.html:32
+msgid ""
+"Facebook was founded in 2004 with the mission to bring the world closer and "
+"empower people to build community.Today, over 2 billion people use Facebook, "
+"Instagram, WhatsApp, or Messenger every month to stay connected withfriends "
+"and family, discover what’s going on in the world, create and run "
+"businesses, and share things that matter."
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-project.html:6
+msgid "About The Project"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-project.html:21
+msgid "ABOUT THE PROJECT"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/about-project.html:33
+msgid ""
+"Digital Beti, a joint initiative of the Ministry of Electronics and "
+"Information Technology’s CSC Academy and Facebook, envisions to overcome the "
+"digital gender gap in India by training women from rural areas tobecome "
+"entrepreneurs, using digital tools. With necessary technological skills, "
+"they will be able to enhancetheir businesses and gain market access, thereby "
+"creating better opportunities for them and their communities.The program "
+"aims to train 5,000 Village Level Entrepreneurs on digital literacy, who in "
+"turn as MasterTrainers, will educate 250,000 rural entrepreneurs in over "
+"3,000 villages across 10 Indian states."
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/base.html:48
+msgid "HOME"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/base.html:53
+msgid "ABOUT"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/base.html:57
+msgid "The Project"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/base.html:60
+msgid "CSC Academy"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/base.html:63
+msgid "Facebook"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/base.html:67
+msgid "IMPACT"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/base.html:77
+msgid "LOGIN"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:9
+msgid "Digital Marketing Curriculum"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:17
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:28
+#: digitalbeti/templates/digitalbeti/index.html:85
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:40
+#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:37
+msgid "Digital Marketing"
+msgstr "ଡିଜିଟାଲ୍  କାରବାର"
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:17
+#: digitalbeti/templates/digitalbeti/jobs.html:15
+#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:7
+#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:15
+#: digitalbeti/templates/digitalbeti/safety.html:15
+msgid "Curriculum"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:47
+msgid "Basics of Digital Marketing"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:54
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:61
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:69
+msgid "What is Digital Marketing?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:80
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:114
+msgid "Using Facebook for Digital Marketing"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:90
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:93
+msgid "Key Features"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:98
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:184
+msgid "Expand Businesses on Facebook"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:101
+msgid "How to Create and Expand Businesses on Facebook?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:106
+msgid "Facebook Features Benefits for Businesses"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:109
+msgid "How do Facebook Features Benefit Businesses"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:125
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:140
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:146
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:152
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:158
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:164
+msgid "Facebook Profile"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:133
+msgid "How to Create a Facebook Profile and Why?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:175
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:197
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:203
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:209
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:215
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:221
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:227
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:233
+msgid "Facebook Page"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:190
+msgid "How to Create a Facebook Page"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:243
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:257
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:262
+msgid "Facebook Groups"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:250
+msgid "The benefits of Creating and Joining Facebook Groups"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:272
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:286
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:291
+msgid "Facebook Watch"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:279
+msgid "What is Facebook Watch"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:300
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:315
+msgid "Facebook Live"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/digital-marketing.html:308
+msgid "What is Facebook Live"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/impact.html:6
+#: digitalbeti/templates/digitalbeti/impact.html:15
+msgid "Impact Stories"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/impact.html:21
+msgid "Let's have a look at how Digital Beti is changing and "
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/impact.html:22
+msgid "impacting lives"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/impact.html:22
+msgid "in rural India"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/impact.html:29
+msgid "Digital Beti Campaign Video"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/impact.html:35
+msgid "Sonu Bala"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:6
+msgid "Home"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:68
+msgid "DIGITAL CURRICULUM"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:98
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:42
+#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:51
+msgid "Jobs and Livelihood"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:111
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:44
+#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:65
+#: digitalbeti/templates/digitalbeti/safety.html:15
+#: digitalbeti/templates/digitalbeti/safety.html:27
+msgid "Online Safety"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:125
+msgid "Case Stories"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:130
+msgid "Meet the groundbreakers"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:131
+msgid ""
+"who are changing the face of rural India, by redefining opportunities for "
+"themselves and their communities."
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:138
+msgid "Devrai Art Village"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:147
+msgid "Craftizen"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:155
+msgid "My Mom's Art Gallery"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:163
+msgid "Baby Destination"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:179
+msgid "Program Status"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:195
+msgid "Latest News & Update"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:212
+msgid ""
+"Content feedback session has been conducted in Coimbatore, Tamilnadu with "
+"VLEs."
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/index.html:227
+msgid ""
+"Content feedback session has been conducted in Katihar, Bihar with VLEs."
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/jobs.html:7
+msgid "Jobs & Livelihood Curriculum"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/jobs.html:15
+msgid "Jobs & Livelihood "
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/jobs.html:26
+msgid "Jobs & Livelihood"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/jobs.html:46
+#: digitalbeti/templates/digitalbeti/jobs.html:67
+#: digitalbeti/templates/digitalbeti/jobs.html:72
+#: digitalbeti/templates/digitalbeti/jobs.html:77
+msgid "About Facebook Jobs"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/jobs.html:53
+msgid "What are Facebook Jobs?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/jobs.html:60
+msgid "What is Facebook Jobs?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/jobs.html:86
+#: digitalbeti/templates/digitalbeti/jobs.html:100
+#: digitalbeti/templates/digitalbeti/jobs.html:106
+#: digitalbeti/templates/digitalbeti/jobs.html:112
+#: digitalbeti/templates/digitalbeti/jobs.html:118
+#: digitalbeti/templates/digitalbeti/jobs.html:124
+msgid "Finding Jobs on Facebook"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/jobs.html:92
+msgid "How to Find and Apply for Jobs on Facebook?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/jobs.html:134
+#: digitalbeti/templates/digitalbeti/jobs.html:150
+#: digitalbeti/templates/digitalbeti/jobs.html:156
+#: digitalbeti/templates/digitalbeti/jobs.html:162
+#: digitalbeti/templates/digitalbeti/jobs.html:168
+#: digitalbeti/templates/digitalbeti/jobs.html:174
+msgid "Posting and Managing Jobs on Facebook"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/jobs.html:142
+msgid "How to Post and Manage Jobs on Your Business Page?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:37
+msgid "USER PROFILE"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:38
+msgid "CURRICULUM"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:45
+msgid "EXAM"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:47
+msgid "Examinations"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:50
+msgid "REGISTER A USER"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:52
+msgid "REGISTRATION HISTORY"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:54
+msgid "CONDUCT EXAMINATION"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:56
+msgid "EXAMINATION HISTORY"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:58
+msgid "COMPETITION"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:60
+msgid "ICE MATERIAL"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:63
+msgid "ACTIVE VLEs"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:65
+msgid "TOP PERFORMING VLEs"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:86
+msgid "Logout"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:15
+msgid "Digital"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:7
+msgid "Exams"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:29
+msgid "Choose the exam you want to attempt"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:54
+msgid "START NOW"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:13
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:14
+msgid "User"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:13
+msgid "Not Registered"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:26
+msgid ""
+"Sorry, you are not registered with us at the moment. To register please "
+"click below:"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:6
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:14
+msgid "Profile"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:37
+msgid "Date of Birth"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:53
+msgid "Phone"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:15
+msgid "Registration"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:15
+msgid "Form"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:66
+msgid "Your Permanent Address:"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:91
+msgid "Select Languages You Are Fluent In:"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/login.html:6
+#: digitalbeti/templates/digitalbeti/login.html:62
+#: digitalbeti/templates/digitalbeti/signup.html:46
+msgid "Login"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/login.html:41
+msgid "Username"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/login.html:53
+msgid "Password"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/login.html:68
+msgid "New User?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/login.html:68
+#: digitalbeti/templates/digitalbeti/signup.html:6
+#: digitalbeti/templates/digitalbeti/signup.html:42
+msgid "Sign Up"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/safety.html:7
+msgid "Online Safety Curriculum"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/safety.html:45
+#: digitalbeti/templates/digitalbeti/safety.html:60
+#: digitalbeti/templates/digitalbeti/safety.html:67
+#: digitalbeti/templates/digitalbeti/safety.html:74
+#: digitalbeti/templates/digitalbeti/safety.html:81
+#: digitalbeti/templates/digitalbeti/safety.html:88
+msgid "About Online Safety"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/safety.html:53
+msgid "What is Online Safety and Why is it Important?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/safety.html:100
+#: digitalbeti/templates/digitalbeti/safety.html:114
+#: digitalbeti/templates/digitalbeti/safety.html:121
+#: digitalbeti/templates/digitalbeti/safety.html:128
+#: digitalbeti/templates/digitalbeti/safety.html:135
+msgid "Security Features in Facebook"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/safety.html:107
+msgid "How to Secure Your Facebook Account?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/safety.html:147
+#: digitalbeti/templates/digitalbeti/safety.html:162
+#: digitalbeti/templates/digitalbeti/safety.html:169
+#: digitalbeti/templates/digitalbeti/safety.html:176
+#: digitalbeti/templates/digitalbeti/safety.html:183
+#: digitalbeti/templates/digitalbeti/safety.html:190
+#: digitalbeti/templates/digitalbeti/safety.html:197
+msgid "Privacy Settings on Facebook"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/safety.html:155
+msgid "What Tools Can You Use for Privacy on Facebook?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/safety.html:209
+#: digitalbeti/templates/digitalbeti/safety.html:223
+#: digitalbeti/templates/digitalbeti/safety.html:230
+#: digitalbeti/templates/digitalbeti/safety.html:237
+#: digitalbeti/templates/digitalbeti/safety.html:244
+msgid "Tackling Misinformation"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/safety.html:216
+msgid "How to Deal with Incorrect Information?"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/signup.html:46
+msgid "Already have an account?"
+msgstr ""
+
+#: digitalbeti/views.py:77
+msgid "You have been successfully logged out."
+msgstr ""

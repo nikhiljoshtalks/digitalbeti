@@ -13,11 +13,11 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 # import django_heroku
 from django.contrib.messages import constants as messages
-
+import django.conf.locale
+from django.conf import global_settings
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -29,7 +29,6 @@ SECRET_KEY = '=xnmu^5ffjjhi9))=2u&7!ht60_k$&taxz^1^q-13*^03p3yg5'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -78,7 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'digibeti.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -88,7 +86,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -107,7 +104,6 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
@@ -129,8 +125,27 @@ LOCALE_PATHS = [
 LANGUAGES = [
     ('en', 'English'),
     ('hi', 'Hindi'),
+    ('bn', 'Bengali'),
+    ('kn', 'Kannada'),
+    ('ml', 'Malayalam'),
+    ('mr', 'Marathi'),
+    ('ur', 'Urdu'),
     ('te', 'Telugu'),
+    ('or', 'Oriya'),
 ]
+
+EXTRA_LANG_INFO = {
+    'or': {
+        'bidi': False,  # right-to-left
+        'code': 'or',
+        'name': 'Oriya',
+        'name_local': 'Oriya',
+    },
+}
+
+LANG_INFO = dict(django.conf.locale.LANG_INFO, **EXTRA_LANG_INFO)
+django.conf.locale.LANG_INFO = LANG_INFO
+global_settings.LANGUAGES = global_settings.LANGUAGES + ["or"]
 
 LOGIN_URL = '/login'
 

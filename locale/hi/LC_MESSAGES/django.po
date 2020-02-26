@@ -371,11 +371,11 @@ msgstr "किया ग्रामीण भारत में।"
 
 #: digitalbeti/templates/digitalbeti/impact.html:29
 msgid "Digital Beti Campaign Video"
-msgstr ""
+msgstr "डिजिटल बेटी अभियान वीडियो "
 
 #: digitalbeti/templates/digitalbeti/impact.html:35
 msgid "Sonu Bala"
-msgstr ""
+msgstr "सोनू बाला"
 
 #: digitalbeti/templates/digitalbeti/index.html:6
 msgid "Home"
