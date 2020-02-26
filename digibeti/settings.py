@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-# import django_heroku
+import django_heroku
 from django.contrib.messages import constants as messages
 import django.conf.locale
 from django.conf import global_settings
@@ -28,7 +28,9 @@ SECRET_KEY = '=xnmu^5ffjjhi9))=2u&7!ht60_k$&taxz^1^q-13*^03p3yg5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*'
+]
 
 # Application definition
 
@@ -154,7 +156,7 @@ LOGIN_URL = '/login'
 
 STATIC_URL = '/static/'
 
-# django_heroku.settings(locals())
+django_heroku.settings(locals())
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
