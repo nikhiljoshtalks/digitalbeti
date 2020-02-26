@@ -384,8 +384,9 @@ footer {
 
 html,
 body {
-    overflow-x: visible;
+    overflow-x: hidden;
 }
+
 
 .btn-orange {
     font-size: 1.25rem;
