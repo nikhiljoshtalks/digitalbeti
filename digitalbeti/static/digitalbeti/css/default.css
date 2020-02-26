@@ -310,13 +310,13 @@ html {
 
     .header-image-text {
         position: absolute;
-        font-size: 1rem;
+        font-size: 8vw;
         top: 50%;
         left: 10%;
         transform: translate(0%, -50%);
         color: #ffffff;
         font-weight: bold;
-        line-height: 1rem;
+        line-height: 8vw;
     }
 
 }

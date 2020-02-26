@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-20 15:54+0530\n"
+"POT-Creation-Date: 2020-02-26 12:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,10 +123,17 @@ msgid "Digital Beti"
 msgstr ""
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:20
-msgid "ABOUT CSC ACADEMY"
-msgstr "CSC अकेडमी के बारे में "
+#: digitalbeti/templates/digitalbeti/about-facebook.html:20
+#: digitalbeti/templates/digitalbeti/about-project.html:21
+#: digitalbeti/templates/digitalbeti/base.html:58
+msgid "ABOUT"
+msgstr "बारे में"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:31
+#: digitalbeti/templates/digitalbeti/about-csc.html:21
+msgid "CSC ACADEMY"
+msgstr "CSC अकेडमी के"
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:32
 msgid ""
 "CSC Academy is a publicly invested learning institution committed to "
 "teaching, delivering specialised trainingprogrammes, and promoting rural "
@@ -136,27 +143,27 @@ msgstr ""
 "विशेष प्रशिक्षण कार्यक्रम प्रदान करते है, और ग्रामीण उद्यमिता (एंटरप्रोन्योरशिप) को बढ़ावा "
 "देता है। VLE को स्किलिंग करने का उद्देश्य उन्हें सक्षम करना है:"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:34
+#: digitalbeti/templates/digitalbeti/about-csc.html:35
 msgid "Fulfil personal learning goals and become facilitators"
 msgstr "व्यक्तिगत शिक्षा के लक्ष्यों को पूरा करना और सूत्रधार बनना"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:35
+#: digitalbeti/templates/digitalbeti/about-csc.html:36
 msgid "Increase learners’ income"
 msgstr "शिक्षार्थियों की आय में वृद्धि"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:36
+#: digitalbeti/templates/digitalbeti/about-csc.html:37
 msgid "Expand business to new products and services"
 msgstr "नए उत्पादों और सेवाओं के लिए व्यापार का विस्तार"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:37
+#: digitalbeti/templates/digitalbeti/about-csc.html:38
 msgid "Augment markets and reach new customers"
 msgstr "बाजारों में वृद्धि और नए ग्राहकों तक पहुंच"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:38
+#: digitalbeti/templates/digitalbeti/about-csc.html:39
 msgid "Improve existing businesses to become recruiters"
 msgstr "भर्ती होने के लिए मौजूदा व्यवसायों में सुधार करें"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:39
+#: digitalbeti/templates/digitalbeti/about-csc.html:40
 msgid "Impart career oriented education"
 msgstr "भर्ती होने के लिए मौजूदा व्यवसायों में सुधार"
 
@@ -164,11 +171,11 @@ msgstr "भर्ती होने के लिए मौजूदा व्�
 msgid "About Facebook"
 msgstr "फेसबुक के बारे में "
 
-#: digitalbeti/templates/digitalbeti/about-facebook.html:20
-msgid "ABOUT FACEBOOK"
-msgstr "फेसबुक के बारे में"
+#: digitalbeti/templates/digitalbeti/about-facebook.html:21
+msgid "FACEBOOK"
+msgstr "फेसबुक के"
 
-#: digitalbeti/templates/digitalbeti/about-facebook.html:32
+#: digitalbeti/templates/digitalbeti/about-facebook.html:33
 msgid ""
 "Facebook was founded in 2004 with the mission to bring the world closer and "
 "empower people to build community.Today, over 2 billion people use Facebook, "
@@ -185,11 +192,11 @@ msgstr ""
 msgid "About The Project"
 msgstr "प्रोजेक्ट के बारे में"
 
-#: digitalbeti/templates/digitalbeti/about-project.html:21
-msgid "ABOUT THE PROJECT"
-msgstr "प्रोजेक्ट के बारे में"
+#: digitalbeti/templates/digitalbeti/about-project.html:22
+msgid "THE PROJECT"
+msgstr "प्रोजेक्ट"
 
-#: digitalbeti/templates/digitalbeti/about-project.html:33
+#: digitalbeti/templates/digitalbeti/about-project.html:34
 msgid ""
 "Digital Beti, a joint initiative of the Ministry of Electronics and "
 "Information Technology’s CSC Academy and Facebook, envisions to overcome the "
@@ -210,31 +217,27 @@ msgstr ""
 "मास्टर ट्रेनर्स के रूप में, 10 भारतीय राज्यों के 3,000 से अधिक गांवों में 250,000 ग्रामीण "
 "एंटरप्रोन्योर को शिक्षित करेंगे।"
 
-#: digitalbeti/templates/digitalbeti/base.html:48
+#: digitalbeti/templates/digitalbeti/base.html:53
 msgid "HOME"
 msgstr "होम"
 
-#: digitalbeti/templates/digitalbeti/base.html:53
-msgid "ABOUT"
-msgstr "बारे में"
-
-#: digitalbeti/templates/digitalbeti/base.html:57
+#: digitalbeti/templates/digitalbeti/base.html:62
 msgid "The Project"
 msgstr "प्रोजेक्ट"
 
-#: digitalbeti/templates/digitalbeti/base.html:60
+#: digitalbeti/templates/digitalbeti/base.html:65
 msgid "CSC Academy"
 msgstr "CSC अकेडमी"
 
-#: digitalbeti/templates/digitalbeti/base.html:63
+#: digitalbeti/templates/digitalbeti/base.html:68
 msgid "Facebook"
 msgstr "फेसबुक"
 
-#: digitalbeti/templates/digitalbeti/base.html:67
+#: digitalbeti/templates/digitalbeti/base.html:72
 msgid "IMPACT"
 msgstr "प्रभाव"
 
-#: digitalbeti/templates/digitalbeti/base.html:77
+#: digitalbeti/templates/digitalbeti/base.html:84
 msgid "LOGIN"
 msgstr "लॉगिन"
 
@@ -551,7 +554,7 @@ msgstr ""
 msgid "TOP PERFORMING VLEs"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:86
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:69
 msgid "Logout"
 msgstr "लॉग आउट"
 
@@ -608,11 +611,11 @@ msgstr "पंजीकरण"
 msgid "Form"
 msgstr "प्रपत्र"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:66
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:65
 msgid "Your Permanent Address:"
 msgstr "आपका स्थायी पता"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:91
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:92
 msgid "Select Languages You Are Fluent In:"
 msgstr "आपके द्वारा बोली जाने वाली भाषाओं का चयन करें :"
 
@@ -703,33 +706,30 @@ msgstr "पहले से खाता है? "
 msgid "You have been successfully logged out."
 msgstr "आप सफलता पूर्वक लॉगआउट कर चुके हैं।"
 
-msgid "Your password can’t be a commonly used password."
-msgstr "आपका पासवर्ड आमतौर पर इस्तेमाल किया जाने वाला पासवर्ड नहीं हो सकता है।"
+#~ msgid "Your password can’t be a commonly used password."
+#~ msgstr "आपका पासवर्ड आमतौर पर इस्तेमाल किया जाने वाला पासवर्ड नहीं हो सकता है।"
 
-msgid "Your password can’t be entirely numeric."
-msgstr "आपका पासवर्ड पूरी तरह से संख्यात्मक नहीं हो सकता है"
+#~ msgid "Your password can’t be entirely numeric."
+#~ msgstr "आपका पासवर्ड पूरी तरह से संख्यात्मक नहीं हो सकता है"
 
-msgid "Password confirmation"
-msgstr "पासवर्ड पुष्टि"
+#~ msgid "Password confirmation"
+#~ msgstr "पासवर्ड पुष्टि"
 
-msgid "The two password fields didn’t match."
-msgstr "ये दो पासवर्ड फ़ील्ड मेल नहीं खाते हैं।"
+#~ msgid "The two password fields didn’t match."
+#~ msgstr "ये दो पासवर्ड फ़ील्ड मेल नहीं खाते हैं।"
 
-msgid "Your password can’t be too similar to your other personal information."
-msgstr "आपका पासवर्ड आपकी अन्य व्यक्तिगत जानकारी के समान नहीं हो सकता है"
+#~ msgid ""
+#~ "Your password can’t be too similar to your other personal information."
+#~ msgstr "आपका पासवर्ड आपकी अन्य व्यक्तिगत जानकारी के समान नहीं हो सकता है"
 
+#~ msgid "Your password must contain at least %(min_length)d character."
+#~ msgid_plural ""
+#~ "Your password must contain at least %(min_length)d characters."
+#~ msgstr[0] "आपके पासवर्ड में कम से कम %(min_length)d वर्ण होना चाहिए।"
+#~ msgstr[1] "आपके पासवर्ड में कम से कम %(min_length)d वर्ण होना चाहिए।"
 
-#, python-format
-msgid "Your password must contain at least %(min_length)d character."
-msgid_plural "Your password must contain at least %(min_length)d characters."
-msgstr[0] "आपके पासवर्ड में कम से कम %(min_length)d वर्ण होना चाहिए।"
-msgstr[1] "आपके पासवर्ड में कम से कम %(min_length)d वर्ण होना चाहिए।"
-
-#, python-format
-msgid "The password is too similar to the %(verbose_name)s."
-msgstr "पासवर्ड %(verbose_name)s के समान है।"
-
-
+#~ msgid "The password is too similar to the %(verbose_name)s."
+#~ msgstr "पासवर्ड %(verbose_name)s के समान है।"
 
 #~ msgid "village"
 #~ msgstr "गाँव"
