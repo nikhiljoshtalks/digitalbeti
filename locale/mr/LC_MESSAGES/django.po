@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-26 04:49+0000\n"
+"POT-Creation-Date: 2020-02-27 08:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,37 +123,47 @@ msgid "Digital Beti"
 msgstr "डिजिटल बेटी"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:20
-msgid "ABOUT CSC ACADEMY"
-msgstr "CSC अ‍ॅकॅडमी बद्दल"
+#: digitalbeti/templates/digitalbeti/about-facebook.html:20
+#: digitalbeti/templates/digitalbeti/about-project.html:21
+#: digitalbeti/templates/digitalbeti/base.html:58
+msgid "ABOUT"
+msgstr "बद्दल"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:31
+#: digitalbeti/templates/digitalbeti/about-csc.html:21
+msgid "CSC ACADEMY"
+msgstr "CSC अ‍ॅकॅडमी"
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:32
 msgid ""
 "CSC Academy is a publicly invested learning institution committed to "
 "teaching, delivering specialised training programmes, and promoting rural "
 "entrepreneurship. The purpose behind skilling the VLEs is to enable them to:"
-msgstr "CSC अकादमी ही सार्वजनिकपणे गुंतवणूक केलेली शैक्षणिक संस्था आहे जी शिक्षण, विशेष प्रशिक्षण कार्यक्रम प्रदान करणे आणि ग्रामीण उद्योजकतेस प्रोत्साहित करण्यास वचनबद्ध आहे. स्किलिंग VLE करण्याचा हेतू त्यांना सक्षम करायच आहे :"
+msgstr ""
+"CSC अकादमी ही सार्वजनिकपणे गुंतवणूक केलेली शैक्षणिक संस्था आहे जी शिक्षण, विशेष प्रशिक्षण "
+"कार्यक्रम प्रदान करणे आणि ग्रामीण उद्योजकतेस प्रोत्साहित करण्यास वचनबद्ध आहे. स्किलिंग VLE "
+"करण्याचा हेतू त्यांना सक्षम करायच आहे :"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:34
+#: digitalbeti/templates/digitalbeti/about-csc.html:35
 msgid "Fulfil personal learning goals and become facilitators"
 msgstr " वैयक्तिक शिक्षणाची उद्दीष्टे पूर्ण करणे आणि एक सुत्ररधार बनणे"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:35
+#: digitalbeti/templates/digitalbeti/about-csc.html:36
 msgid "Increase learners’ income"
 msgstr "शिकणार्‍यांच्या उत्पन्नात वाढ"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:36
+#: digitalbeti/templates/digitalbeti/about-csc.html:37
 msgid "Expand business to new products and services"
 msgstr "नवीन उत्पादने आणि सेवां साठी व्यवसाय विस्तारित करणे"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:37
+#: digitalbeti/templates/digitalbeti/about-csc.html:38
 msgid "Augment markets and reach new customers"
 msgstr " बाजारपेठेत वाढ आणि नवीन ग्राहकां पर्यंत पोहोचणे"
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:38
+#: digitalbeti/templates/digitalbeti/about-csc.html:39
 msgid "Improve existing businesses to become recruiters"
 msgstr "भर्ती होण्यासाठि उपलब्ध व्यवसायांमध्ये सुधारणा करा."
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:39
+#: digitalbeti/templates/digitalbeti/about-csc.html:40
 msgid "Impart career oriented education"
 msgstr "करिअर देणारं शिक्षण द्या"
 
@@ -161,65 +171,73 @@ msgstr "करिअर देणारं शिक्षण द्या"
 msgid "About Facebook"
 msgstr "फेसबूक बद्दल"
 
-#: digitalbeti/templates/digitalbeti/about-facebook.html:20
-msgid "ABOUT FACEBOOK"
-msgstr "फेसबूक बद्दल"
+#: digitalbeti/templates/digitalbeti/about-facebook.html:21
+msgid "FACEBOOK"
+msgstr "फेसबूक "
 
-#: digitalbeti/templates/digitalbeti/about-facebook.html:32
+#: digitalbeti/templates/digitalbeti/about-facebook.html:33
 msgid ""
 "Facebook was founded in 2004 with the mission to bring the world closer and "
 "empower people to build community.Today, over 2 billion people use Facebook, "
 "Instagram, WhatsApp, or Messenger every month to stay connected with friends "
 "and family, discover what’s going on in the world, create and run "
 "businesses, and share things that matter."
-msgstr "जग जवळ आणणे आणि लोकांना सक्षम बनविणे या उद्देशाने 2004 साली फेसबुकची स्थापना झाली. आज, 2 बिलियन पेक्षा अधिक लोक फेसबुक, इंस्टाग्राम, व्हाट्सएप या मैसेंजरच्या उपयोगाने दर महीने मित्र आणि परिवार सोबत मिळून राहत आहेत, जगात काय चालले आहे ते जाणून घेत आहेत, बिजनेस बनवण्यासाठी आणि वाढवण्यासाठी, आणि काही महत्त्वाच्या गोष्टी सामायिक करतात."
+msgstr ""
+"जग जवळ आणणे आणि लोकांना सक्षम बनविणे या उद्देशाने 2004 साली फेसबुकची स्थापना झाली. आज, "
+"2 बिलियन पेक्षा अधिक लोक फेसबुक, इंस्टाग्राम, व्हाट्सएप या मैसेंजरच्या उपयोगाने दर महीने "
+"मित्र आणि परिवार सोबत मिळून राहत आहेत, जगात काय चालले आहे ते जाणून घेत आहेत, बिजनेस "
+"बनवण्यासाठी आणि वाढवण्यासाठी, आणि काही महत्त्वाच्या गोष्टी सामायिक करतात."
 
 #: digitalbeti/templates/digitalbeti/about-project.html:6
 msgid "About The Project"
 msgstr "प्रोजेक्ट बद्दल"
 
-#: digitalbeti/templates/digitalbeti/about-project.html:21
-msgid "ABOUT THE PROJECT"
-msgstr "प्रोजेक्ट बद्दल"
+#: digitalbeti/templates/digitalbeti/about-project.html:22
+msgid "THE PROJECT"
+msgstr "प्रोजेक्ट"
 
-#: digitalbeti/templates/digitalbeti/about-project.html:33
+#: digitalbeti/templates/digitalbeti/about-project.html:34
 msgid ""
 "Digital Beti, a joint initiative of the Ministry of Electronics and "
 "Information Technology’s CSC Academy and Facebook, envisions to overcome the "
 "digital gender gap in India by training women from rural areas to become "
 "entrepreneurs, using digital tools. With necessary technological skills, "
-"they will be able to enhance their businesses and gain market access, thereby "
-"creating better opportunities for them and their communities.The program "
-"aims to train 5,000 Village Level Entrepreneurs on digital literacy, who in "
-"turn as MasterTrainers, will educate 250,000 rural entrepreneurs in over "
-"3,000 villages across 10 Indian states."
-msgstr "डिजिटल बेटी, इलेक्ट्रॉनिक्स आणि माहिती तंत्रज्ञान मंत्रालयाची सीएससी अकादमी आणि फेसबुकचा एक संयुक्त भाग आहे, डिजिटल उपकरणांचा उपयोग करून ग्रामीण क्षेत्रातील महिलान्ना एंटरप्रोन्योर बनण्यासाठी प्रशिक्षण देऊन भारतातील डिजिटल जेंडर गैप दूर करणे हा त्यांचा लक्ष्य आहे। त्यासाठी आवश्यक तंत्रिक कौशल्या सोबत आपला बिजनेस वाढवणे आणि बाजार उपलब्ध करुन देण्यापर्यंत ते सक्षम असणार, यामुळे त्यांच्यासाठी आणि त्यांच्या समाजासाठी चांगल्या संधी निर्माण होतील. या कार्यक्रमाचे उद्दिष्ट डिजिटल साक्षरता वर 5,000 ग्रामीण पातळीवरील उद्योजकांना (एंटरप्रोन्योर) प्रशिक्षण देण्याचे आहे, जे मास्टर ट्रेनर्स म्हणून 10 भारतीय राज्यांतील 3,000 पेक्षा जास्त खेड्यांमध्ये 250,000 ग्रामीण उद्योजकांना प्रशिक्षण देतील."
+"they will be able to enhance their businesses and gain market access, "
+"thereby creating better opportunities for them and their communities.The "
+"program aims to train 5,000 Village Level Entrepreneurs on digital literacy, "
+"who in turn as MasterTrainers, will educate 250,000 rural entrepreneurs in "
+"over 3,000 villages across 10 Indian states."
+msgstr ""
+"डिजिटल बेटी, इलेक्ट्रॉनिक्स आणि माहिती तंत्रज्ञान मंत्रालयाची सीएससी अकादमी आणि फेसबुकचा "
+"एक संयुक्त भाग आहे, डिजिटल उपकरणांचा उपयोग करून ग्रामीण क्षेत्रातील महिलान्ना "
+"एंटरप्रोन्योर बनण्यासाठी प्रशिक्षण देऊन भारतातील डिजिटल जेंडर गैप दूर करणे हा त्यांचा लक्ष्य "
+"आहे। त्यासाठी आवश्यक तंत्रिक कौशल्या सोबत आपला बिजनेस वाढवणे आणि बाजार उपलब्ध करुन "
+"देण्यापर्यंत ते सक्षम असणार, यामुळे त्यांच्यासाठी आणि त्यांच्या समाजासाठी चांगल्या संधी "
+"निर्माण होतील. या कार्यक्रमाचे उद्दिष्ट डिजिटल साक्षरता वर 5,000 ग्रामीण पातळीवरील "
+"उद्योजकांना (एंटरप्रोन्योर) प्रशिक्षण देण्याचे आहे, जे मास्टर ट्रेनर्स म्हणून 10 भारतीय "
+"राज्यांतील 3,000 पेक्षा जास्त खेड्यांमध्ये 250,000 ग्रामीण उद्योजकांना प्रशिक्षण देतील."
 
-#: digitalbeti/templates/digitalbeti/base.html:48
+#: digitalbeti/templates/digitalbeti/base.html:53
 msgid "HOME"
 msgstr "मुख्यपृष्ठ"
 
-#: digitalbeti/templates/digitalbeti/base.html:53
-msgid "ABOUT"
-msgstr "बद्दल"
-
-#: digitalbeti/templates/digitalbeti/base.html:57
+#: digitalbeti/templates/digitalbeti/base.html:62
 msgid "The Project"
 msgstr "प्रोजेक्ट"
 
-#: digitalbeti/templates/digitalbeti/base.html:60
+#: digitalbeti/templates/digitalbeti/base.html:65
 msgid "CSC Academy"
 msgstr "CSC अ‍ॅकॅडमी"
 
-#: digitalbeti/templates/digitalbeti/base.html:63
+#: digitalbeti/templates/digitalbeti/base.html:68
 msgid "Facebook"
 msgstr "फेसबूक"
 
-#: digitalbeti/templates/digitalbeti/base.html:67
+#: digitalbeti/templates/digitalbeti/base.html:72
 msgid "IMPACT"
 msgstr "परिणाम"
 
-#: digitalbeti/templates/digitalbeti/base.html:77
+#: digitalbeti/templates/digitalbeti/base.html:84
 msgid "LOGIN"
 msgstr "लॉग इन"
 
@@ -396,7 +414,8 @@ msgstr "भेट द्या ग्राउंडब्रेकर्सन�
 msgid ""
 "who are changing the face of rural India, by redefining opportunities for "
 "themselves and their communities."
-msgstr "जे स्वत: साठी आणि त्यांच्या समुदायासाठी संधी उपलब्ध करत ग्रामीण भारताचा चेहरा बदलत आहेत."
+msgstr ""
+"जे स्वत: साठी आणि त्यांच्या समुदायासाठी संधी उपलब्ध करत ग्रामीण भारताचा चेहरा बदलत आहेत."
 
 #: digitalbeti/templates/digitalbeti/index.html:138
 msgid "Devrai Art Village"
@@ -534,7 +553,7 @@ msgstr ""
 msgid "TOP PERFORMING VLEs"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:86
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:69
 msgid "Logout"
 msgstr "लॉगआउट"
 
@@ -567,7 +586,9 @@ msgstr "नोंदणीकृत नाही"
 msgid ""
 "Sorry, you are not registered with us at the moment. To register please "
 "click below:"
-msgstr "क्षमस्व, आपण याक्षणी आमच्याबरोबर नोंदणीकृत नाही. नोंदणी करण्यासाठी कृपया खाली क्लिक करा:"
+msgstr ""
+"क्षमस्व, आपण याक्षणी आमच्याबरोबर नोंदणीकृत नाही. नोंदणी करण्यासाठी कृपया खाली क्लिक "
+"करा:"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:6
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:14
@@ -590,11 +611,11 @@ msgstr "नोंदणी"
 msgid "Form"
 msgstr "फॉर्म"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:66
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:65
 msgid "Your Permanent Address:"
 msgstr "आपला कायम पत्ता:"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:91
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:92
 msgid "Select Languages You Are Fluent In:"
 msgstr "आपण ज्या भाषांमध्ये प्रवाही आहात त्या भाषा निवडा:"
 
@@ -685,6 +706,39 @@ msgstr "आधीपासूनच एक खाते आहे? "
 msgid "You have been successfully logged out."
 msgstr "आपण यशस्वीरित्या लॉग आउट झाला आहात."
 
-#: digitalbeti/templates/digitalbeti/signup.html:39
+msgid "Your password can’t be a commonly used password."
+msgstr "आपला संकेतशब्द सामान्यतः वापरलेला संकेतशब्द असू शकत नाही."
+
+msgid "Your password can’t be entirely numeric."
+msgstr "आपला संकेतशब्द संपूर्ण संख्यात्मक असू शकत नाही."
+
+msgid "Password confirmation"
+msgstr "पासवर्ड पुष्टि"
+
+msgid "The two password fields didn’t match."
+msgstr "दोन संकेतशब्द फील्ड जुळले नाहीत."
+
+msgid ""
+"Your password can’t be too similar to your other personal information."
+msgstr "आपला संकेतशब्द आपल्या इतर वैयक्तिक माहितीसारखा असू शकत नाही."
+
+msgid "Your password must contain at least %(min_length)d character."
+msgid_plural ""
+"Your password must contain at least %(min_length)d characters."
+msgstr[0] "आपल्या संकेतशब्दामध्ये कमीतकमी %(min_length)d वर्ण असणे आवश्यक आहे."
+msgstr[1] "आपल्या संकेतशब्दामध्ये कमीतकमी %(min_length)d वर्ण असणे आवश्यक आहे."
+
+msgid "The password is too similar to the %(verbose_name)s."
+msgstr "संकेतशब्द %(verbose_name)s प्रमाणेच आहे."
+
 msgid "Password Confirmation"
-msgstr "पासवर्ड कनफर्मेशन"
+msgstr "पासवर्ड कनफर्मेशन "
+
+msgid "password1"
+msgstr "पासवर्ड "
+
+msgid "username"
+msgstr "यूजरनेम"
+
+msgid "password2"
+msgstr "पासवर्ड कनफर्मेशन  "
