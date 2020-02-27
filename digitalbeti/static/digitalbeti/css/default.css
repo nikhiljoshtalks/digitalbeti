@@ -299,6 +299,11 @@ html {
     #img-center {
         text-align: center;
     }
+    .ab-img{
+        height: 300px;
+        width: auto;
+        max-height: 300px;
+    }
 
     .hideme {
         display: none;
@@ -311,7 +316,7 @@ html {
     .header-image-text {
         position: absolute;
         font-size: 8vw;
-        top: 50%;
+        top: 80%;
         left: 10%;
         transform: translate(0%, -50%);
         color: #ffffff;
