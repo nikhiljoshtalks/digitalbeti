@@ -20,212 +20,212 @@ msgstr ""
 
 #: digitalbeti/forms.py:12 digitalbeti/models.py:140
 msgid "First name"
-msgstr ""
+msgstr "प्रथम नाव"
 
 #: digitalbeti/forms.py:13 digitalbeti/models.py:142
 msgid "Last name"
-msgstr ""
+msgstr "अंतिम नाव"
 
 #: digitalbeti/forms.py:20
 msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
-msgstr ""
+msgstr "गरज आहे. १५० अक्षर किंवा त्यापेक्षा कमी लेटर, डिजिट आणि @/./+/-/_ only."
 
 #: digitalbeti/forms.py:21
 msgid "Enter the same password as before, for verification."
-msgstr ""
+msgstr "वेरिफिकेशनसाठी एकाच प्रकारचा पासवर्ड टाका"
 
 #: digitalbeti/forms.py:51 digitalbeti/models.py:92
 msgid "District"
-msgstr ""
+msgstr "जिल्हा"
 
 #: digitalbeti/forms.py:52 digitalbeti/models.py:91
 msgid "Subdistrict"
-msgstr ""
+msgstr "उप जिल्हा"
 
 #: digitalbeti/forms.py:53 digitalbeti/models.py:93
 msgid "Village"
-msgstr ""
+msgstr "गाव"
 
 #: digitalbeti/models.py:90
 msgid "State"
-msgstr ""
+msgstr "राज्य"
 
 #: digitalbeti/models.py:94
 msgid "Full Address"
-msgstr ""
+msgstr "संपूर्ण पत्ता"
 
 #: digitalbeti/models.py:141
 msgid "Middle name"
-msgstr ""
+msgstr "मधले नाव"
 
 #: digitalbeti/models.py:143
 msgid "Father name"
-msgstr ""
+msgstr "वडिलांची नावे"
 
 #: digitalbeti/models.py:144
 msgid "Mother name"
-msgstr ""
+msgstr "आईचे नाव"
 
 #: digitalbeti/models.py:145
 msgid "Gender"
-msgstr ""
+msgstr "लिंग"
 
 #: digitalbeti/models.py:146
 msgid "Date of birth"
-msgstr ""
+msgstr "जन्म तारीख"
 
 #: digitalbeti/models.py:147
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:45
 msgid "Email"
-msgstr ""
+msgstr "ईमेल"
 
 #: digitalbeti/models.py:148
 msgid "Phone Number"
-msgstr ""
+msgstr "फोन नंबर"
 
 #: digitalbeti/models.py:149
 msgid "Personal monthly income"
-msgstr ""
+msgstr "वैयक्तिक मासिक उत्पन्न"
 
 #: digitalbeti/models.py:151
 msgid "First Language Preference"
-msgstr ""
+msgstr "प्रथम भाषेचे प्राधान्य"
 
 #: digitalbeti/models.py:153
 msgid "Second Language Preference"
-msgstr ""
+msgstr "दुसरी भाषा प्राधान्य"
 
 #: digitalbeti/models.py:155
 msgid "Third Language Preference"
-msgstr ""
+msgstr "तृतीय भाषा प्राधान्य"
 
 #: digitalbeti/models.py:157
 msgid "Education qualification"
-msgstr ""
+msgstr "शैक्षणिक पात्रता"
 
 #: digitalbeti/models.py:158
 msgid "Are you differently abled?"
-msgstr ""
+msgstr "आपण विकलांग आहे का?"
 
 #: digitalbeti/models.py:159
 msgid "Do you have a bank account?"
-msgstr ""
+msgstr "तुमच्याकडे बँक खाते आहे का?"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:6
 msgid "About CSC Academy"
-msgstr ""
+msgstr "CSC अ‍ॅकॅडमी बद्दल"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:6
 #: digitalbeti/templates/digitalbeti/about-project.html:6
 #: digitalbeti/templates/digitalbeti/jobs.html:7
 #: digitalbeti/templates/digitalbeti/login.html:6
 msgid "Digital Beti"
-msgstr ""
+msgstr "डिजिटल बेटी"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:20
 msgid "ABOUT CSC ACADEMY"
-msgstr ""
+msgstr "CSC अ‍ॅकॅडमी बद्दल"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:31
 msgid ""
 "CSC Academy is a publicly invested learning institution committed to "
-"teaching, delivering specialised trainingprogrammes, and promoting rural "
+"teaching, delivering specialised training programmes, and promoting rural "
 "entrepreneurship. The purpose behind skilling the VLEs is to enable them to:"
-msgstr ""
+msgstr "CSC अकादमी ही सार्वजनिकपणे गुंतवणूक केलेली शैक्षणिक संस्था आहे जी शिक्षण, विशेष प्रशिक्षण कार्यक्रम प्रदान करणे आणि ग्रामीण उद्योजकतेस प्रोत्साहित करण्यास वचनबद्ध आहे. स्किलिंग VLE करण्याचा हेतू त्यांना सक्षम करायच आहे :"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:34
 msgid "Fulfil personal learning goals and become facilitators"
-msgstr ""
+msgstr " वैयक्तिक शिक्षणाची उद्दीष्टे पूर्ण करणे आणि एक सुत्ररधार बनणे"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:35
 msgid "Increase learners’ income"
-msgstr ""
+msgstr "शिकणार्‍यांच्या उत्पन्नात वाढ"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:36
 msgid "Expand business to new products and services"
-msgstr ""
+msgstr "नवीन उत्पादने आणि सेवां साठी व्यवसाय विस्तारित करणे"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:37
 msgid "Augment markets and reach new customers"
-msgstr ""
+msgstr " बाजारपेठेत वाढ आणि नवीन ग्राहकां पर्यंत पोहोचणे"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:38
 msgid "Improve existing businesses to become recruiters"
-msgstr ""
+msgstr "भर्ती होण्यासाठि उपलब्ध व्यवसायांमध्ये सुधारणा करा."
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:39
 msgid "Impart career oriented education"
-msgstr ""
+msgstr "करिअर देणारं शिक्षण द्या"
 
 #: digitalbeti/templates/digitalbeti/about-facebook.html:6
 msgid "About Facebook"
-msgstr ""
+msgstr "फेसबूक बद्दल"
 
 #: digitalbeti/templates/digitalbeti/about-facebook.html:20
 msgid "ABOUT FACEBOOK"
-msgstr ""
+msgstr "फेसबूक बद्दल"
 
 #: digitalbeti/templates/digitalbeti/about-facebook.html:32
 msgid ""
 "Facebook was founded in 2004 with the mission to bring the world closer and "
 "empower people to build community.Today, over 2 billion people use Facebook, "
-"Instagram, WhatsApp, or Messenger every month to stay connected withfriends "
+"Instagram, WhatsApp, or Messenger every month to stay connected with friends "
 "and family, discover what’s going on in the world, create and run "
 "businesses, and share things that matter."
-msgstr ""
+msgstr "जग जवळ आणणे आणि लोकांना सक्षम बनविणे या उद्देशाने 2004 साली फेसबुकची स्थापना झाली. आज, 2 बिलियन पेक्षा अधिक लोक फेसबुक, इंस्टाग्राम, व्हाट्सएप या मैसेंजरच्या उपयोगाने दर महीने मित्र आणि परिवार सोबत मिळून राहत आहेत, जगात काय चालले आहे ते जाणून घेत आहेत, बिजनेस बनवण्यासाठी आणि वाढवण्यासाठी, आणि काही महत्त्वाच्या गोष्टी सामायिक करतात."
 
 #: digitalbeti/templates/digitalbeti/about-project.html:6
 msgid "About The Project"
-msgstr ""
+msgstr "प्रोजेक्ट बद्दल"
 
 #: digitalbeti/templates/digitalbeti/about-project.html:21
 msgid "ABOUT THE PROJECT"
-msgstr ""
+msgstr "प्रोजेक्ट बद्दल"
 
 #: digitalbeti/templates/digitalbeti/about-project.html:33
 msgid ""
 "Digital Beti, a joint initiative of the Ministry of Electronics and "
 "Information Technology’s CSC Academy and Facebook, envisions to overcome the "
-"digital gender gap in India by training women from rural areas tobecome "
+"digital gender gap in India by training women from rural areas to become "
 "entrepreneurs, using digital tools. With necessary technological skills, "
-"they will be able to enhancetheir businesses and gain market access, thereby "
+"they will be able to enhance their businesses and gain market access, thereby "
 "creating better opportunities for them and their communities.The program "
 "aims to train 5,000 Village Level Entrepreneurs on digital literacy, who in "
 "turn as MasterTrainers, will educate 250,000 rural entrepreneurs in over "
 "3,000 villages across 10 Indian states."
-msgstr ""
+msgstr "डिजिटल बेटी, इलेक्ट्रॉनिक्स आणि माहिती तंत्रज्ञान मंत्रालयाची सीएससी अकादमी आणि फेसबुकचा एक संयुक्त भाग आहे, डिजिटल उपकरणांचा उपयोग करून ग्रामीण क्षेत्रातील महिलान्ना एंटरप्रोन्योर बनण्यासाठी प्रशिक्षण देऊन भारतातील डिजिटल जेंडर गैप दूर करणे हा त्यांचा लक्ष्य आहे। त्यासाठी आवश्यक तंत्रिक कौशल्या सोबत आपला बिजनेस वाढवणे आणि बाजार उपलब्ध करुन देण्यापर्यंत ते सक्षम असणार, यामुळे त्यांच्यासाठी आणि त्यांच्या समाजासाठी चांगल्या संधी निर्माण होतील. या कार्यक्रमाचे उद्दिष्ट डिजिटल साक्षरता वर 5,000 ग्रामीण पातळीवरील उद्योजकांना (एंटरप्रोन्योर) प्रशिक्षण देण्याचे आहे, जे मास्टर ट्रेनर्स म्हणून 10 भारतीय राज्यांतील 3,000 पेक्षा जास्त खेड्यांमध्ये 250,000 ग्रामीण उद्योजकांना प्रशिक्षण देतील."
 
 #: digitalbeti/templates/digitalbeti/base.html:48
 msgid "HOME"
-msgstr ""
+msgstr "मुख्यपृष्ठ"
 
 #: digitalbeti/templates/digitalbeti/base.html:53
 msgid "ABOUT"
-msgstr ""
+msgstr "बद्दल"
 
 #: digitalbeti/templates/digitalbeti/base.html:57
 msgid "The Project"
-msgstr ""
+msgstr "प्रोजेक्ट"
 
 #: digitalbeti/templates/digitalbeti/base.html:60
 msgid "CSC Academy"
-msgstr ""
+msgstr "CSC अ‍ॅकॅडमी"
 
 #: digitalbeti/templates/digitalbeti/base.html:63
 msgid "Facebook"
-msgstr ""
+msgstr "फेसबूक"
 
 #: digitalbeti/templates/digitalbeti/base.html:67
 msgid "IMPACT"
-msgstr ""
+msgstr "परिणाम"
 
 #: digitalbeti/templates/digitalbeti/base.html:77
 msgid "LOGIN"
-msgstr ""
+msgstr "लॉग इन"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:9
 msgid "Digital Marketing Curriculum"
-msgstr ""
+msgstr "डिजिटल मार्केटिंग अभ्यासक्रम"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:17
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:28
@@ -233,7 +233,7 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:40
 #: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:37
 msgid "Digital Marketing"
-msgstr ""
+msgstr "डिजिटल मार्केटिंग "
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:17
 #: digitalbeti/templates/digitalbeti/jobs.html:15
@@ -241,44 +241,44 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:15
 #: digitalbeti/templates/digitalbeti/safety.html:15
 msgid "Curriculum"
-msgstr ""
+msgstr "अभ्यासक्रम"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:47
 msgid "Basics of Digital Marketing"
-msgstr ""
+msgstr "डिजिटल मार्केटींगची मूलतत्त्वे"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:54
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:61
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:69
 msgid "What is Digital Marketing?"
-msgstr ""
+msgstr "डिजिटल मार्केटिंग काय आहे?"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:80
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:114
 msgid "Using Facebook for Digital Marketing"
-msgstr ""
+msgstr "डिजिटल मार्केटींगसाठी फेसबुक वापरणे"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:90
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:93
 msgid "Key Features"
-msgstr ""
+msgstr "महत्वाची वैशिष्टे "
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:98
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:184
 msgid "Expand Businesses on Facebook"
-msgstr ""
+msgstr "फेसबुक वर बिजनेस कसे बनवायच आणि कसे वाढवायच?"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:101
 msgid "How to Create and Expand Businesses on Facebook?"
-msgstr ""
+msgstr "फेसबुक वर बिजनेस कसे बनवायच आणि कसे वाढवायच?"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:106
 msgid "Facebook Features Benefits for Businesses"
-msgstr ""
+msgstr "फेसबुकच्या फीचर्समुळे बिजनेसला कसा फायदा होईल?"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:109
 msgid "How do Facebook Features Benefit Businesses"
-msgstr ""
+msgstr "फेसबुकच्या फीचर्समुळे बिजनेसला कसा फायदा होईल?"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:125
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:140
@@ -287,11 +287,11 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:158
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:164
 msgid "Facebook Profile"
-msgstr ""
+msgstr "फेसबुक प्रोफाइल"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:133
 msgid "How to Create a Facebook Profile and Why?"
-msgstr ""
+msgstr "फेसबुक वर प्रोफाइल कसे आणि का बनवायच ?"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:175
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:197
@@ -302,61 +302,61 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:227
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:233
 msgid "Facebook Page"
-msgstr ""
+msgstr "फेसबुक पेज "
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:190
 msgid "How to Create a Facebook Page"
-msgstr ""
+msgstr "फेसबुक वर पेज कसे आणि का बनवायच ?"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:243
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:257
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:262
 msgid "Facebook Groups"
-msgstr ""
+msgstr "फेसबुक ग्रुप"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:250
 msgid "The benefits of Creating and Joining Facebook Groups"
-msgstr ""
+msgstr "फेसबुकवर ग्रुप बनवणे आणि ग्रुपमध्ये जॉईन होण्याचे फायदे"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:272
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:286
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:291
 msgid "Facebook Watch"
-msgstr ""
+msgstr "फेसबुक वाच "
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:279
 msgid "What is Facebook Watch"
-msgstr ""
+msgstr "फेसबुक वॉच काय आहे ?"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:300
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:315
 msgid "Facebook Live"
-msgstr ""
+msgstr "फेसबुक लाइव "
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:308
 msgid "What is Facebook Live"
-msgstr ""
+msgstr "फेसबुक लाईव काय आहे ?"
 
 #: digitalbeti/templates/digitalbeti/impact.html:6
 #: digitalbeti/templates/digitalbeti/impact.html:15
 msgid "Impact Stories"
-msgstr ""
+msgstr "प्रभाव कथा"
 
 #: digitalbeti/templates/digitalbeti/impact.html:21
 msgid "Let's have a look at how Digital Beti is changing and "
-msgstr ""
+msgstr "एक नजर टाकूया कि, कसे डिजिटल बेटी ग्रामिण भारतात "
 
 #: digitalbeti/templates/digitalbeti/impact.html:22
 msgid "impacting lives"
-msgstr ""
+msgstr "जीवनावर परिणाम"
 
 #: digitalbeti/templates/digitalbeti/impact.html:22
 msgid "in rural India"
-msgstr ""
+msgstr "प्रभावित आहे आणि तिथल्या लोकांचे जिवन कसे बदलत आहे."
 
 #: digitalbeti/templates/digitalbeti/impact.html:29
 msgid "Digital Beti Campaign Video"
-msgstr ""
+msgstr "डिजिटल बेटी मोहीम व्हिडिओ"
 
 #: digitalbeti/templates/digitalbeti/impact.html:35
 msgid "Sonu Bala"
@@ -364,17 +364,17 @@ msgstr ""
 
 #: digitalbeti/templates/digitalbeti/index.html:6
 msgid "Home"
-msgstr ""
+msgstr "मुख्यपृष्ठ"
 
 #: digitalbeti/templates/digitalbeti/index.html:68
 msgid "DIGITAL CURRICULUM"
-msgstr ""
+msgstr "डिजिटल अभ्यासक्रम"
 
 #: digitalbeti/templates/digitalbeti/index.html:98
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:42
 #: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:51
 msgid "Jobs and Livelihood"
-msgstr ""
+msgstr "जॉब आणि उदरनिर्वाह"
 
 #: digitalbeti/templates/digitalbeti/index.html:111
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:44
@@ -382,83 +382,83 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/safety.html:15
 #: digitalbeti/templates/digitalbeti/safety.html:27
 msgid "Online Safety"
-msgstr ""
+msgstr "ऑनलाइन सेफ़्टी"
 
 #: digitalbeti/templates/digitalbeti/index.html:125
 msgid "Case Stories"
-msgstr ""
+msgstr "केस स्टोरीज"
 
 #: digitalbeti/templates/digitalbeti/index.html:130
 msgid "Meet the groundbreakers"
-msgstr ""
+msgstr "भेट द्या ग्राउंडब्रेकर्सना "
 
 #: digitalbeti/templates/digitalbeti/index.html:131
 msgid ""
 "who are changing the face of rural India, by redefining opportunities for "
 "themselves and their communities."
-msgstr ""
+msgstr "जे स्वत: साठी आणि त्यांच्या समुदायासाठी संधी उपलब्ध करत ग्रामीण भारताचा चेहरा बदलत आहेत."
 
 #: digitalbeti/templates/digitalbeti/index.html:138
 msgid "Devrai Art Village"
-msgstr ""
+msgstr "देवराय "
 
 #: digitalbeti/templates/digitalbeti/index.html:147
 msgid "Craftizen"
-msgstr ""
+msgstr "क्राफ्टीजन"
 
 #: digitalbeti/templates/digitalbeti/index.html:155
 msgid "My Mom's Art Gallery"
-msgstr ""
+msgstr "माय मॉम्स आर्ट"
 
 #: digitalbeti/templates/digitalbeti/index.html:163
 msgid "Baby Destination"
-msgstr ""
+msgstr "बेबी डेस्टिनेशन"
 
 #: digitalbeti/templates/digitalbeti/index.html:179
 msgid "Program Status"
-msgstr ""
+msgstr "प्रोग्राम स्थिती"
 
 #: digitalbeti/templates/digitalbeti/index.html:195
 msgid "Latest News & Update"
-msgstr ""
+msgstr "ताज्या बातम्या आणि अपडेट"
 
 #: digitalbeti/templates/digitalbeti/index.html:212
 msgid ""
 "Content feedback session has been conducted in Coimbatore, Tamilnadu with "
 "VLEs."
-msgstr ""
+msgstr "कंटेंट फीडबैक सेशन कोयम्बटूर, तमिलनाडु में वीएलई सोबत आयोजित केले गेले आहे."
 
 #: digitalbeti/templates/digitalbeti/index.html:227
 msgid ""
 "Content feedback session has been conducted in Katihar, Bihar with VLEs."
-msgstr ""
+msgstr "वीएलई सोबत बिहार मधील कटिहार मध्ये कंटेंट फीडबैक सेशन आयोजित केले गेले आहे."
 
 #: digitalbeti/templates/digitalbeti/jobs.html:7
 msgid "Jobs & Livelihood Curriculum"
-msgstr ""
+msgstr "जॉब आणि उदरनिर्वाह अभ्यासक्रम"
 
 #: digitalbeti/templates/digitalbeti/jobs.html:15
 msgid "Jobs & Livelihood "
-msgstr ""
+msgstr "जॉब आणि उदरनिर्वाह"
 
 #: digitalbeti/templates/digitalbeti/jobs.html:26
 msgid "Jobs & Livelihood"
-msgstr ""
+msgstr "जॉब आणि उदरनिर्वाह"
 
 #: digitalbeti/templates/digitalbeti/jobs.html:46
 #: digitalbeti/templates/digitalbeti/jobs.html:67
 #: digitalbeti/templates/digitalbeti/jobs.html:72
 #: digitalbeti/templates/digitalbeti/jobs.html:77
 msgid "About Facebook Jobs"
-msgstr ""
+msgstr "फेसबुकच्या जॉब्स बद्दल"
 
 #: digitalbeti/templates/digitalbeti/jobs.html:53
 msgid "What are Facebook Jobs?"
-msgstr ""
+msgstr "फेसबुक जॉब काय आहे ?"
 
 #: digitalbeti/templates/digitalbeti/jobs.html:60
 msgid "What is Facebook Jobs?"
-msgstr ""
+msgstr "फेसबुक जॉब काय आहे ?"
 
 #: digitalbeti/templates/digitalbeti/jobs.html:86
 #: digitalbeti/templates/digitalbeti/jobs.html:100
@@ -467,11 +467,11 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/jobs.html:118
 #: digitalbeti/templates/digitalbeti/jobs.html:124
 msgid "Finding Jobs on Facebook"
-msgstr ""
+msgstr "फेसबुक वर जॉब्स शोधणे"
 
 #: digitalbeti/templates/digitalbeti/jobs.html:92
 msgid "How to Find and Apply for Jobs on Facebook?"
-msgstr ""
+msgstr "फेसबुक वर जॉब कसे शोधावे आणि अप्लाई कसे करावे ?"
 
 #: digitalbeti/templates/digitalbeti/jobs.html:134
 #: digitalbeti/templates/digitalbeti/jobs.html:150
@@ -480,23 +480,23 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/jobs.html:168
 #: digitalbeti/templates/digitalbeti/jobs.html:174
 msgid "Posting and Managing Jobs on Facebook"
-msgstr ""
+msgstr "फेसबुक वर जॉब पोस्टिंग आणि मॅनेज करणे"
 
 #: digitalbeti/templates/digitalbeti/jobs.html:142
 msgid "How to Post and Manage Jobs on Your Business Page?"
-msgstr ""
+msgstr "फेसबुक बिजनेस पेज वर जॉब कसे पोस्ट करावे आणि मॅनेज कसे करावे ?"
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:37
 msgid "USER PROFILE"
-msgstr ""
+msgstr "वापरकर्ता प्रोफाइल"
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:38
 msgid "CURRICULUM"
-msgstr ""
+msgstr "अभ्यासक्रम"
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:45
 msgid "EXAM"
-msgstr ""
+msgstr "परीक्षा"
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:47
 msgid "Examinations"
@@ -504,7 +504,7 @@ msgstr ""
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:50
 msgid "REGISTER A USER"
-msgstr ""
+msgstr "वापरकर्त्याची नोंदणी करा"
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:52
 msgid "REGISTRATION HISTORY"
@@ -512,7 +512,7 @@ msgstr ""
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:54
 msgid "CONDUCT EXAMINATION"
-msgstr ""
+msgstr "परीक्षा आयोजित"
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:56
 msgid "EXAMINATION HISTORY"
@@ -536,95 +536,95 @@ msgstr ""
 
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:86
 msgid "Logout"
-msgstr ""
+msgstr "लॉगआउट"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:15
 msgid "Digital"
-msgstr ""
+msgstr "डिजिटल"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:7
 msgid "Exams"
-msgstr ""
+msgstr "परीक्षा"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:29
 msgid "Choose the exam you want to attempt"
-msgstr ""
+msgstr "आपण प्रयत्न करू इच्छित असलेली परीक्षा निवडा"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:54
 msgid "START NOW"
-msgstr ""
+msgstr "आता प्रारंभ करा"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:13
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:14
 msgid "User"
-msgstr ""
+msgstr "वापरकर्ता"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:13
 msgid "Not Registered"
-msgstr ""
+msgstr "नोंदणीकृत नाही"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:26
 msgid ""
 "Sorry, you are not registered with us at the moment. To register please "
 "click below:"
-msgstr ""
+msgstr "क्षमस्व, आपण याक्षणी आमच्याबरोबर नोंदणीकृत नाही. नोंदणी करण्यासाठी कृपया खाली क्लिक करा:"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:6
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:14
 msgid "Profile"
-msgstr ""
+msgstr "प्रोफाइल"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:37
 msgid "Date of Birth"
-msgstr ""
+msgstr "जन्म तारीख"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:53
 msgid "Phone"
-msgstr ""
+msgstr "फोन"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:15
 msgid "Registration"
-msgstr ""
+msgstr "नोंदणी"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:15
 msgid "Form"
-msgstr ""
+msgstr "फॉर्म"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:66
 msgid "Your Permanent Address:"
-msgstr ""
+msgstr "आपला कायम पत्ता:"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:91
 msgid "Select Languages You Are Fluent In:"
-msgstr ""
+msgstr "आपण ज्या भाषांमध्ये प्रवाही आहात त्या भाषा निवडा:"
 
 #: digitalbeti/templates/digitalbeti/login.html:6
 #: digitalbeti/templates/digitalbeti/login.html:62
 #: digitalbeti/templates/digitalbeti/signup.html:46
 msgid "Login"
-msgstr ""
+msgstr "लॉग इन करा"
 
 #: digitalbeti/templates/digitalbeti/login.html:41
 msgid "Username"
-msgstr ""
+msgstr "यूजरनेम"
 
 #: digitalbeti/templates/digitalbeti/login.html:53
 msgid "Password"
-msgstr ""
+msgstr "पासवर्ड "
 
 #: digitalbeti/templates/digitalbeti/login.html:68
 msgid "New User?"
-msgstr ""
+msgstr "न्यू यूजर?"
 
 #: digitalbeti/templates/digitalbeti/login.html:68
 #: digitalbeti/templates/digitalbeti/signup.html:6
 #: digitalbeti/templates/digitalbeti/signup.html:42
 msgid "Sign Up"
-msgstr ""
+msgstr "साइन अप "
 
 #: digitalbeti/templates/digitalbeti/safety.html:7
 msgid "Online Safety Curriculum"
-msgstr ""
+msgstr "ऑनलाइन सेफ़्टी अभ्यासक्रम"
 
 #: digitalbeti/templates/digitalbeti/safety.html:45
 #: digitalbeti/templates/digitalbeti/safety.html:60
@@ -633,11 +633,11 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/safety.html:81
 #: digitalbeti/templates/digitalbeti/safety.html:88
 msgid "About Online Safety"
-msgstr ""
+msgstr "ऑनलाइन सेफ़्टी बद्दल"
 
 #: digitalbeti/templates/digitalbeti/safety.html:53
 msgid "What is Online Safety and Why is it Important?"
-msgstr ""
+msgstr "ऑनलाइन सेफ्टी काय आहे आणि का महत्वाचा आहे ?"
 
 #: digitalbeti/templates/digitalbeti/safety.html:100
 #: digitalbeti/templates/digitalbeti/safety.html:114
@@ -645,11 +645,11 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/safety.html:128
 #: digitalbeti/templates/digitalbeti/safety.html:135
 msgid "Security Features in Facebook"
-msgstr ""
+msgstr "फेसबुक वरील सेक्युरीटी फीचर्स"
 
 #: digitalbeti/templates/digitalbeti/safety.html:107
 msgid "How to Secure Your Facebook Account?"
-msgstr ""
+msgstr "आपले फेसबुक अकाउंट सुरक्षित कसे करावे?"
 
 #: digitalbeti/templates/digitalbeti/safety.html:147
 #: digitalbeti/templates/digitalbeti/safety.html:162
@@ -659,11 +659,11 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/safety.html:190
 #: digitalbeti/templates/digitalbeti/safety.html:197
 msgid "Privacy Settings on Facebook"
-msgstr ""
+msgstr "फेसबुक वरील प्राइवेसी सेटिंग"
 
 #: digitalbeti/templates/digitalbeti/safety.html:155
 msgid "What Tools Can You Use for Privacy on Facebook?"
-msgstr ""
+msgstr "आपण फेसबुक वर प्राईवसी साठी कोणती टूल वापरु शकता ?"
 
 #: digitalbeti/templates/digitalbeti/safety.html:209
 #: digitalbeti/templates/digitalbeti/safety.html:223
@@ -671,16 +671,20 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/safety.html:237
 #: digitalbeti/templates/digitalbeti/safety.html:244
 msgid "Tackling Misinformation"
-msgstr ""
+msgstr "चुकीची माहिती हाताळणे"
 
 #: digitalbeti/templates/digitalbeti/safety.html:216
 msgid "How to Deal with Incorrect Information?"
-msgstr ""
+msgstr "चुकीच्या माहितीचे सौदा कसे करावे?"
 
 #: digitalbeti/templates/digitalbeti/signup.html:46
 msgid "Already have an account?"
-msgstr ""
+msgstr "आधीपासूनच एक खाते आहे? "
 
 #: digitalbeti/views.py:77
 msgid "You have been successfully logged out."
-msgstr ""
+msgstr "आपण यशस्वीरित्या लॉग आउट झाला आहात."
+
+#: digitalbeti/templates/digitalbeti/signup.html:39
+msgid "Password Confirmation"
+msgstr "पासवर्ड कनफर्मेशन"
