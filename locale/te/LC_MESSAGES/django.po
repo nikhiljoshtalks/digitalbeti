@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-26 04:48+0000\n"
+"POT-Creation-Date: 2020-02-27 11:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,37 +127,44 @@ msgid "Digital Beti"
 msgstr "డిజిటల్ మార్కెటింగ్"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:20
-msgid "ABOUT CSC ACADEMY"
+#: digitalbeti/templates/digitalbeti/about-facebook.html:20
+#: digitalbeti/templates/digitalbeti/about-project.html:21
+#: digitalbeti/templates/digitalbeti/base.html:58
+msgid "ABOUT"
+msgstr "మా గురించి"
+
+#: digitalbeti/templates/digitalbeti/about-csc.html:21
+msgid "CSC ACADEMY"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:31
+#: digitalbeti/templates/digitalbeti/about-csc.html:32
 msgid ""
 "CSC Academy is a publicly invested learning institution committed to "
-"teaching, delivering specialised trainingprogrammes, and promoting rural "
+"teaching, delivering specialised training programmes, and promoting rural "
 "entrepreneurship. The purpose behind skilling the VLEs is to enable them to:"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:34
+#: digitalbeti/templates/digitalbeti/about-csc.html:35
 msgid "Fulfil personal learning goals and become facilitators"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:35
+#: digitalbeti/templates/digitalbeti/about-csc.html:36
 msgid "Increase learners’ income"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:36
+#: digitalbeti/templates/digitalbeti/about-csc.html:37
 msgid "Expand business to new products and services"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:37
+#: digitalbeti/templates/digitalbeti/about-csc.html:38
 msgid "Augment markets and reach new customers"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:38
+#: digitalbeti/templates/digitalbeti/about-csc.html:39
 msgid "Improve existing businesses to become recruiters"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/about-csc.html:39
+#: digitalbeti/templates/digitalbeti/about-csc.html:40
 msgid "Impart career oriented education"
 msgstr ""
 
@@ -167,15 +174,15 @@ msgstr ""
 msgid "About Facebook"
 msgstr "ఫేస్బుక్"
 
-#: digitalbeti/templates/digitalbeti/about-facebook.html:20
-msgid "ABOUT FACEBOOK"
+#: digitalbeti/templates/digitalbeti/about-facebook.html:21
+msgid "FACEBOOK"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/about-facebook.html:32
+#: digitalbeti/templates/digitalbeti/about-facebook.html:33
 msgid ""
 "Facebook was founded in 2004 with the mission to bring the world closer and "
 "empower people to build community.Today, over 2 billion people use Facebook, "
-"Instagram, WhatsApp, or Messenger every month to stay connected withfriends "
+"Instagram, WhatsApp, or Messenger every month to stay connected with friends "
 "and family, discover what’s going on in the world, create and run "
 "businesses, and share things that matter."
 msgstr ""
@@ -186,48 +193,44 @@ msgstr ""
 msgid "About The Project"
 msgstr "ది ప్రాజెక్ట్"
 
-#: digitalbeti/templates/digitalbeti/about-project.html:21
-msgid "ABOUT THE PROJECT"
+#: digitalbeti/templates/digitalbeti/about-project.html:22
+msgid "THE PROJECT"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/about-project.html:33
+#: digitalbeti/templates/digitalbeti/about-project.html:34
 msgid ""
 "Digital Beti, a joint initiative of the Ministry of Electronics and "
 "Information Technology’s CSC Academy and Facebook, envisions to overcome the "
-"digital gender gap in India by training women from rural areas tobecome "
+"digital gender gap in India by training women from rural areas to become "
 "entrepreneurs, using digital tools. With necessary technological skills, "
-"they will be able to enhancetheir businesses and gain market access, thereby "
-"creating better opportunities for them and their communities.The program "
-"aims to train 5,000 Village Level Entrepreneurs on digital literacy, who in "
-"turn as MasterTrainers, will educate 250,000 rural entrepreneurs in over "
-"3,000 villages across 10 Indian states."
+"they will be able to enhance their businesses and gain market access, "
+"thereby creating better opportunities for them and their communities.The "
+"program aims to train 5,000 Village Level Entrepreneurs on digital literacy, "
+"who in turn as MasterTrainers, will educate 250,000 rural entrepreneurs in "
+"over 3,000 villages across 10 Indian states."
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/base.html:48
+#: digitalbeti/templates/digitalbeti/base.html:53
 msgid "HOME"
 msgstr "హోమ్"
 
-#: digitalbeti/templates/digitalbeti/base.html:53
-msgid "ABOUT"
-msgstr "మా గురించి"
-
-#: digitalbeti/templates/digitalbeti/base.html:57
+#: digitalbeti/templates/digitalbeti/base.html:62
 msgid "The Project"
 msgstr "ది ప్రాజెక్ట్"
 
-#: digitalbeti/templates/digitalbeti/base.html:60
+#: digitalbeti/templates/digitalbeti/base.html:65
 msgid "CSC Academy"
 msgstr "csc అకాడమీ"
 
-#: digitalbeti/templates/digitalbeti/base.html:63
+#: digitalbeti/templates/digitalbeti/base.html:68
 msgid "Facebook"
 msgstr "ఫేస్బుక్"
 
-#: digitalbeti/templates/digitalbeti/base.html:67
+#: digitalbeti/templates/digitalbeti/base.html:72
 msgid "IMPACT"
 msgstr "ప్రభావం"
 
-#: digitalbeti/templates/digitalbeti/base.html:77
+#: digitalbeti/templates/digitalbeti/base.html:84
 msgid "LOGIN"
 msgstr "ప్రవేశించండి"
 
@@ -572,7 +575,7 @@ msgstr ""
 msgid "TOP PERFORMING VLEs"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:86
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:69
 msgid "Logout"
 msgstr ""
 
@@ -628,11 +631,11 @@ msgstr ""
 msgid "Form"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:66
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:65
 msgid "Your Permanent Address:"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:91
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:92
 msgid "Select Languages You Are Fluent In:"
 msgstr ""
 
