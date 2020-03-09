@@ -305,13 +305,18 @@ html {
         max-height: 300px;
     }
     .csc-img{
-        width: 100px ;
-        height:50px ;
+        width: 60px ;
+        height:40px ;
         margin: 0 !important;
     }
     .base-img{
         height: 100px;
-        width: 150px;
+        width: 95px;
+        margin: 0 !important;
+    }
+    .fb-img{
+        width: 80px;
+        height: 70px;
         margin: 0 !important;
     }
 
