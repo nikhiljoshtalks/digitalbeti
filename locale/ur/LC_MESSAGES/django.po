@@ -179,7 +179,7 @@ msgid ""
 "Instagram, WhatsApp, or Messenger every month to stay connected with friends "
 "and family, discover what’s going on in the world, create and run "
 "businesses, and share things that matter."
-msgstr "آئیے اس پر ایک نظر ڈالتے ہیں کہ ڈیجیٹل بیٹی دیہی ہندوستان میں زندگی کو کس طرح تبدیل کر رہا ہے اور ان پر اثر انداز ہورہا ہے۔"
+msgstr "فیس بک کی بنیاد 2004 میں دنیا کو قریب لانے اور لوگوں کو معاشرے کی تعمیر کے لئے بااختیار بنانے کے مشن کے ساتھ رکھی گئی تھی۔ آج ، 2 بلین سے زیادہ افراد ہر ماہ فیس بک ، انسٹاگرام ، واٹس ایپ یا میسنجر کا استعمال کرتے ہیں ، کاروبار کو مربوط ، دریافت ، تخلیق اور چلانے اور دوستوں اور کنبہ کے ساتھ اہم چیزوں کا اشتراک کرنے کے لئے۔"
 
 #: digitalbeti/templates/digitalbeti/about-project.html:6
 msgid "About The Project"
