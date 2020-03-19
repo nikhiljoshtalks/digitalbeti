@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-27 08:18+0000\n"
+"POT-Creation-Date: 2020-03-11 05:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -556,6 +556,38 @@ msgstr ""
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:69
 msgid "Logout"
 msgstr "लॉगआउट"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:16
+msgid "You Passed"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:19
+msgid "Congratulations, you scored"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:19
+msgid "correct answers. You have successfully cleared the"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:19
+msgid "examination. You can download the certificate from below."
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:31
+msgid "Better Luck Next Time."
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:34
+msgid "You scored"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:34
+msgid "out of"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:39
+msgid "Try Again"
+msgstr ""
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:15
 msgid "Digital"

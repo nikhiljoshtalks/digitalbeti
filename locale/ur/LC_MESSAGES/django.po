@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-09 04:57+0000\n"
+"POT-Creation-Date: 2020-03-11 05:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,8 @@ msgstr "آخری نام"
 
 #: digitalbeti/forms.py:20
 msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
-msgstr "ضروری ہے۔ 150 حرف یا اس سے کم۔ صرف خطوط ، ہندسے اور @ /. / + / - / _ ہی۔"
+msgstr ""
+"ضروری ہے۔ 150 حرف یا اس سے کم۔ صرف خطوط ، ہندسے اور @ /. / + / - / _ ہی۔"
 
 #: digitalbeti/forms.py:21
 msgid "Enter the same password as before, for verification."
@@ -138,7 +139,10 @@ msgid ""
 "CSC Academy is a publicly invested learning institution committed to "
 "teaching, delivering specialised training programmes, and promoting rural "
 "entrepreneurship. The purpose behind skilling the VLEs is to enable them to:"
-msgstr "سی ایس سی اکیڈمی ایک عوامی سطح پر لگائے جانے والا سیکھنے والا ادارہ ہے جو درس دینے ، خصوصی تربیتی پروگراموں کی فراہمی ، اور دیہی کاروباری کو فروغ دینے کا پابند ہے۔ وی ایل ای کو مہارت دینے کے پیچھے ان کا مقصد یہ ہے کہ:"
+msgstr ""
+"سی ایس سی اکیڈمی ایک عوامی سطح پر لگائے جانے والا سیکھنے والا ادارہ ہے جو "
+"درس دینے ، خصوصی تربیتی پروگراموں کی فراہمی ، اور دیہی کاروباری کو فروغ دینے "
+"کا پابند ہے۔ وی ایل ای کو مہارت دینے کے پیچھے ان کا مقصد یہ ہے کہ:"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:35
 msgid "Fulfil personal learning goals and become facilitators"
@@ -179,7 +183,12 @@ msgid ""
 "Instagram, WhatsApp, or Messenger every month to stay connected with friends "
 "and family, discover what’s going on in the world, create and run "
 "businesses, and share things that matter."
-msgstr "فیس بک کی بنیاد 2004 میں دنیا کو قریب لانے اور لوگوں کو معاشرے کی تعمیر کے لئے بااختیار بنانے کے مشن کے ساتھ رکھی گئی تھی۔ آج ، 2 بلین سے زیادہ افراد ہر ماہ فیس بک ، انسٹاگرام ، واٹس ایپ یا میسنجر کا استعمال کرتے ہیں ، کاروبار کو مربوط ، دریافت ، تخلیق اور چلانے اور دوستوں اور کنبہ کے ساتھ اہم چیزوں کا اشتراک کرنے کے لئے۔"
+msgstr ""
+"فیس بک کی بنیاد 2004 میں دنیا کو قریب لانے اور لوگوں کو معاشرے کی تعمیر کے "
+"لئے بااختیار بنانے کے مشن کے ساتھ رکھی گئی تھی۔ آج ، 2 بلین سے زیادہ افراد "
+"ہر ماہ فیس بک ، انسٹاگرام ، واٹس ایپ یا میسنجر کا استعمال کرتے ہیں ، کاروبار "
+"کو مربوط ، دریافت ، تخلیق اور چلانے اور دوستوں اور کنبہ کے ساتھ اہم چیزوں کا "
+"اشتراک کرنے کے لئے۔"
 
 #: digitalbeti/templates/digitalbeti/about-project.html:6
 msgid "About The Project"
@@ -200,7 +209,16 @@ msgid ""
 "program aims to train 5,000 Village Level Entrepreneurs on digital literacy, "
 "who in turn as MasterTrainers, will educate 250,000 rural entrepreneurs in "
 "over 3,000 villages across 10 Indian states."
-msgstr "ڈیجیٹل ڈوٹر سی ایس سی اکیڈمی آف الیکٹرانکس اینڈ انفارمیشن ٹکنالوجی اور فیس بک کا مشترکہ اقدام ہے ، جس کا مقصد دیہی خواتین کو ڈیجیٹل ٹولوں کے ذریعے کاروباری افراد بننے کی تربیت دے کر ہندوستان میں صنفی فرق کو ختم کرنا ہے۔ یہ کیا ہے. ضروری تکنیکی مہارتوں کی مدد سے ، وہ اپنے کاروبار کو بڑھاسکیں گے اور مارکیٹ تک رسائی حاصل کرسکیں گے ، اس طرح ان کے اور ان کی برادریوں کے لئے بہتر مواقع پیدا ہوں گے۔ اس پروگرام کا مقصد دیہی سطح کے 5،000 کاروباری افراد کو ڈیجیٹل خواندگی پر تربیت دینا ہے ، جس میں 10 ہندوستانی ریاستوں کے 3،000 سے زیادہ دیہاتوں میں 2،000 سے زائد دیہی کاروباروں کو تعلیم دینے کے لئے ماسٹر ٹرینر کی حیثیت سے کام کرنا ہے۔ کروں گا"
+msgstr ""
+"ڈیجیٹل ڈوٹر سی ایس سی اکیڈمی آف الیکٹرانکس اینڈ انفارمیشن ٹکنالوجی اور فیس "
+"بک کا مشترکہ اقدام ہے ، جس کا مقصد دیہی خواتین کو ڈیجیٹل ٹولوں کے ذریعے "
+"کاروباری افراد بننے کی تربیت دے کر ہندوستان میں صنفی فرق کو ختم کرنا ہے۔ یہ "
+"کیا ہے. ضروری تکنیکی مہارتوں کی مدد سے ، وہ اپنے کاروبار کو بڑھاسکیں گے اور "
+"مارکیٹ تک رسائی حاصل کرسکیں گے ، اس طرح ان کے اور ان کی برادریوں کے لئے بہتر "
+"مواقع پیدا ہوں گے۔ اس پروگرام کا مقصد دیہی سطح کے 5،000 کاروباری افراد کو "
+"ڈیجیٹل خواندگی پر تربیت دینا ہے ، جس میں 10 ہندوستانی ریاستوں کے 3،000 سے "
+"زیادہ دیہاتوں میں 2،000 سے زائد دیہی کاروباروں کو تعلیم دینے کے لئے ماسٹر "
+"ٹرینر کی حیثیت سے کام کرنا ہے۔ کروں گا"
 
 #: digitalbeti/templates/digitalbeti/base.html:53
 msgid "HOME"
@@ -399,7 +417,9 @@ msgstr "گراؤنڈ توڑنے والوں سے ملو"
 msgid ""
 "who are changing the face of rural India, by redefining opportunities for "
 "themselves and their communities."
-msgstr "جو اپنے اور اپنی برادری کے مواقع کی تعی .ن کرتے ہوئے دیہی ہندوستان کا چہرہ بدل رہے ہیں"
+msgstr ""
+"جو اپنے اور اپنی برادری کے مواقع کی تعی .ن کرتے ہوئے دیہی ہندوستان کا چہرہ "
+"بدل رہے ہیں"
 
 #: digitalbeti/templates/digitalbeti/index.html:138
 msgid "Devrai Art Village"
@@ -541,6 +561,38 @@ msgstr ""
 msgid "Logout"
 msgstr "لاگ آوٹ"
 
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:16
+msgid "You Passed"
+msgstr "آپ گزر گئے"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:19
+msgid "Congratulations, you scored"
+msgstr "مبارک ہو ، آپ نے اسکور کیا"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:19
+msgid "correct answers. You have successfully cleared the"
+msgstr "آپ نے کامیابی کے ساتھ صفایا کردیا"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:19
+msgid "examination. You can download the certificate from below."
+msgstr "امتحان۔ آپ ذیل میں سند ڈاؤن لوڈ کرسکتے ہیں۔"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:31
+msgid "Better Luck Next Time."
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:34
+msgid "You scored"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:34
+msgid "out of"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:39
+msgid "Try Again"
+msgstr "دوبارہ کوشش کریں"
+
 #: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:15
 msgid "Digital"
 msgstr "ڈیجیٹل"
@@ -551,7 +603,7 @@ msgstr "امتحان"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:29
 msgid "Choose the exam you want to attempt"
-msgstr "آپ جس آزمائش کی کوشش کرنا چاہتے ہیں اس کا انتخاب کریں"
+msgstr "آپ جس امتحان کی کوشش کرنا چاہتے ہیں اس کا انتخاب کریں"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:54
 msgid "START NOW"
@@ -570,7 +622,9 @@ msgstr "غیر درج شدہ"
 msgid ""
 "Sorry, you are not registered with us at the moment. To register please "
 "click below:"
-msgstr "معذرت ، آپ ابھی تک ہمارے ساتھ رجسٹرڈ نہیں ہیں۔ رجسٹر کرنے کے لئے نیچے کلک کریں:"
+msgstr ""
+"معذرت ، آپ ابھی تک ہمارے ساتھ رجسٹرڈ نہیں ہیں۔ رجسٹر کرنے کے لئے نیچے کلک "
+"کریں:"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:6
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:14
