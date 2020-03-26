@@ -45,7 +45,6 @@
         </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <div class="container">
-
             <div class="row">
                     <div class=" d-flex justify-content-start mt-2 mb-2" id="navbarSupportedContent">
                         <ul class="navbar-nav">
@@ -74,7 +73,6 @@
                         </ul>
                     </div>
                 </div>
-
         </div>
         <div class="d-flex justify-content-end mt-2 mb-2">
                 <ul class="navbar-nav">
@@ -87,7 +85,6 @@
                 </ul>
             </div>
     </div>
-
     <form action="{% url 'set_language' %}" method="post" id="myForm">
         {% csrf_token %}
         <input name="next" type="hidden" value="{{ redirect_to }}" >
@@ -225,9 +222,6 @@
             $("#videoModal iframe").removeAttr("src allow");
         });
     });
-    {#document.getElementById("myForm").submit();#}
-  {#  document.getElementById("myForm").onclick = function() {#}
-  {#document.getElementById("myForm").submit();};#}
 </script>
 
 </body>
