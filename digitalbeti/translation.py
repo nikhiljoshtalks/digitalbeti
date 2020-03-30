@@ -1,8 +1,12 @@
 from modeltranslation.translator import register, TranslationOptions
-from .models import Exam
+from .models import Exam, Question
 
 @register(Exam)
 class ExamTranslationOptions(TranslationOptions):
-    fields = ('title','urls')
+    fields = ('title',)
+    required_languages = ('en',)
 
-# translator.register(News, NewsTranslationOptions)
+@register(Question)
+class QuestionTranslationOptions(TranslationOptions):
+    fields = ('option_1','option_2','option_3','option_4')
+    required_languages = ('en',)

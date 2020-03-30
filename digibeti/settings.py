@@ -137,6 +137,10 @@ LANGUAGES = [
     ('or', 'Oriya'),
 ]
 
+MODELTRANSLATION_FALLBACK_LANGUAGES = {
+    'default': ('hi','en'),
+}
+
 EXTRA_LANG_INFO = {
     'or': {
         'bidi': False,  # right-to-left
