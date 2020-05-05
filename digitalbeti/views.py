@@ -14,7 +14,6 @@ from django_weasyprint import WeasyTemplateView
 
 from digibeti import settings
 from digitalbeti.forms import BeneficiaryDataForm, AddressForm, SignUpForm, VLEDataForm
-
 from digitalbeti.models import DigitalBetiUser, BeneficiaryData, Exam, AnswerSet, Question, VillageDetails, \
     STATE_KEY_MAP, VLECompetition, StateVideo
 from django.http import JsonResponse
@@ -59,13 +58,19 @@ def jobs(request):
 
 
 def state(request):
-    states = StateVideo.objects.all()
+    state_videos = StateVideo.objects.all()
+    state_video_map = {}
+    for video in state_videos:
+        video_list = state_video_map.get(video.state, [])
+        print(video_list)
+        video_list.append(video)
+        print(video_list)
+        state_video_map[video.state] = video_list
+    print(state_video_map)
     context = {
-        'state': True,
-        'states': states
+        'state_video_map': state_video_map,
     }
     return render(request, 'digitalbeti/state.html', context)
-
 
 def digital_marketing(request):
     context = {}

@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import django_heroku
+# import django_heroku
 from django.contrib.messages import constants as messages
 import django.conf.locale
 from django.conf import global_settings
@@ -158,7 +158,7 @@ global_settings.LANGUAGES = global_settings.LANGUAGES + ["or"]
 
 STATIC_URL = '/static/'
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 

@@ -1,0 +1,51 @@
+{% extends "digitalbeti/base.html" %}
+{% load static i18n %}
+
+<!-- Title -->
+{% block title %}
+{% trans 'State' %} || {% trans 'Digital Beti' %}
+{% endblock title %}
+
+{% block body %}
+
+<!-- Groundbreakers -->
+<div class="container">
+    <div class="row">
+        <div class="col py-4">
+            <h1 class="text-center font-weight-bold mt-5 case-stories ">{% trans 'State' %}</h1>
+        </div>
+    </div>
+</div>
+{% for i in state2 %}
+<div class="row">
+
+        <div class="col py-4">
+            <p class="text-center font-weight-bold about-text" style="font-size: 1.5rem;">{{ i }}</p>
+            <div class="container">
+                <div class="row">
+                   {% for k in states %}
+                        {% if k.state == i %}
+                         <div class="col-sm-4 col-md-4 p-4 mx-auto groundbreakers d-flex justify-content-center align-items-center" >
+                            <a href="#" data-toggle="modal" data-target="#videoModal"
+                                data-video="{{ k.video_url }}" data-title=""><img
+                                    src="{{ k.thumbnail.url }}" class="img-fluid" style="border-radius: 25px; display: block; " alt="image" >
+                            </a>
+                         </div>
+                        {% endif %}
+                    {% endfor %}
+
+                 </div>
+            </div>
+        </div>
+
+    </div>
+    {% endfor %}
+
+
+
+
+
+{% endblock body %}
+
+{% block scripttags %}
+{% endblock scripttags %}

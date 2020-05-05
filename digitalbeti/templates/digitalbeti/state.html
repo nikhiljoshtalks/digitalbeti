@@ -3,220 +3,40 @@
 
 <!-- Title -->
 {% block title %}
-{% trans 'State' %} || {% trans 'Digital Beti' %}
+    {% trans 'State' %} || {% trans 'Digital Beti' %}
 {% endblock title %}
 
 {% block body %}
 
-<!-- Groundbreakers -->
-<div class="container">
-    <div class="row">
-        <div class="col py-4">
-            <h1 class="text-center font-weight-bold mt-5 case-stories ">{% trans 'State' %}</h1>
-        </div>
-    </div>
-</div>
-
-    <div class="row">
-        <div class="col py-4">
-            <p class="text-center font-weight-bold about-text">{% trans 'JAMMU AND KASHMIR' %}</p>
-            <div class="container">
-                <div class="row">
-                    {% for i in states %}
-                        {% if i.state == 'JAMMU AND KASHMIR' %}
-                         <div class="col-sm-4 col-md-4 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
-                            <a href="#" data-toggle="modal" data-target="#videoModal"
-                                data-video="{{ i.video_url }}" data-title=""><img
-                                    src="{{ i.thumbnail.url }}" class="img-fluid" style="border-radius: 25px;">
-                            </a>
-                         </div>
-                        {% endif %}
-                    {% endfor %}
-
-                 </div>
+    <!-- Groundbreakers -->
+    <div class="container">
+        <div class="row">
+            <div class="col py-4">
+                <h1 class="text-center font-weight-bold mt-5 case-stories ">{% trans 'State' %}</h1>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col py-4">
-            <p class="text-center font-weight-bold about-text">{% trans 'BIHAR' %}</p>
-            <div class="container">
-                <div class="row">
-                    {% for i in states %}
-                        {% if i.state == 'BIHAR' %}
-                         <div class="col-sm-4 col-md-4 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
-                            <a href="#" data-toggle="modal" data-target="#videoModal"
-                                data-video="{{ i.video_url }}" data-title=""><img
-                                    src="{{ i.thumbnail.url }}" class="img-fluid" style="border-radius: 25px;">
-                            </a>
-                         </div>
-                        {% endif %}
-                    {% endfor %}
 
-                 </div>
+    {% for state, video_list in state_video_map.items %}
+        <div class="row">
+            <div class="col py-4">
+                <p class="text-center font-weight-bold about-text" style="font-size: 1.5rem;">{{ state }}</p>
+                <div class="container">
+                    <div class="row">
+                        {% for k in video_list %}
+                                <div class="col-sm-4 col-md-4 p-4 mx-auto groundbreakers d-flex justify-content-center align-items-center">
+                                    <a href="#" data-toggle="modal" data-target="#videoModal"
+                                       data-video="{{ k.video_url }}" data-title=""><img
+                                            src="{{ k.thumbnail.url }}" class="img-fluid"
+                                            style="border-radius: 25px; display: block; " alt="image">
+                                    </a>
+                                </div>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col py-4">
-            <p class="text-center font-weight-bold about-text">{% trans 'TELANGANA' %}</p>
-            <div class="container">
-                <div class="row">
-                    {% for i in states %}
-                        {% if i.state == 'TELANGANA' %}
-                         <div class="col-sm-4 col-md-4 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
-                            <a href="#" data-toggle="modal" data-target="#videoModal"
-                                data-video="{{ i.video_url }}" data-title=""><img
-                                    src="{{ i.thumbnail.url }}" class="img-fluid" style="border-radius: 25px;">
-                            </a>
-                         </div>
-                        {% endif %}
-                    {% endfor %}
-
-                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col py-4">
-            <p class="text-center font-weight-bold about-text">{% trans 'HARYANA' %}</p>
-            <div class="container">
-                <div class="row">
-                    {% for i in states %}
-                        {% if i.state == 'HARYANA' %}
-                         <div class="col-sm-4 col-md-4 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
-                            <a href="#" data-toggle="modal" data-target="#videoModal"
-                                data-video="{{ i.video_url }}" data-title=""><img
-                                    src="{{ i.thumbnail.url }}" class="img-fluid" style="border-radius: 25px;">
-                            </a>
-                         </div>
-                        {% endif %}
-                    {% endfor %}
-
-                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col py-4">
-            <p class="text-center font-weight-bold about-text">{% trans 'RAJASTHAN' %}</p>
-            <div class="container">
-                <div class="row">
-                    {% for i in states %}
-                        {% if i.state == 'RAJASTHAN' %}
-                         <div class="col-sm-4 col-md-4 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
-                            <a href="#" data-toggle="modal" data-target="#videoModal"
-                                data-video="{{ i.video_url }}" data-title=""><img
-                                    src="{{ i.thumbnail.url }}" class="img-fluid" style="border-radius: 25px;">
-                            </a>
-                         </div>
-                        {% endif %}
-                    {% endfor %}
-
-                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col py-4">
-            <p class="text-center font-weight-bold about-text">{% trans 'TAMIL NADU' %}</p>
-            <div class="container">
-                <div class="row">
-                    {% for i in states %}
-                        {% if i.state == 'TAMIL NADU' %}
-                         <div class="col-sm-4 col-md-4 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
-                            <a href="#" data-toggle="modal" data-target="#videoModal"
-                                data-video="{{ i.video_url }}" data-title=""><img
-                                    src="{{ i.thumbnail.url }}" class="img-fluid" style="border-radius: 25px;">
-                            </a>
-                         </div>
-                        {% endif %}
-                    {% endfor %}
-
-                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col py-4">
-            <p class="text-center font-weight-bold about-text">{% trans 'CHHATTISGARH' %}</p>
-            <div class="container">
-                <div class="row">
-                    {% for i in states %}
-                        {% if i.state == 'CHHATTISGARH' %}
-                         <div class="col-sm-4 col-md-4 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
-                            <a href="#" data-toggle="modal" data-target="#videoModal"
-                                data-video="{{ i.video_url }}" data-title=""><img
-                                    src="{{ i.thumbnail.url }}" class="img-fluid" style="border-radius: 25px;">
-                            </a>
-                         </div>
-                        {% endif %}
-                    {% endfor %}
-
-                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col py-4">
-            <p class="text-center font-weight-bold about-text">{% trans 'UTTAR PRADESH' %}</p>
-            <div class="container">
-                <div class="row">
-                    {% for i in states %}
-                        {% if i.state == 'UTTAR PRADESH' %}
-                         <div class="col-sm-4 col-md-4 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
-                            <a href="#" data-toggle="modal" data-target="#videoModal"
-                                data-video="{{ i.video_url }}" data-title=""><img
-                                    src="{{ i.thumbnail.url }}" class="img-fluid" style="border-radius: 25px;">
-                            </a>
-                         </div>
-                        {% endif %}
-                    {% endfor %}
-
-                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col py-4">
-            <p class="text-center font-weight-bold about-text">{% trans 'KERALA' %}</p>
-            <div class="container">
-                <div class="row">
-                    {% for i in states %}
-                        {% if i.state == 'KERALA' %}
-                         <div class="col-sm-4 col-md-4 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
-                            <a href="#" data-toggle="modal" data-target="#videoModal"
-                                data-video="{{ i.video_url }}" data-title=""><img
-                                    src="{{ i.thumbnail.url }}" class="img-fluid" style="border-radius: 25px;">
-                            </a>
-                         </div>
-                        {% endif %}
-                    {% endfor %}
-
-                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col py-4">
-            <p class="text-center font-weight-bold about-text">{% trans 'MAHARASHTRA' %}</p>
-            <div class="container">
-                <div class="row">
-                    {% for i in states %}
-                        {% if i.state == 'MAHARASHTRA' %}
-                         <div class="col-sm-4 col-md-4 p-4 groundbreakers d-flex justify-content-sm-end justify-content-center align-items-center">
-                            <a href="#" data-toggle="modal" data-target="#videoModal"
-                                data-video="{{ i.video_url }}" data-title=""><img
-                                    src="{{ i.thumbnail.url }}" class="img-fluid" style="border-radius: 25px;">
-                            </a>
-                         </div>
-                        {% endif %}
-                    {% endfor %}
-
-                 </div>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
 
 
 
