@@ -5,7 +5,7 @@
 
 <head>
     <!-- Meta Tags -->
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Linking Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -29,47 +29,69 @@
     {% if not skip_menu %}
         <div class="border-right" id="sidebar-wrapper">
             <div class="sidebar-heading text-center">
-                <img src="{% static 'digitalbeti/images/db.png' %}" height="70px" width="180px"
-                     style="border-radius: 8px;"></div>
+                <a href="{% url 'user_dashboard' %}"><img src="{% static 'digitalbeti/images/db.png' %}" height="70px"
+                                                          width="180px"
+                                                          style="border-radius: 8px;">
+                </a>
+            </div>
             <div class="list-group text-left">
                 {% if user.digitalbetiuser.kind == 'USER' %}
-                    <a href="{% url 'profile' %}"><h5 class="list-group-item border-0 font-weight-bold">
-                        {% trans 'USER PROFILE' %}</h5></a>
-                    <a href="{% url 'curriculum' %}"><h5 class="list-group-item border-0 font-weight-bold">{% trans 'CURRICULUM' %}</h5></a>
+                    <a href="{% url 'user_dashboard' %}"><h6 class="list-group-item border-0 font-weight-bold">
+                        {% trans 'USER PROFILE' %}</h6></a>
+                    <a href="{% url 'curriculum' %}"><h6 class="list-group-item border-0 font-weight-bold">
+                       {% trans 'CURRICULUM' %} </h6></a>
                     <a href="{% url 'digital-marketing' %}" class="list-group-item border-0"
                        style="color: rgb(147, 148, 150);">{% trans 'Digital Marketing' %}</a>
                     <a href="{% url 'jobs' %}" class="list-group-item border-0"
                        style="color: rgb(147, 148, 150);">{% trans 'Jobs and Livelihood' %}</a>
                     <a href="{% url 'online-safety' %}" class="list-group-item border-0"
                        style="color: rgb(147, 148, 150);">{% trans 'Online Safety' %}</a>
-                    <h5 class="list-group-item border-0 font-weight-bold">{% trans 'EXAM' %}</h5>
+                    <h6 class="list-group-item border-0 font-weight-bold">{% trans 'EXAM' %}</h6>
                     <a href="{% url 'exams' %}" class="list-group-item border-0"
                        style="color: rgb(147, 148, 150);">{% trans 'Examinations' %}</a>
                 {% elif user.digitalbetiuser.kind == 'VLE' %}
                     <a href="{% url 'reg_user_prompt' %}">
-                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'REGISTER A USER' %}</h5></a>
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'REGISTER A USER' %}</h6></a>
                     <a href="{% url 'reg_history' %}">
-                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'REGISTRATION HISTORY' %}</h5></a>
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'REGISTRATION HISTORY' %}</h6></a>
                     <a href="{% url 'vle_user_exam' %}">
-                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'CONDUCT EXAMINATION' %}</h5></a>
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'CONDUCT EXAMINATION' %}</h6></a>
                     <a href="{% url 'history' %}">
-                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'EXAMINATION HISTORY' %}</h5></a>
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'EXAMINATION HISTORY' %}</h6></a>
                     <a href="{% url 'competition' %}">
-                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'COMPETITION' %}</h5></a>
-                    <a href="{% url 'assets' %}">
-                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'ICE MATERIAL' %}</h5></a>
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'COMPETITION' %}</h6></a>
+                {% elif user.digitalbetiuser.kind == 'DM/DC' %}
+                    <a href="{% url 'dmdc_all_vle' %}">
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'VLEs' %}</h6></a>
+                    <a href="{% url 'dmdc_top_vle' %}">
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'TOP PERFORMING VLEs' %}</h6>
+                    </a>
+                {% elif user.digitalbetiuser.kind == 'STATE' %}
+                    <a href="{% url 'state_all_districts' %}">
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'DISTRICTS' %}</h6></a>
+                    <a href="{% url 'state_top_vle' %}">
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'TOP PERFORMING VLEs' %}</h6></a>
+                {% elif user.digitalbetiuser.kind == 'ADMIN' %}
+                    <a href="{% url 'admin_create_user' %}">
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'CREATE USER' %}</h6></a>
+                    <a href="{% url 'admin_create_bulk' %}">
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'CREATE VLEs BULK' %}</h6></a>
+                    <a href="{% url 'admin_all_states' %}">
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'STATES' %}</h6></a>
+                    <a href="{% url 'admin_all_vles' %}">
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'VLE' %}</h6></a>
+
                 {% else %}
                     <a href="#">
-                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'ACTIVE VLEs' %}</h5></a>
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'ACTIVE VLEs' %}</h6></a>
                     <a href="#">
-                        <h5 class="list-group-item border-0 font-weight-bold">{% trans 'TOP PERFORMING VLEs' %}</h5></a>
+                        <h6 class="list-group-item border-0 font-weight-bold">{% trans 'TOP PERFORMING VLEs' %}</h6></a>
                 {% endif %}
-                 <!-- Logout -->
+                        <!-- Logout -->
 
                             <a class="list-group-item border-0 font-weight-bold" href="{% url 'logout' %}">{% trans 'Logout' %}
                                 <span class="oi oi-account-logout px-2"></span>
                             </a>
-
             </div>
         </div>
     {% endif %}
@@ -78,16 +100,15 @@
     <div id="page-content-wrapper">
         <!-- Toggle button & Username -->
         <nav class="navbar navbar-expand-lg border-bottom navbar-custom2">
-            <div class="container">
+            <div class="container-fluid">
                 {% if not skip_menu %}
                 <button
                         class="navbar-toggler custom-toggler d-sm-block d-xs-block d-md-block d-lg-block d-xl-block d-inline"
                         id="menu-toggle"><span class="navbar-toggler-icon"></span>
                 </button>
-                {% endif %}
-                <h5 class="d-inline mt-2">Hi {{ user.first_name }}</h5>
-
-                <form action="{% url 'set_language' %}" method="post" id="myForm">
+            {% endif %}
+            <h6 class="d-inline mt-2">Hi {{ user.first_name }} {{ user.last_name }}</h6>
+            <form action="{% url 'set_language' %}" method="post" id="myForm">
                     {% csrf_token %}
                     <input name="next" type="hidden" value="{{ redirect_to }}" >
                     <label>
@@ -125,11 +146,9 @@
                     {% endfor %}
                 </div>
             {% endif %}
-            <div class="container">
-                {% block body %}
-                {% endblock body %}
-            </div>
 
+            {% block body %}
+            {% endblock body %}
         </div>
     </div>
 
@@ -161,7 +180,7 @@
                 <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body bg-dark p-0">
-                    <img width="100%" />
+                <img width="100%"/>
             </div>
         </div>
     </div>
@@ -216,7 +235,7 @@
             let url = button.data("image");
             let title = button.data("title");
 
-            $('#imageTitle').html('<h5 class="modal-title text-white">' + title + '</h5>');
+            $('#imageTitle').html('<h6 class="modal-title text-white">' + title + '</h6>');
             $(this).find("img").attr({
                 src: url,
             });
@@ -232,7 +251,7 @@
             let url = button.data("video");
             let title = button.data("title");
 
-            $('#videoTitle').html('<h5 class="modal-title text-white">' + title + '</h5>');
+            $('#videoTitle').html('<h6 class="modal-title text-white">' + title + '</h6>');
             $(this).find("iframe").attr({
                 src: url,
                 allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -242,9 +261,6 @@
             $("#videoModal iframe").removeAttr("src allow");
         });
     });
-
-  {#  document.getElementById("myFormInput").onclick = function() {#}
-  {#document.getElementById("myForm").submit();};#}
 </script>
 {% block scripttags %}
 {% endblock scripttags %}

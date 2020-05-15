@@ -1,0 +1,54 @@
+{% extends 'digitalbeti/logged-in/dashboard_base.html' %}
+{% load static %}
+<!-- Title -->
+{% block title %}
+    VLE || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">All VLE</h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+{% block body %}
+
+    <div class="container py-4">
+        <div style="overflow-x:auto">
+            <table class="table table-striped mt-2">
+                <thead style="background-color: #EDEEF2">
+                <tr style="font-weight: bold; text-align: left;">
+                    <th scope="col" class="sNo">S. No.</th>
+                    <th scope="col" class="appN">VLE Name</th>
+                    <th scope="col" class="regC">User ID</th>
+                    <th scope="col" style="text-align: center;" class="regC">Delete VLE</th>
+                </tr>
+                </thead>
+                <tbody id="VLEDashTBody">
+                <!-- Run a for loop here. -->
+                {% for vle in Vles %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td><a href="{% url 'vle_overview' user_id=vle.id %}">{{ vle.user.first_name }} {{ vle.user.last_name }}</a></td>
+                        <td>{{ vle.user.id }}</td>
+                        <td style="text-align: center;">
+                            <a href="{% url 'admin_delete_vle' email=vle.user.email %}"><button type="button" class="btn btn-danger">Delete</button></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+{% endblock body %}
+
+
+{% block scripttags %}
+
+{% endblock scripttags %}

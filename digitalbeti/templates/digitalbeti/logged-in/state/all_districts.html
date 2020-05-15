@@ -1,0 +1,51 @@
+{% extends "digitalbeti/logged-in/dashboard_base.html" %}
+{% load static %}
+
+<!-- Title -->
+{% block title %}
+    Districts || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">All Districts</h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+{% block body %}
+    <!-- Content -->
+    <div class="container py-4">
+        <div style="overflow-x:auto">
+            <table class="table table-striped mt-2">
+                <thead style="background-color: #EDEEF2">
+                <tr style="font-weight: bold; text-align: left;">
+                    <th scope="col" class="sNo">S. No.</th>
+                    <th scope="col" class="appN">Name</th>
+                    <th scope="col" class="regC">Registered VLEs</th>
+                </tr>
+                </thead>
+                <tbody id="VLEDashTBody">
+                <!-- Run a for loop here. -->
+                {% for d in districts %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td><a href="{% url 'dmdc_overview' district=d.district %}">{{ d.district }}</a></td>
+                        <td>{{ d.num_user }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock body %}
+
+
+{% block scripttags %}
+
+{% endblock scripttags %}

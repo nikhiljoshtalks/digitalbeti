@@ -28,14 +28,11 @@ SECRET_KEY = '=xnmu^5ffjjhi9))=2u&7!ht60_k$&taxz^1^q-13*^03p3yg5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '*'
-]
+ALLOWED_HOSTS = []
 
 # Application definition
 
 INSTALLED_APPS = [
-    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,6 +42,7 @@ INSTALLED_APPS = [
     'digitalbeti',
     'crispy_forms',
     'bootstrap_datepicker',
+    'modeltranslation',
 
 ]
 
@@ -68,7 +66,6 @@ TEMPLATES = [
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
-                'django.template.context_processors.media',
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
@@ -121,6 +118,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+LOGIN_URL = '/login'
+
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale')
 ]
@@ -138,7 +137,7 @@ LANGUAGES = [
 ]
 
 MODELTRANSLATION_FALLBACK_LANGUAGES = {
-    'default': ('hi','en'),
+    'default': ('en', 'hi')
 }
 
 EXTRA_LANG_INFO = {
@@ -153,8 +152,6 @@ EXTRA_LANG_INFO = {
 LANG_INFO = dict(django.conf.locale.LANG_INFO, **EXTRA_LANG_INFO)
 django.conf.locale.LANG_INFO = LANG_INFO
 global_settings.LANGUAGES = global_settings.LANGUAGES + ["or"]
-
-LOGIN_URL = '/login'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
@@ -172,3 +169,6 @@ MESSAGE_TAGS = {
     messages.WARNING: 'alert alert-warning',
     messages.ERROR: 'alert alert-danger',
 }
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'digitalbeti/static/digitalbeti/images/')

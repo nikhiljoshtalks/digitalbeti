@@ -38,14 +38,20 @@
                 {% for answer_set in as %}
                     <tr>
                         <td>{{ forloop.counter }}</td>
-                        <td>DB{{ answer_set.participant.beneficiarydata.id|stringformat:"08d" }}</td>
+                        <td>{{ answer_set.participant.uk }}</td>
                         <td>{{ answer_set.exam.title }}</td>
                         <td>{{ answer_set.status }}</td>
                         <td>{{ answer_set.result }}</td>
                         <td>
-                            {% if answer_set.result == 'SUCCESS' %}
-                                <a class="btn btn-primary btn-sm" href="{% url 'download_certificate' ref_hash=answer_set.ref_hash %}"
-                    download>Download Certificate</a>
+                            {% if answer_set.participant.certificate_hash %}
+                                <a class="btn btn-primary btn-sm"
+                                   href="{% url 'user_download_certificate' ref_hash=answer_set.participant.certificate_hash %}"
+                                   >Download Certificate</a>
+                            {% else %}
+                                <form method="GET" action="{% url 'vle_user_exam' %}">
+                                    <input type="hidden" name="user_id" value="{{ answer_set.participant.id }}">
+                                    <button class="btn btn-primary btn-sm">Conduct</button>
+                                </form>
                             {% endif %}
                         </td>
                     </tr>

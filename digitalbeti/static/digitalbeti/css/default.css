@@ -407,7 +407,6 @@ body {
     overflow-x: hidden;
 }
 
-
 .btn-orange {
     font-size: 1.25rem;
     color: #ffffff;
@@ -472,4 +471,9 @@ div#preloader {
 
 .curriculum-header:hover {
     cursor: pointer;
+}
+
+.competition-title {
+    color: #0183FB;
+    font-size: 4rem;
 }

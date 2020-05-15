@@ -16,13 +16,7 @@ Exam Completed || Digital Beti
                 {% trans 'You Passed' %}!!
             </h1>
             <p class="text-center about-text mt-4">
-               {% trans 'Congratulations, you scored' %}  {{ answer_set.score }}/{{ answer_set.total_score }} {% trans 'correct answers. You have successfully cleared the' %} <b>{{ exam.title }}</b> {% trans 'examination. You can download the certificate from below.' %}
-            </p>
-        </div>
-        <div class="col-12">
-            <p class="text-center about-text">
-                <a class="btn btn-orange" href="{% url 'download_certificate' ref_hash=answer_set.ref_hash %}"
-                    download>Download Certificate</a>
+                {% trans 'Congratulations, you scored' %}  {{ answer_set.score }}/{{ answer_set.total_score }} {% trans 'correct answers. You have successfully cleared the' %} <b>{{ exam.title }}</b> {% trans 'examination.' %}
             </p>
         </div>
         {% else %}

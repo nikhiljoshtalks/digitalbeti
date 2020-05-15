@@ -3,35 +3,110 @@
 
 <!-- Title -->
 {% block title %}
-    VLE Dashboard || Digital Beti
+    VLE Overview || Digital Beti
 {% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">{{ state|title }} <span class="text-dark"> Overview</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
 
 {% block body %}
 
     <!-- Content -->
-    <div class="container">
-        <div style="overflow-x:auto">
-            <table class="table table-striped mt-2">
-                <thead style="background-color: #EDEEF2">
-                <tr style="font-weight: bold; text-align: left;">
-                    <th scope="col" class="sNo">S. No.</th>
-                    <th scope="col" class="appN">Name</th>
-                    <th scope="col" class="name">subdistrict</th>
-                    <th scope="col" class="staE">Village</th>
-                </tr>
-                </thead>
-                <tbody id="VLEDashTBody">
-                <!-- Run a for loop here. -->
-                {% for vle in vles %}
-                    <tr>
-                        <td>{{ forloop.counter }}</td>
-                        <td><a href="{% url 'state_vle_details' user_id=vle.id %}">{{ vle.user.first_name }}{{ vle.user.last_name }}</a></td>
-                        <td>{{ vle.subdistrict }}</td>
-                        <td>{{ vle.village }}</td>
-                    </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-4 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Districts</h5>
+                        <a href="{% url 'state_all_districts_list' state=state %}"><h1>{{ district_count }}</h1></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Subdistricts</h5>
+                        <h1>{{ subdistrict_count }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Villages</h5>
+                        <h1>{{ village_count }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total VLEs</h5>
+                        <h1>{{ vle_count }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Enrolled</h5>
+                        <h1>{{ total_registered }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Users Who Gave Exam</h5>
+                        <h1>{{ total_exams_given }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Users Passed</h5>
+                        <h1>{{ total_passed }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Total Users Failed</h5>
+                        <h1>{{ total_failed }}</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Result</h5>
+                        <canvas id="success_chart"></canvas>
+                    </div>
+                </div>
+            </div>
+             <div class="col-3 my-2">
+                <div class="card h-100">
+                    <div class="card-body d-flex flex-column justify-content-top">
+                        <h5 class="card-title">Top VLEs</h5>
+                        {% for vle in top_vle %}
+                            <p>{{ forloop.counter }}. <a href="{% url 'vle_overview' user_id=vle.id %}">{{ vle.user.first_name }} {{ vle.user.last_name }}</a></p>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -39,5 +114,28 @@
 
 
 {% block scripttags %}
-    
+    <script type="text/javascript">
+        var ctx = document.getElementById('success_chart');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Passed', 'Failed'],
+                datasets: [
+                    {
+                        label: '# of Votes',
+                        data: [{{total_passed}}, {{total_failed}}],
+                        backgroundColor: [
+                            '#0183FB',
+                            '#00227C'
+                        ],
+                        borderColor: [
+                            '#0183FB',
+                            '#00227C'
+                        ],
+                        borderWidth: 1
+                    }]
+            },
+            {#optio ns: options#}
+        });
+    </script>
 {% endblock scripttags %}

@@ -1,9 +1,9 @@
 {% extends "digitalbeti/logged-in/dashboard_base.html" %}
-{% load static %}
+{% load static i18n %}
 
 <!-- Title -->
 {% block title %}
-    Register A User || Digital Beti
+    Conduct Examination || Digital Beti
 {% endblock title %}
 
 {% block subheader %}
@@ -19,6 +19,20 @@
 
 {% block body %}
     <div class="container py-5">
+    {% if can_download_certificate %}
+            <div class="row justify-content-center py-2 mt-5">
+                <div class="col-12">
+                    <p class="text-center big-text">
+                        {% trans 'Congratulations, you have completed all the examinations. You can download the certificate from below.' %}
+                    </p>
+
+                    <p class="text-center about-text">
+                        <a class="btn btn-orange" href="{% url 'vle_download_certificate' ref_hash=completed_exams_hash %}"
+                           >Download Certificate</a>
+                    </p>
+                </div>
+            </div>
+        {% else %}
         <form method="POST">
             {% csrf_token %}
             {% if user_id %}
@@ -68,6 +82,7 @@
                 <button type="submit" class="btn btn-orange">START NOW</button>
             </div>
         </form>
+    {% endif %}
     </div>
 
 {% endblock body %}

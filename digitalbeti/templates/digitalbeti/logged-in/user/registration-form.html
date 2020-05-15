@@ -2,7 +2,7 @@
 {% load static i18n %}
 <!-- Title -->
 {% block title %}
-    Fill Form || Digital Beti
+    {% trans 'Fill Form' %} || {% trans 'Digital Beti' %}
 {% endblock title %}
 
 {% load crispy_forms_tags %}
@@ -25,94 +25,91 @@
         <form method="post">
             {% csrf_token %}
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-4">
                     {{ form.first_name|as_crispy_field }}
                 </div>
-                <div class="col-sm-4">
+                <div class="col-4">
                     {{ form.middle_name|as_crispy_field }}
                 </div>
-                <div class="col-sm-4">
+                <div class="col-4">
                     {{ form.last_name|as_crispy_field }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-6">
                     {{ form.fathers_name|as_crispy_field }}
                 </div>
-                <div class="col-sm-6">
+                <div class="col-6">
                     {{ form.mothers_name|as_crispy_field }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col">
                     {{ form.gender|as_crispy_field }}
                 </div>
-
-                <div class="col-sm-8">
+            </div>
+            <div class="row">
+                <div class="col">
                     {{ form.date_of_birth|as_crispy_field }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-6">
                     {{ form.email_id|as_crispy_field }}
                 </div>
-                <div class="col-sm-6">
+                <div class="col-6">
                     {{ form.phone_number|as_crispy_field }}
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <h6>{% trans 'Your Permanent Address:' %}</h6>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
+                <div class="col-3">
                     {{ paf.state|as_crispy_field }}
                 </div>
-                <div class="col-sm-4">
+                <div class="col-3">
                     {{ paf.district|as_crispy_field }}
                 </div>
-                <div class="col-sm-4">
+                <div class="col-3">
                     {{ paf.subdistrict|as_crispy_field }}
                 </div>
-                <div class="col-sm-4">
+                <div class="col-3">
                     {{ paf.village|as_crispy_field }}
                 </div>
-                <div class="col-sm-8">
+                <div class="col-12">
                     {{ paf.text|as_crispy_field }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-12">
                     {{ form.personal_monthly_income|as_crispy_field }}
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12">
                     <h4>{% trans 'Select Languages You Are Fluent In:' %}</h4>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
+                <div class="col-4">
                     {{ form.language_pref_1|as_crispy_field }}
                 </div>
-                <div class="col-sm-4">
+                <div class="col-4">
                     {{ form.language_pref_2|as_crispy_field }}
                 </div>
-                <div class="col-sm-4">
+                <div class="col-4">
                     {{ form.language_pref_3|as_crispy_field }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-12">
                     {{ form.education_qualification|as_crispy_field }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-4">
                     {{ form.differently_abled|as_crispy_field }}
                 </div>
-                <div class="col-sm-4">
+                <div class="col-4">
                     {{ form.bank_account|as_crispy_field }}
                 </div>
             </div>

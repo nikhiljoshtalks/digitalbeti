@@ -3,7 +3,7 @@
 
 <!-- Title -->
 {% block title %}
-Competition || Digital Beti
+    Competition || Digital Beti
 {% endblock title %}
 
 {% block subheader %}
@@ -18,7 +18,40 @@ Competition || Digital Beti
 {% endblock subheader %}
 
 {% block body %}
-
-<!-- Body -->
-
+    <div class="container py-5">
+        {% if not already_participated %}
+            <div class="row py-5">
+                <div class="col-12">
+                    <h1 class="competition-title">{% now "F" %} <span class="text-dark">Competition</span></h1>
+                </div>
+                <div class="col-12">
+                    <div class="bigger-text">To get the highest number of likes on a facebook page in the month
+                        of {% now "F" %}.
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-8">
+                    <div class="bigger-text">Last date to participate is 25th {% now "F" %} 2020.</div>
+                </div>
+                <div class="col-4">
+                    <div class="text-right">
+                        <a class="btn btn-orange" href="{% url 'vle_competition_input' %}">Participate Now</a>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            <div class="row py-5">
+                <div class="col-12">
+                    <h1 class="competition-title">You have already participated in <span class="text-dark">{% now "F" %} Competition</span>
+                    </h1>
+                </div>
+                <div class="col-12">
+                <div class="bigger-text">
+                    Come back next month to participate again.
+                </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
 {% endblock body %}

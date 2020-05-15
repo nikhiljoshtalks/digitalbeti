@@ -35,6 +35,26 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-12">
+                    <h6>Address:</h6>
+                </div>
+                <div class="col-3">
+                    {{ paf.state|as_crispy_field }}
+                </div>
+                <div class="col-3">
+                    {{ paf.district|as_crispy_field }}
+                </div>
+                <div class="col-3">
+                    {{ paf.subdistrict|as_crispy_field }}
+                </div>
+                <div class="col-3">
+                    {{ paf.village|as_crispy_field }}
+                </div>
+                <div class="col-12">
+                    {{ paf.text|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-6">
                     {{ form.personal_monthly_income|as_crispy_field }}
                 </div>

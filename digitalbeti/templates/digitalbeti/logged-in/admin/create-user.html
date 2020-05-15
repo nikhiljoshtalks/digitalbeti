@@ -1,0 +1,59 @@
+{% extends 'digitalbeti/logged-in/dashboard_base.html' %}
+{% load static %}
+<!-- Title -->
+{% block title %}
+    Fill Form || Digital Beti
+{% endblock title %}
+
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+    <!-- Form -->
+    <div class="container py-5">
+        <form method="post">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-6">
+                    {{ form.first_name|as_crispy_field }}
+                </div>
+                <div class="col-6">
+                    {{ form.last_name|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    {{ form.kind|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    {{ form.email|as_crispy_field }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    {{ form.state|as_crispy_field }}
+                </div>
+                <div class="col-3">
+                    {{ form.district|as_crispy_field }}
+                </div>
+                <div class="col-3">
+                    {{ form.subdistrict|as_crispy_field }}
+                </div>
+                <div class="col-3">
+                    {{ form.village|as_crispy_field }}
+                </div>
+            </div>
+            <div class="text-right">
+                <button type="submit" class="btn btn-orange">Save Details</button>
+            </div>
+        </form>
+    </div>
+
+{% endblock body %}
+
+
+{% block scripttags %}
+    <script src="{% static "digitalbeti/js/address-form.js" %}"></script>
+{% endblock scripttags %}

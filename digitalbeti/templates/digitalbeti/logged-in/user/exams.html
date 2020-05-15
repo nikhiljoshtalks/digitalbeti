@@ -4,7 +4,7 @@
 
 <!-- Title -->
 {% block title %}
-    {% trans 'Exams' %} || Digital Beti
+{% trans 'Exams' %} || {% trans 'Digital Beti' %}
 {% endblock title %}
 
 {% block subheader %}
@@ -12,7 +12,7 @@
     <div class="container-fluid dashboard-header">
         <div class="row justify-content-center align-items-center">
             <div class="col-12">
-                <h1 class="text-center">Examinations</h1>
+                <h1 class="text-center">{% trans 'Examinations' %}</h1>
             </div>
         </div>
     </div>
@@ -23,37 +23,51 @@
 
     <!-- Exam -->
     <div class="container pb-4">
-        <form method="POST">
-            {% csrf_token %}
+        {% if can_download_certificate %}
             <div class="row justify-content-center py-2 mt-5">
-                <h4 class="text-center">{% trans 'Choose the exam you want to attempt' %} &downarrow;</h4>
+                <div class="col-12">
+                    <p class="text-center big-text">
+                        {% trans 'Congratulations, you have completed all the examinations. You can download the certificate from below.' %}
+                    </p>
+                    <p class="text-center about-text">
+                        <a class="btn btn-orange" href="{% url 'user_download_certificate' ref_hash=completed_exams_hash %}"
+                           >Download Certificate</a>
+                    </p>
+                </div>
             </div>
-            <div class="row justify-content-center py-2 mt-5">
-                {% for exam in exams %}
-                    <div class="col-sm-4">
-                        <div class="row">
-                            <div class="col py-2 d-flex justify-content-center align-items-center">
-                                <img src="{% static exam.urls %}" class="img-fluid"
-                                     width="250px" height="250px" alt="Here comes the url">
+        {% else %}
+            <form method="POST">
+                {% csrf_token %}
+                <div class="row justify-content-center py-2 mt-5">
+                    <h4 class="text-center">{% trans 'Choose the exam you want to attempt' %} &downarrow;</h4>
+                </div>
+                <div class="row justify-content-center py-2 mt-5">
+                    {% for exam in exams %}
+                        <div class="col-sm-4">
+                            <div class="row">
+                                <div class="col py-2 d-flex justify-content-center align-items-center">
+                                    <img src="{% static exam.urls %}" class="img-fluid"
+                                         width="250px" height="250px">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-2 d-flex justify-content-center align-items-center font-weight-bold">
+                                    {{ exam.title }}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-2 d-flex justify-content-center align-items-center font-weight-bold">
+                                    <input type="radio" name="exam_id" value="{{ exam.id }}"/>
+                                </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col py-2 d-flex justify-content-center align-items-center font-weight-bold">
-                                {{ exam.title }}
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col py-2 d-flex justify-content-center align-items-center font-weight-bold">
-                                <input type="radio" name="exam_id" value="{{ exam.id }}"/>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-            <div class="row justify-content-center py-2 exams-icon mb-3 mt-3">
-                <button type="submit" class="btn btn-orange">{% trans 'START NOW' %}</button>
-            </div>
-        </form>
+                    {% endfor %}
+                </div>
+                <div class="row justify-content-center py-2 exams-icon mb-3 mt-3">
+                    <button type="submit" class="btn btn-orange">{% trans 'START NOW' %}</button>
+                </div>
+            </form>
+        {% endif %}
     </div>
 
 {% endblock body %}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-11 05:35+0000\n"
+"POT-Creation-Date: 2020-05-03 10:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: digitalbeti/forms.py:12 digitalbeti/models.py:140
+#: digitalbeti/forms.py:12 digitalbeti/models.py:172
 msgid "First name"
 msgstr "ପ୍ରଥମ ନାମ"
 
-#: digitalbeti/forms.py:13 digitalbeti/models.py:142
+#: digitalbeti/forms.py:13 digitalbeti/forms.py:73 digitalbeti/models.py:174
 msgid "Last name"
 msgstr "ଶେଷ ନାମ (ସଂଜ୍ଞା)"
 
@@ -33,82 +33,100 @@ msgstr "ଅତି ବେଶିରେ ୧୫୦ ଟି କ୍ୟାରେକଟ�
 msgid "Enter the same password as before, for verification."
 msgstr "ଉପରେ ଦେଇଥିବା ପାସୱାର୍ଡ ଓ ତଳେ ଦେଇଥିବା ପାସୱାର୍ଡ ସମାନ ହେବା ଜରୁରୀ"
 
-#: digitalbeti/forms.py:51 digitalbeti/models.py:92
+#: digitalbeti/forms.py:50 digitalbeti/forms.py:74 digitalbeti/models.py:56
 msgid "District"
 msgstr "ଜିଲ୍ଲା"
 
-#: digitalbeti/forms.py:52 digitalbeti/models.py:91
+#: digitalbeti/forms.py:51 digitalbeti/forms.py:75 digitalbeti/models.py:55
 msgid "Subdistrict"
 msgstr "ଉପ ଜିଲ୍ଲା"
 
-#: digitalbeti/forms.py:53 digitalbeti/models.py:93
+#: digitalbeti/forms.py:52 digitalbeti/forms.py:76 digitalbeti/models.py:57
 msgid "Village"
 msgstr "ଗାଁ"
 
-#: digitalbeti/models.py:90
+#: digitalbeti/forms.py:71
+msgid "email"
+msgstr "ଇ ମେଲ"
+
+#: digitalbeti/forms.py:72
+msgid "First Name"
+msgstr "ପ୍ରଥମ ନାମ"
+
+#: digitalbeti/models.py:54 digitalbeti/models.py:271
+#: digitalbeti/templates/digitalbeti/state.html:6
+#: digitalbeti/templates/digitalbeti/state.html:15
 msgid "State"
 msgstr "ରାଜ୍ୟ"
 
-#: digitalbeti/models.py:94
-msgid "Full Address"
-msgstr "ପୂର୍ଣ୍ଣ ଠିକଣା"
-
-#: digitalbeti/models.py:141
+#: digitalbeti/models.py:173
 msgid "Middle name"
 msgstr "ମଝି ନାମ"
 
-#: digitalbeti/models.py:143
+#: digitalbeti/models.py:175
 msgid "Father name"
 msgstr "ପିତାଙ୍କ ନାମ"
 
-#: digitalbeti/models.py:144
+#: digitalbeti/models.py:176
 msgid "Mother name"
 msgstr "ମାତା ନାମ"
 
-#: digitalbeti/models.py:145
+#: digitalbeti/models.py:177
 msgid "Gender"
 msgstr "ଲିଙ୍ଗ"
 
-#: digitalbeti/models.py:146
+#: digitalbeti/models.py:178
 msgid "Date of birth"
 msgstr "ଜନ୍ମ ତାରିଖ"
 
-#: digitalbeti/models.py:147
+#: digitalbeti/models.py:179
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:45
 msgid "Email"
 msgstr "ଇ ମେଲ"
 
-#: digitalbeti/models.py:148
+#: digitalbeti/models.py:180
 msgid "Phone Number"
 msgstr "ଫୋନ୍ ନମ୍ବର"
 
-#: digitalbeti/models.py:149
+#: digitalbeti/models.py:181
 msgid "Personal monthly income"
 msgstr "ବ୍ୟକ୍ତିଗତ ମାସିକ ଆୟ |"
 
-#: digitalbeti/models.py:151
+#: digitalbeti/models.py:183
 msgid "First Language Preference"
 msgstr "ପ୍ରଥମ ଭାଷା ପସନ୍ଦ"
 
-#: digitalbeti/models.py:153
+#: digitalbeti/models.py:186
 msgid "Second Language Preference"
 msgstr "ଦ୍ୱିତୀୟ ଭାଷା ପସନ୍ଦ"
 
-#: digitalbeti/models.py:155
+#: digitalbeti/models.py:188
 msgid "Third Language Preference"
 msgstr "ତୃତୀୟ ଭାଷା ପସନ୍ଦ |"
 
-#: digitalbeti/models.py:157
+#: digitalbeti/models.py:191
 msgid "Education qualification"
 msgstr "ଶିକ୍ଷାଗତ ଯୋଗ୍ୟତା |"
 
-#: digitalbeti/models.py:158
+#: digitalbeti/models.py:192
 msgid "Are you differently abled?"
 msgstr "ଆପଣ ଅକ୍ଷମ କି?"
 
-#: digitalbeti/models.py:159
+#: digitalbeti/models.py:193
 msgid "Do you have a bank account?"
 msgstr "ଆପଣଙ୍କର ଏକ ବ୍ୟାଙ୍କ ଆକାଉଣ୍ଟ ଅଛି କି?"
+
+#: digitalbeti/models.py:194
+msgid "Facebook Profile Link"
+msgstr "ଫେସବୁକ ପ୍ରୋଫାଇଲ"
+
+#: digitalbeti/models.py:195
+msgid "Number of Training Computers"
+msgstr ""
+
+#: digitalbeti/models.py:196
+msgid "VLE CSC ID"
+msgstr ""
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:6
 msgid "About CSC Academy"
@@ -116,15 +134,21 @@ msgstr "ସି ଏସ ସି ବିଷୟରେ"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:6
 #: digitalbeti/templates/digitalbeti/about-project.html:6
+#: digitalbeti/templates/digitalbeti/impact.html:6
+#: digitalbeti/templates/digitalbeti/index.html:6
 #: digitalbeti/templates/digitalbeti/jobs.html:7
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:7
+#: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:6
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:5
 #: digitalbeti/templates/digitalbeti/login.html:6
+#: digitalbeti/templates/digitalbeti/state.html:6
 msgid "Digital Beti"
 msgstr "ଡିଜିଟାଲ୍ ବେଟି |"
 
 #: digitalbeti/templates/digitalbeti/about-csc.html:20
 #: digitalbeti/templates/digitalbeti/about-facebook.html:20
 #: digitalbeti/templates/digitalbeti/about-project.html:21
-#: digitalbeti/templates/digitalbeti/base.html:58
+#: digitalbeti/templates/digitalbeti/base.html:57
 msgid "ABOUT"
 msgstr "ସମ୍ବନ୍ଧରେ"
 
@@ -215,25 +239,29 @@ msgstr ""
 "ମାନଙ୍କୁ ଡିଜିଟାଲ ସାକ୍ଷରତା ଉପରେ ଶିକ୍ଷା ଦିଆଯିବ ଯେଉଁମାନେ ପରେ ପ୍ରଶିକ୍ଷକ ଭାବେ ୧୦ ଟି ରାଜ୍ୟର ୩୦୦୦ "
 "ଗ୍ରାମର ୨୫୦୦୦୦ ଗ୍ରାମୀଣ ଉଦ୍ୟମୀ ମାନଙ୍କୁ ପ୍ରଶିକ୍ଷିତ କରିବେ ।"
 
-#: digitalbeti/templates/digitalbeti/base.html:53
+#: digitalbeti/templates/digitalbeti/base.html:52
 msgid "HOME"
 msgstr "ଘର"
 
-#: digitalbeti/templates/digitalbeti/base.html:62
+#: digitalbeti/templates/digitalbeti/base.html:61
 msgid "The Project"
 msgstr "ପ୍ରକଳ୍ପ"
 
-#: digitalbeti/templates/digitalbeti/base.html:65
+#: digitalbeti/templates/digitalbeti/base.html:64
 msgid "CSC Academy"
 msgstr "csc ଏକାଡେମୀ |"
 
-#: digitalbeti/templates/digitalbeti/base.html:68
+#: digitalbeti/templates/digitalbeti/base.html:67
 msgid "Facebook"
 msgstr "ଫେସବୁକ୍"
 
-#: digitalbeti/templates/digitalbeti/base.html:72
+#: digitalbeti/templates/digitalbeti/base.html:71
 msgid "IMPACT"
 msgstr "ପ୍ରଭାବ"
+
+#: digitalbeti/templates/digitalbeti/base.html:74
+msgid "STATE"
+msgstr ""
 
 #: digitalbeti/templates/digitalbeti/base.html:84
 msgid "LOGIN"
@@ -246,15 +274,12 @@ msgstr "ଡିଜିଟାଲ ମାର୍କେଟିଂ ପାଠ୍ୟକ୍�
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:17
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:28
 #: digitalbeti/templates/digitalbeti/index.html:85
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:40
-#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:37
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:44
 msgid "Digital Marketing"
 msgstr "ଡିଜିଟାଲ ମାର୍କେଟିଂ"
 
 #: digitalbeti/templates/digitalbeti/digital-marketing.html:17
 #: digitalbeti/templates/digitalbeti/jobs.html:15
-#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:7
-#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:15
 #: digitalbeti/templates/digitalbeti/safety.html:15
 msgid "Curriculum"
 msgstr "ପାଠ୍ୟକ୍ରମ"
@@ -387,14 +412,12 @@ msgid "DIGITAL CURRICULUM"
 msgstr "ଡିଜିଟାଲ ପାଠ୍ୟକ୍ରମ"
 
 #: digitalbeti/templates/digitalbeti/index.html:98
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:42
-#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:51
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:46
 msgid "Jobs and Livelihood"
 msgstr "କାର୍ଯ୍ୟ ଓ ଜୀବିକା"
 
 #: digitalbeti/templates/digitalbeti/index.html:111
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:44
-#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:65
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:48
 #: digitalbeti/templates/digitalbeti/safety.html:15
 #: digitalbeti/templates/digitalbeti/safety.html:27
 msgid "Online Safety"
@@ -432,15 +455,15 @@ msgstr "ମୋ ମାଆର କଳା"
 msgid "Baby Destination"
 msgstr "ଶିଶୁ ଗନ୍ତବ୍ୟସ୍ଥଳ"
 
-#: digitalbeti/templates/digitalbeti/index.html:179
+#: digitalbeti/templates/digitalbeti/index.html:178
 msgid "Program Status"
 msgstr "କାର୍ଯ୍ୟକ୍ରମ ସ୍ତର"
 
-#: digitalbeti/templates/digitalbeti/index.html:195
+#: digitalbeti/templates/digitalbeti/index.html:194
 msgid "Latest News & Update"
 msgstr "ସାମ୍ପ୍ରତିକ ଖବର"
 
-#: digitalbeti/templates/digitalbeti/index.html:212
+#: digitalbeti/templates/digitalbeti/index.html:209
 msgid ""
 "Content feedback session has been conducted in Coimbatore, Tamilnadu with "
 "VLEs."
@@ -448,7 +471,7 @@ msgstr ""
 "ଭି ଏଲ ଇ ମାନଙ୍କୁ ନେଇ ବିଷୟଗତ ମତାମତ ପାଇଁ ଏକ କାର୍ଯ୍ୟକ୍ରମ ଅନୁଷ୍ଠିତ ହୋଇଥିଲା କୋଇମ୍ବାଟୁର ,"
 "ତାମିଲନାଡୁରେ।"
 
-#: digitalbeti/templates/digitalbeti/index.html:227
+#: digitalbeti/templates/digitalbeti/index.html:222
 msgid ""
 "Content feedback session has been conducted in Katihar, Bihar with VLEs."
 msgstr ""
@@ -508,55 +531,74 @@ msgid "How to Post and Manage Jobs on Your Business Page?"
 msgstr ""
 "ଫେସବୁକରେ କିପରି ଚାକିରୀ ବିଷୟରେ ସୂଚନା ପୋଷ୍ଟ କରିବେ ଏବଂ ନିୟନ୍ତ୍ରଣ କରିବେ ନିଜର ବ୍ୟବସାୟିକ ପୃଷ୍ଠାରେ"
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:37
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:40
 msgid "USER PROFILE"
 msgstr "ଉପଯୋଗକର୍ତ୍ତା ପ୍ରୋଫାଇଲ୍ |"
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:38
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:42
 msgid "CURRICULUM"
 msgstr "ପାଠ୍ୟକ୍ରମ"
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:45
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:49
 msgid "EXAM"
 msgstr "ପରୀକ୍ଷା"
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:47
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:51
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:15
 msgid "Examinations"
 msgstr "ପରୀକ୍ଷା"
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:50
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:54
 msgid "REGISTER A USER"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:52
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:56
 msgid "REGISTRATION HISTORY"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:54
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:58
 msgid "CONDUCT EXAMINATION"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:56
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:60
 msgid "EXAMINATION HISTORY"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:58
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:62
 msgid "COMPETITION"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:60
-msgid "ICE MATERIAL"
-msgstr ""
-
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:63
-msgid "ACTIVE VLEs"
-msgstr ""
-
 #: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:65
+msgid "VLEs"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:67
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:73
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:85
 msgid "TOP PERFORMING VLEs"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:69
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:71
+msgid "DISTRICTS"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:76
+msgid "CREATE USER"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:78
+msgid "CREATE VLEs BULK"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:80
+msgid "STATES"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:83
+msgid "ACTIVE VLEs"
+msgstr ""
+
+#: digitalbeti/templates/digitalbeti/logged-in/dashboard_base.html:89
 msgid "Logout"
 msgstr ""
 
@@ -573,51 +615,59 @@ msgid "correct answers. You have successfully cleared the"
 msgstr "ଆପଣ ସଫଳତାର ସହିତ ସଫା କରିଛନ୍ତି |"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:19
-msgid "examination. You can download the certificate from below."
-msgstr "ଆପଣ ନିମ୍ନରୁ ସାର୍ଟିଫିକେଟ୍ ଡାଉନଲୋଡ୍ କରିପାରିବେ |"
+msgid "examination."
+msgstr "ପରୀକ୍ଷା"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:31
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:25
 msgid "Better Luck Next Time."
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:34
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:28
 msgid "You scored"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:34
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:28
 msgid "out of"
 msgstr ""
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:39
+#: digitalbeti/templates/digitalbeti/logged-in/user/completed-exam.html:33
 msgid "Try Again"
 msgstr "ପୁଣି ଥରେ ଚେଷ୍ଟା କର"
-
-#: digitalbeti/templates/digitalbeti/logged-in/user/curriculum/curriculum.html:15
-msgid "Digital"
-msgstr "ଡିଜିଟାଲ୍ |"
 
 #: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:7
 msgid "Exams"
 msgstr "ପରୀକ୍ଷା"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:29
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:30
+
+msgid ""
+"Congratulations, you have completed all the examinations. You can download "
+"the certificate from below."
+msgstr "ଅଭିନନ୍ଦନ, ଆପଣ ସମସ୍ତ ପରୀକ୍ଷା ସମାପ୍ତ କରିଛନ୍ତି | ଆପଣ ନିମ୍ନରୁ ସାର୍ଟିଫିକେଟ୍ ଡାଉନଲୋଡ୍ କରିପାରିବେ |"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:42
 msgid "Choose the exam you want to attempt"
 msgstr "ଆପଣ ଚେଷ୍ଟା କରିବାକୁ ଚାହୁଁଥିବା ପରୀକ୍ଷା ବାଛନ୍ତୁ |"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:54
+#: digitalbeti/templates/digitalbeti/logged-in/user/exams.html:67
 msgid "START NOW"
 msgstr "ବର୍ତ୍ତମାନ ଆରମ୍ଭ କରନ୍ତୁ |"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:13
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:6
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:14
+msgid "Not Registered"
+msgstr "ପଞ୍ଜିକୃତ ନୁହେଁ |"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:6
+msgid " Digital Beti"
+msgstr "ଡିଜିଟାଲ୍ ବେଟି |"
+
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:14
 #: digitalbeti/templates/digitalbeti/logged-in/user/profile.html:14
 msgid "User"
 msgstr "ଉପଯୋଗକର୍ତ୍ତା |"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:13
-msgid "Not Registered"
-msgstr "ପଞ୍ଜିକୃତ ନୁହେଁ |"
-
-#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:26
+#: digitalbeti/templates/digitalbeti/logged-in/user/not-registered.html:27
 msgid ""
 "Sorry, you are not registered with us at the moment. To register please "
 "click below:"
@@ -637,6 +687,10 @@ msgstr "ଜନ୍ମ ତାରିଖ"
 msgid "Phone"
 msgstr "ଫୋନ୍ ନମ୍ବର"
 
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:5
+msgid "Fill Form"
+msgstr "ଫର୍ମ |"
+
 #: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:15
 msgid "Registration"
 msgstr "ପଞ୍ଜୀକରଣ |"
@@ -645,11 +699,11 @@ msgstr "ପଞ୍ଜୀକରଣ |"
 msgid "Form"
 msgstr "ଫର୍ମ |"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:65
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:66
 msgid "Your Permanent Address:"
 msgstr "ତୁମର ସ୍ଥାୟୀ ଠିକଣା |"
 
-#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:92
+#: digitalbeti/templates/digitalbeti/logged-in/user/registration-form.html:91
 msgid "Select Languages You Are Fluent In:"
 msgstr "ଆପଣ କହୁଥିବା ଭାଷା ବାଛନ୍ତୁ:"
 
@@ -736,9 +790,55 @@ msgstr "ଭୁଲ ସୂଚନାକୁ କିପରି ନିୟନ୍ତ୍ର
 msgid "Already have an account?"
 msgstr "ପୂର୍ବରୁ ଏକାଉଣ୍ଟ ଅଛି?ୁ"
 
-#: digitalbeti/views.py:77
+#: digitalbeti/templates/digitalbeti/state.html:22
+msgid "JAMMU AND KASHMIR"
+msgstr "ଜାମ୍ମୁ କାଶ୍ମୀର"
+
+#: digitalbeti/templates/digitalbeti/state.html:42
+msgid "BIHAR"
+msgstr "ବିହାର |"
+
+#: digitalbeti/templates/digitalbeti/state.html:62
+msgid "TELANGANA"
+msgstr "ତେଲେଙ୍ଗାନା"
+
+#: digitalbeti/templates/digitalbeti/state.html:82
+msgid "HARYANA"
+msgstr "ହରିୟାଣା"
+
+#: digitalbeti/templates/digitalbeti/state.html:102
+msgid "RAJASTHAN"
+msgstr "ରାଜସ୍ଥାନ"
+
+#: digitalbeti/templates/digitalbeti/state.html:122
+msgid "TAMIL NADU"
+msgstr "ତାମିଲନାଡୁ |"
+
+#: digitalbeti/templates/digitalbeti/state.html:142
+msgid "CHHATTISGARH"
+msgstr "ଛତିଶଗଡ"
+
+#: digitalbeti/templates/digitalbeti/state.html:162
+msgid "UTTAR PRADESH"
+msgstr "ଉତ୍ତରପ୍ରଦେଶ"
+
+#: digitalbeti/templates/digitalbeti/state.html:182
+msgid "KERALA"
+msgstr "କେରଳ"
+
+#: digitalbeti/templates/digitalbeti/state.html:202
+msgid "MAHARASHTRA"
+msgstr "ମହାରାଷ୍ଟ୍ର"
+
+#: digitalbeti/views.py:84
 msgid "You have been successfully logged out."
 msgstr "ଆପଣ ସଫଳତାର ସହିତ ଲଗ୍ ଆଉଟ୍ ହୋଇଛନ୍ତି |"
+
+msgid "Full Address"
+msgstr "ପୂର୍ଣ୍ଣ ଠିକଣା"
+
+msgid "Digital"
+msgstr "ଡିଜିଟାଲ୍ |"
 
 msgid "Your password can’t be a commonly used password."
 msgstr "ଆପଣଙ୍କର ପାସୱାର୍ଡ ଏକ ସାଧାରଣ ବ୍ୟବହୃତ ପାସୱାର୍ଡ ହୋଇପାରିବ ନାହିଁ |"

@@ -1,0 +1,51 @@
+{% extends 'digitalbeti/logged-in/dashboard_base.html' %}
+{% load static %}
+<!-- Title -->
+{% block title %}
+    Fill Form || Digital Beti
+{% endblock title %}
+
+{% load crispy_forms_tags %}
+
+{% block body %}
+
+    <!-- Form -->
+    <div class="container py-5">
+        {% if success %}
+            <div class="row py-2">
+                <div class="col-6">
+                    <h3>User Creation Completed</h3>
+                </div>
+            </div>
+        {% else %}
+            <div class="row">
+                <div class="col">
+                    <h3 class="<text-center">Sample CSV File</h3>
+                    <pre>
+                    email,mobile,csc_id,name,state
+                    test@email.in,9999999999,663517540016,Test User,Rajasthan
+                    </pre>
+                </div>
+            </div>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="row py-2">
+                    <div class="col-6">
+                        {{ form.csv_file }}
+                    </div>
+                </div>
+                <div class="row py-2">
+                    <div class="col-6">
+                        <button type="submit" class="btn btn-orange">Create VLEs</button>
+                    </div>
+                </div>
+            </form>
+        {% endif %}
+    </div>
+
+{% endblock body %}
+
+
+{% block scripttags %}
+    <script src="{% static "digitalbeti/js/address-form.js" %}"></script>
+{% endblock scripttags %}

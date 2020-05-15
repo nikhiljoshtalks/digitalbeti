@@ -1,0 +1,41 @@
+{% extends 'digitalbeti/logged-in/dashboard_base.html' %}
+{% load static %}
+<!-- Title -->
+{% block title %}
+    Delete User || Digital Beti
+{% endblock title %}
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">DELETE</h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+{% block body %}
+
+    <div class="container py-4">
+
+
+        <form method="POST" >
+            {% csrf_token %}
+            <p>Do you want to delete this VLE?</p>
+            <p>Name: {{ Vle.first_name }}  {{ Vle.last_name }}</p>
+            <p>VLE ID: {{ Vle.id }}</p>
+            <input type="submit" class="btn btn-danger" value="Delete">
+            <a class="btn btn-primary" href="{% url 'admin_all_vles' %}" role="button">Cancel</a>
+        </form>
+    </div>
+
+
+
+
+{% endblock body %}
+
+
+{% block scripttags %}
+
+{% endblock scripttags %}

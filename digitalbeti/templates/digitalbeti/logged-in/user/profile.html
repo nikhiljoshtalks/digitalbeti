@@ -3,7 +3,7 @@
 
 <!-- Title -->
 {% block title %}
-{% trans 'Profile' %} || Digital Beti
+{% trans 'Profile' %} || {% trans 'Digital Beti' %}
 {% endblock title %}
 
 {% block subheader %}
@@ -42,7 +42,7 @@
     </div>
     <div class="row mt-3">
         <div class="col-4 font-weight-bold">
-            <h4></h4>
+            <h4>{% trans 'Email' %}</h4>
         </div>
         <div class="col-8">
             <p> {{ details.email_id }}</p>

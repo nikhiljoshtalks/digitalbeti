@@ -1,0 +1,55 @@
+{% extends "digitalbeti/logged-in/dashboard_base.html" %}
+{% load static %}
+
+<!-- Title -->
+{% block title %}
+    VLE Dashboard || Digital Beti
+{% endblock title %}
+
+{% block subheader %}
+    <!-- Heading -->
+    <div class="container-fluid dashboard-header">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-12">
+                <h1 class="text-center">{{ district|title }}, <span class="text-dark"> Top VLEs</span></h1>
+            </div>
+        </div>
+    </div>
+{% endblock subheader %}
+
+{% block body %}
+    <!-- Content -->
+    <div class="container py-4">
+        <div style="overflow-x:auto">
+            <table class="table table-striped mt-2">
+                <thead style="background-color: #EDEEF2">
+                <tr style="font-weight: bold; text-align: left;">
+                    <th scope="col" class="sNo">S. No.</th>
+                    <th scope="col" class="appN">Name</th>
+                    <th scope="col" class="name">subdistrict</th>
+                    <th scope="col" class="staE">Village</th>
+                    <th scope="col" class="regC">Registered Users</th>
+                </tr>
+                </thead>
+                <tbody id="VLEDashTBody">
+                <!-- Run a for loop here. -->
+                {% for vle in vles %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td><a href="{% url 'vle_overview' user_id=vle.id %}">{{ vle.user.first_name }} {{ vle.user.last_name }}</a></td>
+                        <td>{{ vle.subdistrict }}</td>
+                        <td>{{ vle.village }}</td>
+                        <td>{{ vle.digitalbetiuser_set.count }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock body %}
+
+
+{% block scripttags %}
+
+{% endblock scripttags %}
